@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#containerTop{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#backgroundLeft{
+    background-image: url(./images/retangulo.png);
+    width: 950.5px;
+    height: 825px;
+}
+
+#containerTop > img{
+    position: absolute;
+    top: 137px;
+    left: 156px;
+}
+
+#menuTop{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
+}
+
+.linha{
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    border-radius: 40px;
+    margin-top: 5px;
+}
+
+#textTop{
+    position: absolute;
+    left: 800px;
+    top: 317px;
+    display: flex;
+    flex-direction: column;
+}
+
+#textTop > h1{
+    color: red;
+    font-family: 'Staatliches', cursive;
+    font-size: 75px;
+}
+
+#textTop > h2{
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+
+#textTop > a{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    align-self: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#textTop > a:hover{
+    background-color: yellow;
+    color: black;
+}
