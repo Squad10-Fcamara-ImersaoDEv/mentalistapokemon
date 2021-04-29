@@ -78,7 +78,7 @@ async function getPokemon(pokemonId) {
             }
 
             el.innerHTML += `
-                            <div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
+                            <div class="card-pokemon ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
                                 <h4><strong class="nome">${pokemonData.name}</strong></h4>
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                                 <div class="container">
@@ -95,7 +95,7 @@ async function getPokemon(pokemonId) {
 }
 let dataAllPokemons = []
 async function escrevePokemons(){
-    for (var i = 1;i<899; i++){
+    for (var i = 1;i<8; i++){
         var onePokemon = await getPokemon(i.toString())
         dataAllPokemons.push(onePokemon)
     }
