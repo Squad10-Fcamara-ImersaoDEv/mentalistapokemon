@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentalmon</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/pokedex.css">
     <link rel="icon" href="./icon/icon.png">
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,22 +17,22 @@
 
     <header>
 
-        <div id="containerMenu">
+        <section id="containerMenu">
 
             <img src="./img/logo_pokemon.svg" alt="logo">
 
-            <div>
+            <nav>
                 <a href="#">Home</a>
                 <a href="#">Pokédex</a>
                 <a href="#">Como Jogar</a>
                 <a href="#">Sobre Nós</a>
-            </div>
+            </nav>
 
             <a>Login</a>
 
-        </div>
+        </section>
 
-        <div id="containerAp">
+        <section id="containerAp">
 
             <img height="470px" src="./img/ashe.svg" alt="ashe e picachu">
 
@@ -40,13 +41,142 @@
                 <a href="#">Jogue agora!</a>
             </div>
 
-        </div>
+        </section>
 
     </header>
 
     <main>
 
-        <div id="containerRules">
+        <section id="containerCarrosel">
+
+            <div>
+                <h1>Destaques</h1>
+                <a href="#">Ver Todos</a>
+            </div>
+            
+            <section class="cards" id="containerinteiro">
+
+                <div class="youare card-grass" id="bulbasaur">
+
+                    <h4><strong class="nome">bulbasaur</strong></h4>
+
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="imagem do bulbasaur">
+
+                    <div class="container">
+                        <span id="code-pokemon">#001</span>
+                     <p id="type-pokemon">grass,poison</p>
+                    </div>
+                </div>
+            
+                <div class="youare card-grass" id="ivysaur">
+
+                    <h4><strong class="nome">ivysaur</strong></h4>
+
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="imagem do ivysaur">
+
+                    <div class="container">
+                        <span id="code-pokemon">#002</span>
+                        <p id="type-pokemon">grass,poison</p>
+                    </div>
+
+                </div>
+                
+                <div class="youare card-grass" id="venusaur">
+
+                    <h4><strong class="nome">venusaur</strong></h4>
+
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="imagem do venusaur">
+
+                    <div class="container">
+                        <span id="code-pokemon">#003</span>
+                        <p id="type-pokemon">grass,poison</p>
+                    </div>
+
+                </div>
+                
+                <div class="youare card-fire" id="charmander">
+
+                    <h4><strong class="nome">charmander</strong></h4>
+                    
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="imagem do charmander">
+                    <div class="container">
+                        <span id="code-pokemon">#004</span>
+                        <p id="type-pokemon">fire</p>
+                    </div>
+                </div>
+                
+                <div class="youare card-fire" id="charmeleon">
+                    <h4><strong class="nome">charmeleon</strong></h4>
+
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="imagem do charmeleon">
+
+                    <div class="container">
+                        <span id="code-pokemon">#005</span>
+                        <p id="type-pokemon">fire</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="youare card-fire" id="charizard">
+                    <h4><strong class="nome">charizard</strong></h4>
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="imagem do charizard">
+                    <div class="container">
+                        <span id="code-pokemon">#006</span>
+                        <p id="type-pokemon">fire,flying</p>
+                    </div>
+                </div>
+                
+                <div class="youare card-water" id="squirtle">
+                    <h4><strong class="nome">squirtle</strong></h4>
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="imagem do squirtle">
+                    <div class="container">
+                        <span id="code-pokemon">#007</span>
+                        <p id="type-pokemon">water</p>
+                    </div>
+                </div>
+                
+                <div class="youare card-water" id="wartortle">
+                    <h4><strong class="nome">wartortle</strong></h4>
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="imagem do wartortle">
+                    <div class="container">
+                        <span id="code-pokemon">#008</span>
+                        <p id="type-pokemon">water</p>
+                    </div>
+                </div>
+                
+                <div class="youare card-water" id="blastoise">
+                    
+                    <h4><strong class="nome">blastoise</strong></h4>
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="imagem do blastoise">
+                    <div class="container">
+                        <span id="code-pokemon">#009</span>
+                        <p id="type-pokemon">water</p>
+                    </div>
+                </div>
+                
+                <div class="youare card-bug" id="caterpie">
+                    <h4><strong class="nome">caterpie</strong></h4>
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="imagem do caterpie">
+                    <div class="container">
+                        <span id="code-pokemon">#010</span>
+                        <p id="type-pokemon">bug</p>
+                    </div>
+                </div>
+                
+                <div class="youare card-bug" id="metapod">
+                    <h4><strong class="nome">metapod</strong></h4>
+                    <img class="imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png" alt="imagem do metapod">
+                    <div class="container">
+                        <span id="code-pokemon">#011</span>
+                        <p id="type-pokemon">bug</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section id="containerRules">
 
             <h1>Regras do Jogo</h1>
 
@@ -68,9 +198,9 @@
 
             </div>
 
-        </div>
+        </section>
 
-        <div id="containerVideo">
+        <section id="containerVideo">
 
             <div>
 
@@ -82,7 +212,7 @@
 
             <img src="./img/picachu.svg" alt="picachu">
 
-        </div>
+        </section>
 
     </main>
 

@@ -19,14 +19,14 @@ body{
 #containerMenu > img{
     margin-left: 1rem;}
 
-#containerMenu div,a{
+#containerMenu nav > a{
     text-decoration: inherit;
     color: #212121;
     width: 100%;
     margin: auto 1.5rem;
     text-align: center;}
 
-#containerMenu div,a:hover{
+#containerMenu nav > a:hover{
     color: #A8A8A8;}
 
 #containerMenu > a{
@@ -201,4 +201,32 @@ footer p{
 footer img{
     margin-right: 3rem;
     height: 50px;
+}
+
+#containerCarrosel > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 3rem 6rem;
+}
+
+#containerCarrosel div > h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 3.15rem;
+    text-transform: uppercase;
+}
+
+#containerCarrosel div > a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-right: 6rem;
+    align-self: flex-end;
+    text-decoration: none;
+    color: #6F6F6F;
+    transition: 0.7s;}
+
+#containerCarrosel div > a:hover{
+    color: black;
+    font-size: 1.7rem;
 }
