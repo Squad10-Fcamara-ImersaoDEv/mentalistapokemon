@@ -89,18 +89,13 @@ body{
 #containerRules{
     background-color: #006DB9;
     font-family: 'Noto Sans';
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #FFFFFF;
 }
 
 #containerRules h1{
-<<<<<<< Updated upstream
     font-size: 3.75rem;
-=======
-    background-color: black;
-    font-size: 3.5rem;
->>>>>>> Stashed changes
-    padding: 4rem;
+    padding: 4.5rem 0 0 5.5rem;
     text-transform: uppercase;
 }
 
@@ -108,57 +103,67 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto;
-<<<<<<< Updated upstream
-}
-
-#rulesGrid img{
-    grid-column-start: 0;
-    grid-column-start: 1;
-    grid-row-start: 0;
-    grid-row-end: 3;
-}
-
-#rulesGrid > div{
-    display: inline-block;
-    grid-column-start: 1;
-    grid-column-start: 2;
-}
-
-#rulesGrid div :first-child{
-=======
     grid-template-areas:    "img text1"
                             "img text2"
                             "img text3";
-    height: 800px;
+    height: 1100px;
 }
 
 #rulesGrid img{
     grid-area: img;
     align-self: center;}
-.text1{grid-area: text1;}
-.text2{grid-area: text2;}
-.text3{grid-area: text3;}
+
+.text1{grid-area: text1;
+     margin: auto 5rem auto 0;}
+
+.text2{
+    grid-area: text2;
+    display: inline-flex;
+    text-align: right;}
+
+.text3{grid-area: text3;
+    margin: auto 5rem auto 0;}
 
 .text1, .text2, .text3{
     align-self: center;}
 
-
-/* #rulesGrid div p::before{
->>>>>>> Stashed changes
-    display: inline-block;
+.text1::before{
+    content: '1';
+    font-size: 4rem;
+    font-weight: 1000;
     float: left;
+    border: 2px solid #FFFFFF;
+    border-radius: 38px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    height: 10rem;
-    width: 10rem;
-    padding: 1.35rem;
-    margin-right: 3.5rem;
-    font-size: 5rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 1rem;
-<<<<<<< Updated upstream
-}
-=======
-} */
->>>>>>> Stashed changes
+    margin-right: 3rem;}
+
+.text2::after{
+    content: '2';
+    font-size: 4rem;
+    font-weight: 1000;
+    border: 2px solid #FFFFFF;
+    border-radius: 38px;
+    min-width: 150px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6rem 0 3rem;}
+
+.text3::before{
+    content: '3';
+    font-size: 4rem;
+    font-weight: 1000;
+    float: left;
+    border: 2px solid #FFFFFF;
+    border-radius: 38px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;}
