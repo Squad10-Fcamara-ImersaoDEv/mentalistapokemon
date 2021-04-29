@@ -65,8 +65,6 @@ async function getPokemon(pokemonId) {
                     break;
                 
             }
-
-            console.log("bbbb")
             var el = document.querySelector(".cards")
             el.innerHTML += `<div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
@@ -82,10 +80,4 @@ async function getPokemon(pokemonId) {
         })
     return pokemonData;
 }
-escrevePokemons()
-async function escrevePokemons(){
-    for (var i = 1;i<200; i++){
-        var aa = await getPokemon(i.toString())
-        console.log(aa.types)
-    }
-}
+tava salvo eu dei ctrl x sem querer mas eu faço aqui agora
