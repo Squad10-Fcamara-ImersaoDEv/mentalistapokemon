@@ -4,10 +4,10 @@ async function getPokemon(pokemonId) {
 
     await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
         .then(response => response.json())
-        .then(poke => {
-            pokemonData.id = poke.id
-            pokemonData.name = poke.name
-            pokemonData.types = poke.types.map(types => { return types.type.name; })
+        .then(data => {
+            pokemonData.id = data.id
+            pokemonData.name = data.name
+            pokemonData.types = data.types.map(types => { return types.type.name; })
             pokemonData.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + ("00" + pokemonId).slice(-3) + ".png"
             id = ("00" + pokemonId).slice(-3)
 
@@ -75,7 +75,7 @@ async function getPokemon(pokemonId) {
                                 <h4><strong class="nome">${pokemonData.name}</strong></h4>
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                                 <div class="container">
-                                    <p>#${id}</p>
+                                    <span>#${id}</span>
                                     <p>${pokemonData.types}</p>
                                 </div>
                             </div>
