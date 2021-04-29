@@ -3,7 +3,16 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     display: inline-block;
-    align-content: center;
+    width: 25%;
+    margin: 20px 10px 0 10px;
+    border-radius: 30px;
+}
+
+#containerinteiro{
+    text-align: center;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
 }
   
   /* On mouse-over, add a deeper shadow */
@@ -13,9 +22,37 @@
   
   /* Add some padding inside the card container */
 .container{
-    padding: 2px 16px;
+    padding: 2px 0;
+}
+
+.nome{
+    text-transform: capitalize;
 }
 
 .imagempokemon{
-    width: 100px;
+    width: 70%;
 } 
+
+.card-green{
+  background-color: #BEFFEF;
+}
+
+.card-red{
+  background-color: #FFA99D;
+}
+
+.card-blue{
+  background-color: #9DEDFF;
+}
+
+.card-normal{
+  background-color: gray;
+}
+
+.card-poison{
+  background-color: #C29DFF;
+}
+
+.card-psychic{
+  background-color: #FFF9BE;
+}
