@@ -68,15 +68,10 @@ async function getPokemon(pokemonId) {
                     var classeTipoPrimarioPokemon = "card-normal"
                     break;
             }
-<<<<<<< HEAD
-            var el = document.querySelector(".cards")
-            el.innerHTML += `<div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
-=======
 
             el.innerHTML += `
                             <div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
                                 <h4><strong class="nome">${pokemonData.name}</strong></h4>
->>>>>>> 5361631ac4e158abbb87066cd988fd46d3ca6986
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                                 <div class="container">
                                     <span>#${id}</span>
@@ -90,16 +85,13 @@ async function getPokemon(pokemonId) {
         })
     return pokemonData;
 }
-<<<<<<< HEAD
-tava salvo eu dei ctrl x sem querer mas eu faço aqui agora
-=======
-
+let dataAllPokemons = []
 async function escrevePokemons(){
-    for (var i = 1;i<10; i++){
-        var aa = await getPokemon(i.toString())
-        console.log(aa.types)
+    for (var i = 1;i<899; i++){
+        var onePokemon = await getPokemon(i.toString())
+        dataAllPokemons.push(onePokemon)
     }
 }
+console.log(dataAllPokemons)
 
 escrevePokemons()
->>>>>>> 5361631ac4e158abbb87066cd988fd46d3ca6986
