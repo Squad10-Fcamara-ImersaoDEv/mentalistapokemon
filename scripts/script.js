@@ -1,5 +1,7 @@
 async function getPokemon(pokemonId) {
+    let id
     let pokemonData = {};
+
     await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
         .then(response => response.json())
         .then(poke => {
@@ -7,6 +9,7 @@ async function getPokemon(pokemonId) {
             pokemonData.name = poke.name
             pokemonData.types = poke.types.map(types => { return types.type.name; })
             pokemonData.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + ("00" + pokemonId).slice(-3) + ".png"
+            id = ("00" + pokemonId).slice(-3)
 
             switch (pokemonData.types[0]) {
                 case "grass":
@@ -63,15 +66,16 @@ async function getPokemon(pokemonId) {
                 default:
                     var classeTipoPrimarioPokemon = "card-normal"
                     break;
-                
             }
 
             console.log("bbbb")
             var el = document.querySelector(".cards")
-            el.innerHTML += `<div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
+            el.innerHTML += `
+                            <div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
+                                <h4><strong class="nome">${pokemonData.name}</strong></h4>
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                                 <div class="container">
-                                    <h4><strong class="nome">${pokemonData.name}</strong></h4> 
+                                    <p>#${id}</p>
                                     <p>${pokemonData.types}</p>
                                 </div>
                             </div>
@@ -82,10 +86,12 @@ async function getPokemon(pokemonId) {
         })
     return pokemonData;
 }
-escrevePokemons()
+
 async function escrevePokemons(){
-    for (var i = 1;i<200; i++){
+    for (var i = 1;i<10; i++){
         var aa = await getPokemon(i.toString())
         console.log(aa.types)
     }
 }
+
+escrevePokemons()
