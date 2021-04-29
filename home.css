@@ -94,7 +94,12 @@ body{
 }
 
 #containerRules h1{
+<<<<<<< Updated upstream
     font-size: 3.75rem;
+=======
+    background-color: black;
+    font-size: 3.5rem;
+>>>>>>> Stashed changes
     padding: 4rem;
     text-transform: uppercase;
 }
@@ -103,6 +108,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto;
+<<<<<<< Updated upstream
 }
 
 #rulesGrid img{
@@ -119,6 +125,26 @@ body{
 }
 
 #rulesGrid div :first-child{
+=======
+    grid-template-areas:    "img text1"
+                            "img text2"
+                            "img text3";
+    height: 800px;
+}
+
+#rulesGrid img{
+    grid-area: img;
+    align-self: center;}
+.text1{grid-area: text1;}
+.text2{grid-area: text2;}
+.text3{grid-area: text3;}
+
+.text1, .text2, .text3{
+    align-self: center;}
+
+
+/* #rulesGrid div p::before{
+>>>>>>> Stashed changes
     display: inline-block;
     float: left;
     align-items: center;
@@ -131,4 +157,8 @@ body{
     font-size: 5rem;
     border: 1px solid #FFFFFF;
     border-radius: 1rem;
+<<<<<<< Updated upstream
 }
+=======
+} */
+>>>>>>> Stashed changes
