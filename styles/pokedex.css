@@ -1,21 +1,112 @@
-.youare {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    display: inline-block;
-    align-content: center;
-}
-  
-  /* On mouse-over, add a deeper shadow */
-.youare:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-  
-  /* Add some padding inside the card container */
-.container{
-    padding: 2px 16px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.imagempokemon{
-    width: 100px;
+.youare {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: inline-block;
+  width: 25%;
+  margin: 20px 10px 0 10px;
+  border-radius: 30px;
+}
+
+#containerinteiro { 
+  text-align: center;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* On mouse-over, add a deeper shadow */
+.youare:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 0;
+}
+
+.nome {
+  text-transform: capitalize;
+}
+
+.imagempokemon {
+  width: 70%;
 } 
+
+.card-grass {
+background-color: #BEFFEF;
+}
+
+.card-fire {
+background-color: #FFA99D;
+}
+
+.card-water {
+background-color: #9DEDFF;
+}
+
+.card-normal {
+background-color: lightgray;
+}
+
+.card-poison {
+background-color: #C29DFF;
+}
+
+.card-psychic {
+background-color: #FFF9BE;
+}
+
+.card-ground {
+background-color: #c0aa98;
+}
+
+.card-electric {
+background-color: #f9d11e;
+}
+
+.card-flying {
+background-color: #f6f6f6;
+}
+
+.card-ice {
+background-color: #cfe5f3;
+}
+
+.card-bug {
+background-color: #b9d446;
+}
+
+.card-dark {
+background-color: #333333;
+}
+
+.card-dragon {
+background-color: #6f6d3d;
+}
+
+.card-fairy {
+background-color: #de5b8f;
+}
+
+.card-fighting {
+background-color: #fda14e;
+}
+
+.card-ghost {
+background-color: #9a57ff;
+}
+
+.card-rock {
+background-color: #ee9c38;
+}
+
+.card-steel {
+background-color: #c6dce7;
+}

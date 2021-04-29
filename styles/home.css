@@ -108,6 +108,10 @@ body{
     grid-template-areas:    "img text1"
                             "img text2"
                             "img text3";
+<<<<<<< HEAD:styles/home.css
+=======
+    height: 1200px;
+>>>>>>> 5c084257bd226522307b7a1fd8b49a7a7658bf5d:home.css
 }
 
 #rulesGrid img{
