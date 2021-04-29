@@ -48,8 +48,8 @@ body{
     position: relative;
     font-family: 'Play', sans-serif;
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:    "i a";
     align-items: center;
 }
@@ -87,27 +87,47 @@ body{
 }
 
 #containerRules{
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas:    "i a";
     background-color: #006DB9;
     font-family: 'Noto Sans';
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #FFFFFF;
 }
 
 #containerRules h1{
     font-size: 3.75rem;
+    padding: 4rem;
+    text-transform: uppercase;
 }
-#containerRules > div :first-child{
+
+#rulesGrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+}
+
+#rulesGrid img{
+    grid-column-start: 0;
+    grid-column-start: 1;
+    grid-row-start: 0;
+    grid-row-end: 3;
+}
+
+#rulesGrid > div{
     display: inline-block;
+    grid-column-start: 1;
+    grid-column-start: 2;
+}
+
+#rulesGrid div :first-child{
+    display: inline-block;
+    float: left;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    height: 11.25rem;
-    width: 11.25rem;
-    padding: 2rem;
+    height: 10rem;
+    width: 10rem;
+    padding: 1.35rem;
+    margin-right: 3.5rem;
     font-size: 5rem;
     border: 1px solid #FFFFFF;
     border-radius: 1rem;
