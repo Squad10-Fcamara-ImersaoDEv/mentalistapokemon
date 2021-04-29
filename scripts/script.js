@@ -1,6 +1,7 @@
 async function getPokemon(pokemonId) {
     let id
     let pokemonData = {};
+    let el = document.querySelector(".cards")
 
     await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
         .then(response => response.json())
@@ -68,8 +69,6 @@ async function getPokemon(pokemonId) {
                     break;
             }
 
-            console.log("bbbb")
-            var el = document.querySelector(".cards")
             el.innerHTML += `
                             <div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
                                 <h4><strong class="nome">${pokemonData.name}</strong></h4>
@@ -80,7 +79,7 @@ async function getPokemon(pokemonId) {
                                 </div>
                             </div>
                             `
-            })
+        })
         .catch(() => {
             console.log("Error request pokémon. Id: " + pokemonId)
         })
