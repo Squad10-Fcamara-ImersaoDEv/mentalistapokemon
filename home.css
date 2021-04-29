@@ -85,3 +85,30 @@ body{
 #containerAp div a:hover{
     background-color: #FB5555;
 }
+
+#containerRules{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:    "i a";
+    background-color: #006DB9;
+    font-family: 'Noto Sans';
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+#containerRules h1{
+    font-size: 3.75rem;
+}
+#containerRules > div :first-child{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    height: 11.25rem;
+    width: 11.25rem;
+    padding: 2rem;
+    font-size: 5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 1rem;
+}
