@@ -1,14 +1,4 @@
 async function getPokemon(pokemonId) {
-<<<<<<< HEAD
-    let pokemonData = {};
-    await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
-        .then(response => response.json())
-        .then(poke => {
-            pokemonData.id = poke.id
-            pokemonData.name = poke.name
-            pokemonData.types = poke.types.map(types => { return types.type.name; })
-            pokemonData.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + ("00" + pokemonId).slice(-3) + ".png"
-=======
     let id
     let pokemonData = {};
     let el = document.querySelector(".cards")
@@ -21,7 +11,6 @@ async function getPokemon(pokemonId) {
             pokemonData.types = data.types.map(types => { return types.type.name; })
             pokemonData.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + ("00" + pokemonId).slice(-3) + ".png"
             id = ("00" + pokemonId).slice(-3)
->>>>>>> 5c084257bd226522307b7a1fd8b49a7a7658bf5d
 
             switch (pokemonData.types[0]) {
                 case "grass":
@@ -78,17 +67,6 @@ async function getPokemon(pokemonId) {
                 default:
                     var classeTipoPrimarioPokemon = "card-normal"
                     break;
-<<<<<<< HEAD
-                
-            }
-
-            console.log("bbbb")
-            var el = document.querySelector(".cards")
-            el.innerHTML += `<div class="youare ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
-                                <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
-                                <div class="container">
-                                    <h4><strong class="nome">${pokemonData.name}</strong></h4> 
-=======
             }
 
             el.innerHTML += `
@@ -97,36 +75,22 @@ async function getPokemon(pokemonId) {
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                                 <div class="container">
                                     <span>#${id}</span>
->>>>>>> 5c084257bd226522307b7a1fd8b49a7a7658bf5d
                                     <p>${pokemonData.types}</p>
                                 </div>
                             </div>
                             `
-<<<<<<< HEAD
-            })
-=======
         })
->>>>>>> 5c084257bd226522307b7a1fd8b49a7a7658bf5d
         .catch(() => {
             console.log("Error request pokémon. Id: " + pokemonId)
         })
     return pokemonData;
 }
-<<<<<<< HEAD
-escrevePokemons()
-async function escrevePokemons(){
-    for (var i = 1;i<200; i++){
-=======
 
 async function escrevePokemons(){
     for (var i = 1;i<10; i++){
->>>>>>> 5c084257bd226522307b7a1fd8b49a7a7658bf5d
         var aa = await getPokemon(i.toString())
         console.log(aa.types)
     }
 }
-<<<<<<< HEAD
-=======
 
 escrevePokemons()
->>>>>>> 5c084257bd226522307b7a1fd8b49a7a7658bf5d
