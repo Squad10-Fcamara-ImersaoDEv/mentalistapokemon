@@ -74,8 +74,8 @@ async function getPokemon(pokemonId) {
                                 <h4><strong class="nome">${pokemonData.name}</strong></h4>
                                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                                 <div class="container">
-                                    <span>#${id}</span>
-                                    <p>${pokemonData.types}</p>
+                                    <span id="code-pokemon">#${id}</span>
+                                    <p id="type-pokemon">${pokemonData.types}</p>
                                 </div>
                             </div>
                             `
@@ -87,7 +87,7 @@ async function getPokemon(pokemonId) {
 }
 let dataAllPokemons = []
 async function escrevePokemons(){
-    for (var i = 1;i<899; i++){
+    for (var i = 1;i<20; i++){
         var onePokemon = await getPokemon(i.toString())
         dataAllPokemons.push(onePokemon)
     }
