@@ -1,3 +1,11 @@
+//botao voltar ao topo com sensação de scroll
+var btn = document.querySelector("#back-to-top");
+btn.addEventListener('click', () => window.scrollTo({
+    top ,
+    behavior: 'smooth',
+}));
+
+
 async function getPokemon(pokemonId) {
     let id
     let pokemonData = {};
@@ -87,7 +95,7 @@ async function getPokemon(pokemonId) {
 }
 let dataAllPokemons = []
 async function escrevePokemons(){
-    for (var i = 1;i<20; i++){
+    for (var i = 1;i<899; i++){
         var onePokemon = await getPokemon(i.toString())
         dataAllPokemons.push(onePokemon)
     }
