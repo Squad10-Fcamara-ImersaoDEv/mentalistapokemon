@@ -87,7 +87,8 @@ body{
     font-family: 'Noto Sans';
     font-size: 1.75rem;
     color: #FFFFFF;
-    height: 1400px;}
+    height: 1400px;
+    margin-top: 2rem;}
 
 #containerRules h1{
     font-family: 'Ubuntu', sans-serif;
