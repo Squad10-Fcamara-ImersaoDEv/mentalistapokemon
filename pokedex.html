@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste card</title>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/pokedex.css">
 </head>
 <body>
-    <div class="cards" id="containerinteiro">
-    </div> 
+    <header>
+        <section id="containerMenu">
+            <img src="./assets/logo_pokemon.svg" alt="logo">
+
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./pokedex.html">Pokédex</a>
+                <a href="./index.html#containerRules">Como Jogar</a>
+                <a href="#">Sobre Nós</a>
+            </nav>
+            <a href="#">Login</a>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <div class="pokedex-searchbar">
+                <label for="pokedex-searchfield"></label>
+                <input id="searchfield" type="text" placeholder="Buscar">
+                <input type="button" value="OK">
+            </div>
+        </section>
+        <div class="cards" id="containerinteiro">
+        </div> 
+    </main>
     
     <div id="back-to-top"><img src="./assets/pokebola.svg" alt="Pokebola"></div>
 </body>

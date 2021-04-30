@@ -1,7 +1,7 @@
 .card-pokemon {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 0 60px rgba(0,0,0,0.05);
-  transition: 0.5s;
+  box-shadow: 5px 5px 60px rgba(0,0,0,0.05);
+  transition: 0.3s;
   display: inline-block;
   width: 25%;
   margin: 20px 10px 0 10px;
@@ -133,6 +133,8 @@ background-color: #c6dce7;
   z-index: 999;
   cursor: pointer;
 }
+
+/* search bar */
 
 /* medias */
 @media (max-width:800px) {
