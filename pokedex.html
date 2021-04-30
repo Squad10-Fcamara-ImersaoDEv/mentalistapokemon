@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentalista Pokedex</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/pokedex.css">
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -32,16 +38,10 @@
                     <input
                         id="searchfield"
                         type="search"
-                        placeholder="Buscar"
-                        list="pokedex-search-list"
+                        placeholder="Busque pelo seu pokemon..."
+                        autocomplete="off"
                     />
                     <img src="" alt="">
-                    <datalist
-                        id="pokedex-search-list">
-                        <option value="Bulbasaur"></option>
-                        <option value="Charmander"></option>
-                        <option value="Pikachu"></option>
-                    </datalist>
                 </form>
             </div>
         </section>
