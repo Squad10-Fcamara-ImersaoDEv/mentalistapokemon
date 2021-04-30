@@ -77,15 +77,15 @@ async function getPokemon(pokemonId) {
             }
 
             el.innerHTML += `
-                            <div class="card-pokemon ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
-                                <h4><strong class="nome">${pokemonData.name}</strong></h4>
-                                <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
-                                <div class="container">
-                                    <span id="code-pokemon">#${id}</span>
-                                    <p id="type-pokemon">${pokemonData.types}</p>
-                                </div>
-                            </div>
-                            `
+                <div class="card-pokemon ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
+                    <h4><strong class="nome">${pokemonData.name}</strong></h4>
+                    <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
+                    <div class="container">
+                        <span id="code-pokemon">#${id}</span>
+                        <p id="type-pokemon">${pokemonData.types.join('/')}</p>
+                    </div>
+                </div>
+            `
         })
         .catch(() => {
             console.log("Error request pokémon. Id: " + pokemonId)
