@@ -1,4 +1,4 @@
-/*  */
+/* Header */
 
 #containerMenu{
   max-width: 1200px;
@@ -76,6 +76,8 @@
   padding-top: 10px;
   width: 70%;
 } 
+
+/* Cores dos fundos das cartas de acordo com a classe do pokemon */
 
 .card-grass {
 background-color: #BEFFEF;
@@ -198,6 +200,11 @@ background-color: #c6dce7;
 
 /* medias */
 @media (max-width:800px) {
+  #searchfield {
+    width: 70vw;
+    margin: auto;
+    padding: auto;
+  }
   .card-pokemon {
     width: 45%;
   }
