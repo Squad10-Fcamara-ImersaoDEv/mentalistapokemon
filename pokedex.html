@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste card</title>
+    <title>Mentalista Pokedex</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/pokedex.css">
@@ -27,9 +27,22 @@
     <main>
         <section>
             <div class="pokedex-searchbar">
-                <label for="pokedex-searchfield"></label>
-                <input id="searchfield" type="text" placeholder="Buscar">
-                <input type="button" value="OK">
+                <form class="pokedex-form">
+                    <label for="pokedex-searchfield"></label>
+                    <input
+                        id="searchfield"
+                        type="search"
+                        placeholder="Buscar"
+                        list="pokedex-search-list"
+                    />
+                    <img src="" alt="">
+                    <datalist
+                        id="pokedex-search-list">
+                        <option value="Bulbasaur"></option>
+                        <option value="Charmander"></option>
+                        <option value="Pikachu"></option>
+                    </datalist>
+                </form>
             </div>
         </section>
         <div class="cards" id="containerinteiro">
