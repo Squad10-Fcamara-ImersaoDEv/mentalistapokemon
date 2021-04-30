@@ -233,3 +233,135 @@ footer img{
     color: black;
     font-size: 1.7rem;
 }
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+.card-item {
+    box-shadow: 5px 5px 60px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    display: inline-block;
+    width: 25%;
+    margin: 20px 10px 0 10px;
+    padding: 30px 0 0 0;
+    border-radius: 1rem;
+}
+
+#containerSlider { 
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nome {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.imagempokemon {
+    padding-top: 10px;
+    width: 70%;
+} 
+
+.container {
+    padding: 2px 0;
+}
+
+.code-pokemon {
+    background-color: #a7a7a785;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0.1rem 0.4rem ;
+    font-size: 0.8rem;
+}
+
+.type-pokemon{
+    padding: 20px 0px 30px;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+.card-grass {
+background-color: #BEFFEF;
+}
+
+.card-fire {
+background-color: #FFA99D;
+}
+
+.card-water {
+background-color: #9DEDFF;
+}
+
+.card-normal {
+background-color: lightgray;
+}
+
+.card-poison {
+background-color: #C29DFF;
+}
+
+.card-psychic {
+background-color: #FFF9BE;
+}
+
+.card-ground {
+background-color: #c0aa98;
+}
+
+.card-electric {
+background-color: #f9d11e;
+}
+
+.card-flying {
+background-color: #f6f6f6;
+}
+
+.card-ice {
+background-color: #cfe5f3;
+}
+
+.card-bug {
+background-color: #b9d446;
+}
+
+.card-dark {
+background-color: #333333;
+}
+
+.card-dragon {
+background-color: #6f6d3d;
+}
+
+.card-fairy {
+background-color: #de5b8f;
+}
+
+.card-fighting {
+background-color: #fda14e;
+}
+
+.card-ghost {
+background-color: #9a57ff;
+}
+
+.card-rock {
+background-color: #ee9c38;
+}
+
+.card-steel {
+background-color: #c6dce7;
+}
