@@ -1,6 +1,6 @@
 .card-pokemon {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 60px rgba(0,0,0,0.05);
   transition: 0.3s;
   display: inline-block;
   width: 25%;
@@ -18,7 +18,7 @@
 }
 
 /* On mouse-over, add a deeper shadow */
-.youare:hover {
+.card-pokemon:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -30,6 +30,7 @@
 .nome {
   font-size: 1.4rem;
   text-transform: capitalize;
+  font-weight: 500;
 }
 
 .imagempokemon {
