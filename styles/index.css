@@ -19,7 +19,7 @@ body{
 #containerMenu > img{
     margin-left: 1rem;}
 
-#containerMenu nav > a{
+#containerMenu nav, a{
     text-decoration: inherit;
     color: #212121;
     width: 100%;
@@ -38,7 +38,8 @@ body{
     border: 0.188rem solid #212121;}
 
 #containerMenu > a:hover{
-    border: 0.188rem solid #A8A8A8;}
+    border: 0.188rem solid #A8A8A8;
+    color: #A8A8A8}
 
 #containerAp{
     background-color: #FFD74E;
@@ -222,6 +223,7 @@ footer img{
     font-size: 1.5rem;
     margin-right: 6rem;
     align-self: flex-end;
+    text-align: right;
     text-decoration: none;
     color: #6F6F6F;
     transition: 0.7s;}
