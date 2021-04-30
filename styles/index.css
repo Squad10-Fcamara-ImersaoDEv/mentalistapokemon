@@ -234,57 +234,135 @@ footer img{
     font-size: 1.7rem;
 }
 
+#containerCarrosel {
+    position: relative;
+    margin-bottom: 40%;
+}
 
 
 /* ----------------------------------------------------------------- */
 
+.gallery {
+    position: absolute;
+    top: 320%;
+    transform: translateY(-50%);
+    left: -9%;
+    width: 100%;
+    height: 70vh;
+    max-height: 28vw;
+    overflow: hidden;
+}
 
-.card-item {
-    box-shadow: 5px 5px 60px rgba(0,0,0,0.05);
-    transition: 0.3s;
-    display: inline-block;
-    width: 25%;
-    margin: 20px 10px 0 10px;
-    padding: 30px 0 0 0;
+.gallery::before, .gallery::after {
+    display: block;
+    content: "";
+    position: relative;
+    top: 0px;
+    width: 0%;
+    height: 110%;
+    z-index: 3;
+}
+
+.gallery::before {
+    left: 0px;
+    background-color: transparent;
+}
+
+.gallery::after {
+    right: 0px;
+    background-color: transparent;
+}
+
+.gallery__prev, .gallery__next {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    cursor: pointer;
+}
+
+.gallery__prev {
+    left: 0px;
+}
+
+.gallery__next {
+    left: 100%;
+}
+
+.gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 80%;
+}
+
+.gallery__item {
+    position: absolute;
+    padding-top: 2rem;
+    width: 430px;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+    transition: all 1s ease 0s;
+    background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 1rem;
 }
 
-#containerSlider { 
-    position: relative;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    max-width: 1440px;
-    width: 90%;
-    margin: 0 auto;
+.gallery__item:nth-child(1) {
+    left: 0px;
+    z-index: 1;
+    transform: translateX(-100%) scale(0.8);
 }
 
-.nome {
+.gallery__item:nth-child(2) {
+    left: 0px;
+    z-index: 2;
+    transform: translateX(-50%) scale(0.8);
+}
+
+.gallery__item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+}
+
+.gallery__item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(0.8);
+}
+
+.gallery__item:nth-child(n+5) {
+    left: 100%;
+    z-index: 1;
+    transform: scale(0.8);
+}
+
+
+.card-nome {
     font-size: 1.4rem;
     text-transform: capitalize;
     font-weight: 500;
 }
-
-.imagempokemon {
+.card-imagempokemon {
     padding-top: 10px;
     width: 70%;
-} 
-
-.container {
-    padding: 2px 0;
 }
-
-.code-pokemon {
-    background-color: #a7a7a785;
+.card-code-pokemon {
+    background-color: rgba(167, 167, 167, 0.52);
     font-weight: 500;
-    border-radius: 10px;
-    padding: 0.1rem 0.4rem ;
     font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 0.1rem 0.4rem;
 }
-
-.type-pokemon{
-    padding: 20px 0px 30px;
+.card-type-pokemon {
     text-transform: capitalize;
     font-size: 0.8rem;
+    padding: 20px 0px;
 }
 
 
@@ -294,74 +372,29 @@ footer img{
 
 
 
-.card-grass {
-background-color: #BEFFEF;
-}
 
-.card-fire {
-background-color: #FFA99D;
-}
 
-.card-water {
-background-color: #9DEDFF;
-}
 
-.card-normal {
-background-color: lightgray;
-}
 
-.card-poison {
-background-color: #C29DFF;
-}
 
-.card-psychic {
-background-color: #FFF9BE;
+.normal {
+    background-color: lightgrey;
 }
-
-.card-ground {
-background-color: #c0aa98;
+.water {
+    background-color: rgb(157, 237, 255);
 }
-
-.card-electric {
-background-color: #f9d11e;
+.fire {
+    background-color: rgb(255, 169, 157);
 }
-
-.card-flying {
-background-color: #f6f6f6;
+.grass {
+    background-color: rgb(190, 255, 239);
 }
-
-.card-ice {
-background-color: #cfe5f3;
+.electric {
+    background-color: rgb(249, 209, 30);
 }
-
-.card-bug {
-background-color: #b9d446;
+.bug {
+    background-color: rgb(185, 212, 70);
 }
-
-.card-dark {
-background-color: #333333;
-}
-
-.card-dragon {
-background-color: #6f6d3d;
-}
-
-.card-fairy {
-background-color: #de5b8f;
-}
-
-.card-fighting {
-background-color: #fda14e;
-}
-
-.card-ghost {
-background-color: #9a57ff;
-}
-
-.card-rock {
-background-color: #ee9c38;
-}
-
-.card-steel {
-background-color: #c6dce7;
+.psychic {
+    background-color: rgb(255, 249, 190);
 }
