@@ -110,7 +110,7 @@ background-color: #ee9c38;
 background-color: #c6dce7;
 }
 
-#code-pokemon {
+.code-pokemon {
   background-color: #a7a7a785;
   font-weight: 500;
   border-radius: 5px;
@@ -118,7 +118,7 @@ background-color: #c6dce7;
   font-size: 0.8rem;
 }
 
-#type-pokemon{
+.type-pokemon{
   padding: 20px 0px 30px;
   text-transform: capitalize;
   font-size: 0.8rem;
