@@ -77,12 +77,12 @@ async function getPokemon(pokemonId) {
             }
 
             el.innerHTML += `
-                <div class="card-pokemon ${classeTipoPrimarioPokemon}" id =${pokemonData.name}>
+                <div class="card-pokemon ${classeTipoPrimarioPokemon}" id=${pokemonData.name}>
                     <h4><strong class="nome">${pokemonData.name}</strong></h4>
                     <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                     <div class="container">
-                        <span id="code-pokemon">#${id}</span>
-                        <p id="type-pokemon">${pokemonData.types.join('/')}</p>
+                        <span class="code-pokemon">#${id}</span>
+                        <p class="type-pokemon">${pokemonData.types.join('/')}</p>
                     </div>
                 </div>
             `
