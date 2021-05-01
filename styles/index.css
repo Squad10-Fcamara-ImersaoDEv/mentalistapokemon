@@ -320,8 +320,6 @@ footer img{
     background-size: cover;
     text-align: center;
     transition: all 1s ease 0s;
-    background-repeat: no-repeat;
-    background-position: center center;
     border-radius: 1rem;}
 
 .gallery__item:nth-child(1) {
@@ -332,7 +330,8 @@ footer img{
 .gallery__item:nth-child(2) {
     left: 0px;
     z-index: 2;
-    transform: translateX(-50%) scale(0.8);}
+    transform: translateX(-50%) scale(0.8);
+}
 
 .gallery__item:nth-child(3) {
     left: 50%;
