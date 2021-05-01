@@ -27,26 +27,26 @@ async function getPokemon(pokemonId) {
 
 let dataAllPokemons = []
 
+var controle = 10 
 
 async function writeDataPokemons(){
-    for (var i = 1 ; i<9; i++){
-        var onePokemon = await getPokemon(i.toString())
+    for (var inicio = 1 ; inicio < controle ; inicio++){
+        var onePokemon = await getPokemon(inicio.toString())
         dataAllPokemons.push(onePokemon)
     }
 }
 
-teste()
+createDataPokemonAndWrite()
 
-async function teste(){
+async function createDataPokemonAndWrite(){
     await writeDataPokemons()
     console.log(dataAllPokemons)
-    for(var i = 1 ; i<9 ; i++){
-        console.log(dataAllPokemons[i])
-        drawPokemons(dataAllPokemons[i-1])
+    for(var inicio = 1 ; inicio < controle ; inicio++){
+        console.log(dataAllPokemons[inicio])
+        drawPokemons(dataAllPokemons[inicio-1])
     }
 
     function drawPokemons(pokemonData){
-        console.log("entrou no desenhar pokemon")
         let el = document.querySelector(".cards")
         let id 
         id = ("00" + pokemonData.id).slice(-3)
@@ -117,9 +117,7 @@ async function teste(){
                     <p class="type-pokemon">${pokemonData.types.join('/')}</p>
                 </div>
             </div>
-        `
-        console.log("chegou aqui")
-        
+        `        
     }
 
 
