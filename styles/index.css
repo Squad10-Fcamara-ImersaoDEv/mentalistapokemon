@@ -96,7 +96,8 @@
     color: #FFFFFF;
     max-width: 1200px;
     height: 1400px;
-    margin: auto;}
+    margin: auto;
+}
 
 .containerRules h1{
     font-family: 'Ubuntu', sans-serif;
@@ -116,7 +117,8 @@
 
 .rulesGrid img{
     grid-area: img;
-    margin-top: 50%;}
+    margin-top: 50%;
+}
 
 .text1{grid-area: text1;
      margin: auto 6rem auto 0;}
@@ -251,25 +253,19 @@ footer img{
 
 .containerCarrosel {
     position: relative;
-    margin-bottom: 35%;
-    margin-top: 10%;
+    height: 650px;
+    width: 100%;
 }
-
-
-
 
 /* Carrosel */
 
 .gallery {
     position: absolute;
-    top: 400%;
-    transform: translateY(-50%);
-    left: -5.2%;
     right: 0;
     width: 100%;
-    height: 70vh;
-    max-height: 28vw;
-    overflow: hidden;}
+    height: 60vh;
+    overflow: hidden;
+}
 
 .gallery::before, .gallery::after {
     display: block;
@@ -307,17 +303,16 @@ footer img{
 
 .gallery__stream {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
-    height: 80%;}
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
 .gallery__item {
     position: absolute;
     padding-top: 2rem;
-    width: 430px;
-    height: auto;
-    background-size: cover;
+    width: 30%;
     text-align: center;
     transition: all 1s ease 0s;
     border-radius: 1rem;}
@@ -330,8 +325,7 @@ footer img{
 .gallery__item:nth-child(2) {
     left: 0px;
     z-index: 2;
-    transform: translateX(-50%) scale(0.8);
-}
+    transform: translateX(-50%) scale(0.8);}
 
 .gallery__item:nth-child(3) {
     left: 50%;
@@ -355,7 +349,9 @@ footer img{
 
 .card-imagempokemon {
     padding-top: 10px;
-    width: 70%;}
+    width: 70%;
+    margin-left: 2rem;
+}
 
 .card-code-pokemon {
     background-color: rgba(167, 167, 167, 0.52);
@@ -393,3 +389,6 @@ footer img{
     bottom: 10px;
     z-index: 999;
     cursor: pointer;}
+
+/* media */
+
