@@ -259,6 +259,10 @@ footer img{
 
 /* medias */
 @media (max-width:800px) {
+  .botao-seemore{
+    margin: 1% 30%; 
+    width: 40%;
+  }
   #searchfield {
     width: 70vw;
     margin: auto;
@@ -282,6 +286,10 @@ footer img{
 }
 
 @media (max-width:600px) {
+  .botao-seemore{
+    margin: 1% 20%; 
+    width: 60%;
+  }
   .card-pokemon {
     width: 90%;
   }
