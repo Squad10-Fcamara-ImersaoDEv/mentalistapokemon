@@ -217,6 +217,13 @@ background-color: #c6dce7;
   border: solid 2px #333333;
 }
 
+.botao-seemore{
+  margin: 1% 45%; 
+  width: 10%;
+  height: 3rem;
+}
+
+
 
 footer{
     background-color:#006db9 ;

@@ -119,6 +119,5 @@ async function createDataPokemonAndWrite(){
             </div>
         `        
     }
-
-
 }
+
