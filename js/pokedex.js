@@ -48,11 +48,8 @@ createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
 //Função que chama a função que preenche a variavel dataAllPokemons e e escreve eles na tela assincrona pois espera a variavel dataAllPokemons ser preenchida
 async function createDataPokemonAndWrite(inicio,controle){
     await writeDataPokemons(inicio,controle)
-    console.log(dataAllPokemons)
-    console.log("leu")
     var i = inicio
     for(i ; i < controle ; i++){
-        console.log(dataAllPokemons[i])
         drawPokemons(dataAllPokemons[i-1])
     }
 
@@ -136,7 +133,5 @@ async function createDataPokemonAndWrite(inicio,controle){
 async function seeMore(){
     pokemonOnScreen += 9
     maxPokemon += 9
-    console.log(pokemonOnScreen)
-    console.log(maxPokemon)
     await createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
 }
