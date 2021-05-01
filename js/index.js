@@ -21,3 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       items = document.querySelectorAll('.gallery__item');
     });
   });
+
+
+function controlesVideo() {
+  let controle = document.getElementById("controlsVideo")
+  controle.addEventListener("mouseover", function(){this.controls = true;}, false);
+  controle.addEventListener("mouseout", function(){this.controls = false;}, false);
+};
+window.addEventListener('load', controlesVideo, false);
+
+
