@@ -232,6 +232,7 @@ background-color: #c6dce7;
 }
 
 .botao-seemore:hover{
+  transition: 0.5s;
   background-color: #FB5555;
 }
 
