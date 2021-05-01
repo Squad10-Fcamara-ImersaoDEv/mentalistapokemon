@@ -37,6 +37,25 @@
   color: #A8A8A8}
 
 
+.titulo {
+  background-color: #006DB9;
+  height:20vh;
+  display: flex;
+  align-items: center;
+}
+.titulo > img {
+  height: 16vh;
+  margin: 2vh 0 2vh 20%;
+}
+
+.titulo >  h2 {
+  font-size: 4rem;
+  display:inline-block;
+  margin-left: 2vw;
+}
+
+
+
 .card-pokemon {
   /* Add shadows to create the "card" effect */
   box-shadow: 5px 5px 60px rgba(0,0,0,0.05);
@@ -198,6 +217,28 @@ background-color: #c6dce7;
   border: solid 2px #333333;
 }
 
+
+footer{
+    background-color:#006db9 ;
+    display: flex;
+    height: 100px;
+    margin-top: 5vh;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    margin-left: 6rem;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer img{
+    margin-right: 3rem;
+    height: 50px;
+}
+
 /* medias */
 @media (max-width:800px) {
   #searchfield {
@@ -208,30 +249,34 @@ background-color: #c6dce7;
   .card-pokemon {
     width: 45%;
   }
+  .titulo {
+    height:16vh;
+  }
+  .titulo > img {
+    height: 12vh;
+    margin: 2vh 0 2vh 5%;
+  }
+  .titulo >  h2 {
+    font-size: 48px;
+    display:inline-block;
+    margin-left: 32px;
+  }
 }
 
 @media (max-width:600px) {
   .card-pokemon {
     width: 90%;
   }
-}
-
-
-footer{
-  display: flex;
-  height: 100px;
-  
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer p{
-  margin-left: 6rem;
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-footer img{
-  margin-right: 3rem;
-  height: 50px;
+  .titulo {
+    height:14vh;
+  }
+  .titulo > img {
+    height: 10vh;
+    margin: 2vh 0 2vh 5%;
+  }
+  .titulo >  h2 {
+    font-size: 48px;
+    display:inline-block;
+    margin-left: 32px;
+  }
 }
