@@ -4,7 +4,7 @@ let baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 // Gera um número inteiro aleatório entre 1 e 898
 function getRandomPokemon() {
     min = Math.ceil(1);
-    max = Math.floor(898);
+    max = Math.floor(150);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -39,6 +39,10 @@ var pokemonOnScreen = []
 
 async function dadosPokemon(){
     pokemonOnScreen = await showPokemon(getRandomPokemon())
+    var containerMain = document.querySelector('#imagem-pokemon')
+    
+    containerMain.innerHTML = ` <img class="card-imagempokemonMedium" src="${pokemonOnScreen.image}" >`
+
 }
 
 //Geracoes de pokemon
@@ -83,9 +87,10 @@ dadosPokemon()
 //função linkada ao botão enviar que a pessoa envia o que ta dentro do input
 function sendNamePokemon(){
     var inputNomePokemon = document.querySelector('#nome-pokemon')
-    console.log(inputNomePokemon.value)
+    inputNomePokemon = inputNomePokemon.value.toLowerCase()
+    console.log(inputNomePokemon)
     console.log(pokemonOnScreen)
-    if(inputNomePokemon.value == pokemonOnScreen.name){
+    if(inputNomePokemon == pokemonOnScreen.name){
         console.log("é isso ai")
         dadosPokemon()
     }
