@@ -1,51 +1,57 @@
-body{
-    max-width: 1200px;
-    margin: auto;
-}
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;}
 
-#containerMenu{
+#responsiveMenu{
+
+}
+
+.containerMenu{
     font-family: 'Play', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
     display: flex;
-    width: 100%;
+    margin: auto;
+    max-width: 1200px;
     height: 8.75rem;}
 
-#containerMenu > img{
+.containerMenu > img{
     margin-left: 1rem;}
 
-#containerMenu nav, a{
+.containerMenu nav, a{
     text-decoration: inherit;
     color: #212121;
     width: 100%;
     margin: auto 1.5rem;
     text-align: center;}
 
-#containerMenu nav > a:hover{
+.containerMenu nav > a:hover{
     color: #A8A8A8;}
 
-#containerMenu > a{
+.containerMenu > a{
     display: inline-block;
-    max-width: 12.5rem;
+    max-width: 11rem;
     margin-right: 4rem;
-    padding: 0.625rem 0;
+    padding: 0.5rem;
     border-radius: 0.625rem;
     border: 0.188rem solid #212121;}
 
-#containerMenu > a:hover{
+.containerMenu > a:hover{
     border: 0.188rem solid #A8A8A8;
     color: #A8A8A8}
 
-#containerAp{
+#responsiveAp{
     background-color: #FFD74E;
-    width: 100%;
     height: 31rem;
-    font-size: 19px;
+    width: 100%;
+}
+
+.containerAp{
+    max-width: 1200px;
+    height: 31rem;
+    margin: auto;
+    font-size: 20px;
     position: relative;
     font-family: 'Play', sans-serif;
     display: grid;
@@ -54,19 +60,19 @@ body{
     grid-template-areas:    "i a";
     align-items: center;}
 
-#containerAp img{
+.containerAp img{
     position: absolute;
     top: auto;
     bottom: 0;
     left: 6rem;
     grid-area: i;}
 
-#containerAp div{
+.containerAp div{
     position: absolute;
     max-width: 450px;
     grid-area: a;}
 
-#containerAp div a{
+.containerAp div a{
     background-color: #006DB9;
     display: block;
     font-family: 'Play', sans-serif;
@@ -79,18 +85,23 @@ body{
     color: #FFFFFF;
     text-transform: uppercase;}
 
-#containerAp div a:hover{
+.containerAp div a:hover{
     background-color: #FB5555;}
 
-#containerRules{
+#responsiveRules{
     background-color: #006DB9;
+}
+
+.containerRules{
     font-family: 'Noto Sans';
     font-size: 1.75rem;
     color: #FFFFFF;
+    max-width: 1200px;
     height: 1400px;
-    margin-top: 2rem;}
+    margin: auto;
+}
 
-#containerRules h1{
+.containerRules h1{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 3.15rem;
@@ -98,17 +109,16 @@ body{
     padding: 5rem 0 0 6rem;
     text-transform: uppercase;}
 
-#rulesGrid{
+.rulesGrid{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:    "img text1"
                             "img text2"
                             "img text3";
-                           
 }
 
-#rulesGrid img{
+.rulesGrid img{
     grid-area: img;
     margin-top: 50%;}
 
@@ -167,29 +177,36 @@ body{
     align-items: center;
     margin-right: 3rem;}
 
-#containerVideo{
+#responsiveVideo{
     background-color: #FFD84F;
+}
+
+.containerVideo{
     font-family: 'Noto Sans';
+    max-width: 1200px;
     max-height: 550px;
+    margin: auto;
     font-size: 20px;
     color: white;}
 
-#containerVideo > div{
+.containerVideo > div{
   transform: translate(250px, -55%);}
 
-#containerVideo div > video{
+.containerVideo div > video{
     border-radius: 20px;
     margin-top: 1rem;
-    box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);}
+    box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);
+}
 
-#containerVideo img{
-    transform: translate(700px, -60%);
-    height: 400px;}
+.containerVideo img{
+transform: translate(700px, -60%);
+height: 400px;}
 
 footer{
     display: flex;
     height: 100px;
-    
+    max-width: 1200px;
+    margin: auto;
     align-items: center;
     justify-content: space-between;
 }

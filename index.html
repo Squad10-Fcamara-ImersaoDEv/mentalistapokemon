@@ -11,56 +11,45 @@
     
 </head>
 <body>
-
     <header>
+        <div id="responsiveMenu">
+            <section class="containerMenu">
+                <img src="./assets/logo_pokemon.svg" alt="logo">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="./pokedex.html">Pokédex</a>
+                    <a href="#containerRules">Como Jogar</a>
+                    <a href="#">Sobre Nós</a>
+                </nav>
+                <a href="#">Login</a>
+            </section>
+        </div>
 
-        <section id="containerMenu">
-
-            <img src="./assets/logo_pokemon.svg" alt="logo">
-
-            <nav>
-                <a href="#">Home</a>
-                <a href="./pokedex.html">Pokédex</a>
-                <a href="#containerRules">Como Jogar</a>
-                <a href="#">Sobre Nós</a>
-            </nav>
-
-            <a href="#">Login</a>
-
-        </section>
-
-        <section id="containerAp">
-
-            <img height="470px" src="./assets/ash.svg" alt="ashe e picachu">
-
-            <div>
-                <h1>Conquiste todos os seus Pokémons e se torne um verdadeiro mestre!</h1>
-                <a href="#">Jogue agora!</a>
-            </div>
-
-        </section>
+        <div id="responsiveAp">
+            <section class="containerAp">
+                <img height="470px" src="./assets/ash.svg" alt="ashe e picachu">
+                <div>
+                    <h1>Conquiste todos os seus Pokémons e se torne um verdadeiro Mestre!</h1>
+                    <a href="#">Jogue agora!</a>
+                </div>
+            </section>
+        </div>
 
     </header>
 
     <main>
-
         <section id="containerCarrosel">
-
             <div>
                 <h1>Destaques</h1>
                 <a href="./pokedex.html">Ver Todos</a>
             </div>
-            
+
             <div class="gallery">
-                <div class="gallery__prev"></div>               
+                <div class="gallery__prev"></div>
+
                 <div class="gallery__next"></div>
 
                 <div class="gallery__stream">
-
-                    
-                
-                    
-
                     <div class="gallery__item grass">
                         <h4><strong class="card-nome">bulbasaur </strong></h4>
                         <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="imagem do Bulbasaur">
@@ -177,76 +166,68 @@
                         <p class="card-type-pokemon">fire,flying</p>
                         </div>
                     </div>
-            <div class="gallery__item electric">
+
+                    <div class="gallery__item electric">
                         <h4><strong class="card-nome">pikachu</strong></h4>
                         <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="imagem do pikachu">
                         <div>
                             <span class="card-code-pokemon">#025</span>
                             <p class="card-type-pokemon">Electric</p>
                         </div>
-                    </div><div class="gallery__item bug">
+                    </div>
+                    
+                    <div class="gallery__item bug">
                         <h4><strong class="card-nome">butterfree</strong></h4>
                         <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="imagem do Butterfree">
                         <div>
                         <span class="card-code-pokemon">#012</span>
                         <p class="card-type-pokemon">bug,flying</p>
                         </div>
-                    </div></div>
-
-            </div></section>
-
-        
-
-        <section id="containerRules">
-
-            <h1>Regras do Jogo</h1>
-
-            <div id="rulesGrid">
-
-                <img height="680px" src="./assets/ash2.svg" alt="ash pokebola">
-
-                <div class="text1">
-                    <p>A primeira regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
-                </div>
-
-                <div class="text2">
-                    <p>A segunda regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
-                </div>
-
-                <div class=" text3">
-                    <p>A terceira regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
-                </div>
-
+                    </div>
             </div>
 
         </section>
 
-        <section id="containerVideo">
+        <div id="responsiveRules">
+            <section class="containerRules">
+                <h1>Regras do Jogo</h1>
 
-            <div>
+                <div class="rulesGrid">
+                    <img height="680px" src="./assets/ash2.svg" alt="ash pokebola">
+                    <div class="text1">
+                        <p>A primeira regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
+                    </div>
 
-                <h2>Assista como jogar</h2>
+                    <div class="text2">
+                        <p>A segunda regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
+                    </div>
 
-                <video controls="" width="700" type="video/mp4" src="./assets/video_exemplo.mp4"></video>
+                    <div class=" text3">
+                        <p>A terceira regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            </div>
-
-            <img src="./assets/picachu.svg" alt="picachu">
-
-        </section>
-
+        <div id="responsiveVideo">
+            <section class="containerVideo">
+                <div>
+                    <h2>Assista como jogar</h2>
+                    <video controls="" width="700" type="video/mp4" src="./assets/video_exemplo.mp4"></video>
+                </div>
+                <img src="./assets/picachu.svg" alt="picachu">
+            </section>
+        </div>
     </main>
 
     <footer>
-
         <p>Copyright © 2021 Mentalmon - Todos os direitos reservados</p>
-        
         <img src="./assets/pokebola.svg" alt="pokebola">
-        
     </footer>
 
     <div id="back-to-top"><img src="./assets/pokebola.svg" alt="Pokebola"></div>
-    
-    <script src="./js/index.js"></script>
+
 </body>
 </html>
+
+<script src="./js/index.js"></script>
