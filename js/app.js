@@ -74,13 +74,13 @@ var Geracoes = {
     },
 };
 
-function definirDificuldade(dificuldadeSelecionada) {
-    if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
-        imageDirectory = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'
-    } 
-    // nao funciona para geração 6/7/8
-    else if (dificuldadeSelecionada == dificuldadeDificil) {
-        imageDirectory = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/500.png'
-    }
-}
 
+// function definirDificuldade(dificuldadeSelecionada) {
+//     if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
+//         imageDirectory = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'
+//     } 
+//     // nao funciona para geração 6/7/8
+//     else if (dificuldadeSelecionada == dificuldadeDificil) {
+//         imageDirectory = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/'
+//     }
+// }
