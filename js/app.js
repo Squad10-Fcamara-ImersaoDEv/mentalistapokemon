@@ -35,8 +35,11 @@ async function showPokemon(id) {
     console.log(pokemonData.types[0])
     return pokemonData;
 }
+var pokemonOnScreen = []
 
-showPokemon(getRandomPokemon())
+async function dadosPokemon(){
+    pokemonOnScreen = await showPokemon(getRandomPokemon())
+}
 
 //Geracoes de pokemon
 var Geracoes = {
@@ -74,6 +77,19 @@ var Geracoes = {
     },
 };
 
+dadosPokemon()
+
+
+//função linkada ao botão enviar que a pessoa envia o que ta dentro do input
+function sendNamePokemon(){
+    var inputNomePokemon = document.querySelector('#nome-pokemon')
+    console.log(inputNomePokemon.value)
+    console.log(pokemonOnScreen)
+    if(inputNomePokemon.value == pokemonOnScreen.name){
+        console.log("é isso ai")
+        dadosPokemon()
+    }
+}
 
 // function definirDificuldade(dificuldadeSelecionada) {
 //     if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
