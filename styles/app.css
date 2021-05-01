@@ -16,14 +16,15 @@
 }
 
 .card-imagempokemonMedium{
-    height: 150px;
-    margin-left: -250px;
+    height: 40%;
     position: absolute;
+    margin-left: -100%;
+    margin-top: -15%;
     filter: brightness(0);
 }
 
 .card-imagempokemonEasy{
-    height: 150px;
+    height: 40%;
     margin-left: -250px;
     position: absolute;
     filter: brightness(0);
@@ -31,8 +32,9 @@
 
 .input-pokemon{
     background-color:#D5EFF6 ;
+    font-size: 1.6rem;
     border-radius: 25px;
-    border: black solid 4px;
+    border: black solid 2px;
     text-align: center;
     display: block;
     margin:  auto;
