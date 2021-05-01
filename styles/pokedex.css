@@ -215,3 +215,23 @@ background-color: #c6dce7;
     width: 90%;
   }
 }
+
+
+footer{
+  display: flex;
+  height: 100px;
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p{
+  margin-left: 6rem;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+footer img{
+  margin-right: 3rem;
+  height: 50px;
+}
