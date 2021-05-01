@@ -1,0 +1,11 @@
+.container-principal {
+    background-image: url("../assets/bg-app.png");
+    height: 70vh;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-size:contain ;
+    margin: 1.5rem auto;
+}
+
+@media (max-width:600px) {
+}
