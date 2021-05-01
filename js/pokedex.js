@@ -27,23 +27,27 @@ async function getPokemon(pokemonId) {
 
 let dataAllPokemons = []
 
-var controle = 10 
+var maxPokemon = 10 
+var pokemonOnScreen = 1
 
-async function writeDataPokemons(){
-    for (var inicio = 1 ; inicio < controle ; inicio++){
-        var onePokemon = await getPokemon(inicio.toString())
+async function writeDataPokemons(inicio,controle){
+    var i = inicio
+    for(i ; i < controle ; i++){
+        var onePokemon = await getPokemon(i.toString())
         dataAllPokemons.push(onePokemon)
     }
 }
 
-createDataPokemonAndWrite()
+createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
 
-async function createDataPokemonAndWrite(){
-    await writeDataPokemons()
+async function createDataPokemonAndWrite(inicio,controle){
+    await writeDataPokemons(inicio,controle)
     console.log(dataAllPokemons)
-    for(var inicio = 1 ; inicio < controle ; inicio++){
-        console.log(dataAllPokemons[inicio])
-        drawPokemons(dataAllPokemons[inicio-1])
+    console.log("leu")
+    var i = inicio
+    for(i ; i < controle ; i++){
+        console.log(dataAllPokemons[i])
+        drawPokemons(dataAllPokemons[i-1])
     }
 
     function drawPokemons(pokemonData){
@@ -121,3 +125,10 @@ async function createDataPokemonAndWrite(){
     }
 }
 
+async function seeMore(){
+    pokemonOnScreen += 9
+    maxPokemon += 9
+    console.log(pokemonOnScreen)
+    console.log(maxPokemon)
+    await createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
+}
