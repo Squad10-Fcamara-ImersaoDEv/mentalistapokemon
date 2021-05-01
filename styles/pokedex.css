@@ -220,8 +220,19 @@ background-color: #c6dce7;
 .botao-seemore{
   margin: 1% 45%; 
   width: 10%;
+  font-size: 1.2rem;
+  background-color: #006DB9;
+  border-radius: 8px;
+  color: #FFFFFF;
   height: 3rem;
+  text-transform:capitalize;
+  cursor: pointer;
 }
+
+.botao-seemore:hover{
+  background-color: #FB5555;
+}
+
 
 
 
