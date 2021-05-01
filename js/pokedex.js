@@ -25,11 +25,16 @@ async function getPokemon(pokemonId) {
     return pokemonData;
 }
 
+// Variavel com os dados de todos pokemons(nome,id, imagem e tipos)
 let dataAllPokemons = []
 
+// variavel que tem o valor de pokemons exibidos na tela Inicia com -1 do valor que esta aqui
 var maxPokemon = 10 
+
+// variavel que tem o valor de pokemons ja exibidos na tela Inicia com 1 porque não existe pokemon com id 0
 var pokemonOnScreen = 1
 
+// Função que preenche a variavel dataAllPokemons adicionando os pokemons do id inicio ate o id controle
 async function writeDataPokemons(inicio,controle){
     var i = inicio
     for(i ; i < controle ; i++){
@@ -40,6 +45,7 @@ async function writeDataPokemons(inicio,controle){
 
 createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
 
+//Função que chama a função que preenche a variavel dataAllPokemons e e escreve eles na tela assincrona pois espera a variavel dataAllPokemons ser preenchida
 async function createDataPokemonAndWrite(inicio,controle){
     await writeDataPokemons(inicio,controle)
     console.log(dataAllPokemons)
@@ -50,8 +56,9 @@ async function createDataPokemonAndWrite(inicio,controle){
         drawPokemons(dataAllPokemons[i-1])
     }
 
+    //funçao que desenha os pokemons na tela 
     function drawPokemons(pokemonData){
-        let el = document.querySelector(".cards")
+        let cards = document.querySelector(".cards")
         let id 
         id = ("00" + pokemonData.id).slice(-3)
 
@@ -112,7 +119,7 @@ async function createDataPokemonAndWrite(inicio,controle){
                 break;
         }
         
-        el.innerHTML += `
+        cards.innerHTML += `
             <div class="card-pokemon ${classeTipoPrimarioPokemon}" id=${pokemonData.name}>
                 <h4><strong class="nome">${pokemonData.name}</strong></h4>
                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
@@ -125,6 +132,7 @@ async function createDataPokemonAndWrite(inicio,controle){
     }
 }
 
+// função para o botão ver mais ele acrescenta de 9 em 9 
 async function seeMore(){
     pokemonOnScreen += 9
     maxPokemon += 9
