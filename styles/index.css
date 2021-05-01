@@ -3,9 +3,9 @@
     margin: 0;
     box-sizing: border-box;}
 
-#responsiveMenu{
+/* #responsiveMenu{
 
-}
+} */
 
 .containerMenu{
     font-family: 'Play', sans-serif;
@@ -44,8 +44,7 @@
 #responsiveAp{
     background-color: #FFD74E;
     height: 31rem;
-    width: 100%;
-}
+    width: 100%;}
 
 .containerAp{
     max-width: 1200px;
@@ -89,8 +88,7 @@
     background-color: #FB5555;}
 
 #responsiveRules{
-    background-color: #006DB9;
-}
+    background-color: #006DB9;}
 
 .containerRules{
     font-family: 'Noto Sans';
@@ -98,8 +96,7 @@
     color: #FFFFFF;
     max-width: 1200px;
     height: 1400px;
-    margin: auto;
-}
+    margin: auto;}
 
 .containerRules h1{
     font-family: 'Ubuntu', sans-serif;
@@ -115,8 +112,7 @@
     grid-template-rows: auto auto auto;
     grid-template-areas:    "img text1"
                             "img text2"
-                            "img text3";
-}
+                            "img text3";}
 
 .rulesGrid img{
     grid-area: img;
@@ -178,8 +174,7 @@
     margin-right: 3rem;}
 
 #responsiveVideo{
-    background-color: #FFD84F;
-}
+    background-color: #FFD84F;}
 
 .containerVideo{
     font-family: 'Noto Sans';
@@ -195,8 +190,7 @@
 .containerVideo div > video{
     border-radius: 20px;
     margin-top: 1rem;
-    box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);
-}
+    box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);}
 
 .containerVideo img{
 transform: translate(700px, -60%);
@@ -208,32 +202,27 @@ footer{
     max-width: 1200px;
     margin: auto;
     align-items: center;
-    justify-content: space-between;
-}
+    justify-content: space-between;}
 
 footer p{
     margin-left: 6rem;
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-}
+    font-family: 'Ubuntu', sans-serif;}
 
 footer img{
     margin-right: 3rem;
-    height: 50px;
-}
+    height: 50px;}
 
 #containerCarrosel > div{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 3rem 6rem;
-}
+    margin: 5rem 0 3rem 6rem;}
 
 #containerCarrosel div > h1{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 3.15rem;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
 
 #containerCarrosel div > a{
     font-family: 'Ubuntu', sans-serif;
@@ -248,27 +237,26 @@ footer img{
 
 #containerCarrosel div > a:hover{
     color: black;
-    font-size: 1.7rem;
-}
+    font-size: 1.7rem;}
 
 #containerCarrosel {
     position: relative;
-    margin-bottom: 40%;
+    margin-bottom: 35%;
 }
 
 
-/* ----------------------------------------------------------------- */
+/* Carrosel */
 
 .gallery {
     position: absolute;
-    top: 320%;
+    top: 400%;
     transform: translateY(-50%);
-    left: -9%;
+    left: -5.2%;
+    right: 0;
     width: 100%;
     height: 70vh;
     max-height: 28vw;
-    overflow: hidden;
-}
+    overflow: hidden;}
 
 .gallery::before, .gallery::after {
     display: block;
@@ -276,9 +264,8 @@ footer img{
     position: relative;
     top: 0px;
     width: 0%;
-    height: 110%;
-    z-index: 3;
-}
+    height: 100%;
+    z-index: 3;}
 
 .gallery::before {
     left: 0px;
@@ -294,27 +281,23 @@ footer img{
     position: absolute;
     top: 50%;
     z-index: 4;
-    width: 50%;
+    width: 40%;
     height: 100%;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    cursor: pointer;
-}
+    cursor: pointer;}
 
 .gallery__prev {
-    left: 0px;
-}
+    left: 0px;}
 
 .gallery__next {
-    left: 100%;
-}
+    left: 100%;}
 
 .gallery__stream {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    height: 80%;
-}
+    height: 80%;}
 
 .gallery__item {
     position: absolute;
@@ -326,95 +309,68 @@ footer img{
     transition: all 1s ease 0s;
     background-repeat: no-repeat;
     background-position: center center;
-    border-radius: 1rem;
-}
+    border-radius: 1rem;}
 
 .gallery__item:nth-child(1) {
     left: 0px;
     z-index: 1;
-    transform: translateX(-100%) scale(0.8);
-}
+    transform: translateX(-100%) scale(0.8);}
 
 .gallery__item:nth-child(2) {
     left: 0px;
     z-index: 2;
-    transform: translateX(-50%) scale(0.8);
-}
+    transform: translateX(-50%) scale(0.8);}
 
 .gallery__item:nth-child(3) {
     left: 50%;
     z-index: 4;
-    transform: translateX(-50%) scale(1);
-}
+    transform: translateX(-50%) scale(1);}
 
 .gallery__item:nth-child(4) {
     left: 100%;
     z-index: 2;
-    transform: translateX(-50%) scale(0.8);
-}
+    transform: translateX(-50%) scale(0.8);}
 
 .gallery__item:nth-child(n+5) {
     left: 100%;
     z-index: 1;
-    transform: scale(0.8);
-}
-
+    transform: scale(0.8);}
 
 .card-nome {
     font-size: 1.4rem;
     text-transform: capitalize;
-    font-weight: 500;
-}
+    font-weight: 500;}
+
 .card-imagempokemon {
     padding-top: 10px;
-    width: 70%;
-}
+    width: 70%;}
+
 .card-code-pokemon {
     background-color: rgba(167, 167, 167, 0.52);
     font-weight: 500;
     font-size: 0.8rem;
     border-radius: 10px;
-    padding: 0.1rem 0.4rem;
-}
+    padding: 0.1rem 0.4rem;}
+
 .card-type-pokemon {
     text-transform: capitalize;
     font-size: 0.8rem;
-    padding: 20px 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+    padding: 20px 0px;}
 
 .normal {
-    background-color: lightgrey;
-}
+    background-color: lightgrey;}
 .water {
-    background-color: rgb(157, 237, 255);
-}
+    background-color: rgb(157, 237, 255);}
 .fire {
-    background-color: rgb(255, 169, 157);
-}
+    background-color: rgb(255, 169, 157);}
 .grass {
-    background-color: rgb(190, 255, 239);
-}
+    background-color: rgb(190, 255, 239);}
 .electric {
-    background-color: rgb(249, 209, 30);
-}
+    background-color: rgb(249, 209, 30);}
 .bug {
-    background-color: rgb(185, 212, 70);
-}
+    background-color: rgb(185, 212, 70);}
 .psychic {
-    background-color: rgb(255, 249, 190);
-}
+    background-color: rgb(255, 249, 190);}
 
 
 #back-to-top {
@@ -424,5 +380,4 @@ footer img{
     right: 10px;
     bottom: 10px;
     z-index: 999;
-    cursor: pointer;
-}
+    cursor: pointer;}
