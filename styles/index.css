@@ -213,18 +213,28 @@ footer img{
     margin-right: 3rem;
     height: 50px;}
 
-#containerCarrosel > div{
+#responsiveCarrosel{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.containerCarrosel > div{
     display: flex;
     justify-content: space-between;
     margin: 5rem 0 3rem 6rem;}
 
-#containerCarrosel div > h1{
+#responsiveCarrosel > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 3rem 6rem;}
+
+#responsiveCarrosel div > h1{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 3.15rem;
     text-transform: uppercase;}
 
-#containerCarrosel div > a{
+#responsiveCarrosel div > a{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
@@ -235,14 +245,17 @@ footer img{
     color: #6F6F6F;
     transition: 0.7s;}
 
-#containerCarrosel div > a:hover{
+#responsiveCarrosel div > a:hover{
     color: black;
     font-size: 1.7rem;}
 
-#containerCarrosel {
+.containerCarrosel {
     position: relative;
     margin-bottom: 35%;
+    margin-top: 10%;
 }
+
+
 
 
 /* Carrosel */
