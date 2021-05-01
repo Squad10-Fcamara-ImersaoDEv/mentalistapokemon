@@ -7,7 +7,7 @@ btn.addEventListener('click', () => window.scrollTo({
 
 async function getPokemon(pokemonId) {
     let id
-    let pokemonData = {};
+    let pokemonData = {}
 
     await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
         .then(response => response.json())
@@ -57,16 +57,16 @@ async function createDataPokemonAndWrite(inicio,controle){
 
         switch (pokemonData.types[0]) {
             case "grass":
-                var classeTipoPrimarioPokemon = "card-grass";     
+                var classeTipoPrimarioPokemon = "card-grass"     
                 break;
             case "fire":
-                var classeTipoPrimarioPokemon = "card-fire";                        
+                var classeTipoPrimarioPokemon = "card-fire"                        
                 break;
             case "water":
-                var classeTipoPrimarioPokemon = "card-water";                  
+                var classeTipoPrimarioPokemon = "card-water"                  
                 break;
             case "poison":
-                var classeTipoPrimarioPokemon = "card-poison";                  
+                var classeTipoPrimarioPokemon = "card-poison"                  
                 break;
             case "psychic":
                 var classeTipoPrimarioPokemon = "card-psychic"
