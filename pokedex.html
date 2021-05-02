@@ -16,23 +16,21 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
-        <section id="containerMenu">
-            <img src="./assets/logo_pokemon.svg" alt="logo">
-
-            <nav>
-                <ul class="menu-list">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pokedex.html">Pokédex</a></li>
-                    <li><a href="./index.html#containerRules">Como Jogar</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                </ul>
-            </nav>
-        </section>
+        <div id="responsiveMenu">
+            <section class="containerMenu">
+                <img src="./assets/logo_pokemon.svg" alt="logo">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="./pokedex.html">Pokédex</a>
+                    <a href="#containerRules">Como Jogar</a>
+                    <a href="#">Sobre Nós</a>
+                </nav>
+                <a href="#">Login</a>
+            </section>
+        </div>
     </header>
 
     <main>
@@ -71,5 +69,7 @@
 
 
 </body>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="js/pokedex.js"></script>
 </html>
