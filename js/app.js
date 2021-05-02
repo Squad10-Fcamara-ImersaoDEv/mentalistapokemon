@@ -118,7 +118,7 @@ function WriteHintOne(){
 }
 
 function WriteHintTwo(){
-    if(currentPlayerMoney >= 25 & !hintTwoShow)
+    if(currentPlayerMoney >= 25 & !hintTwoShow){
         var hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
 
@@ -127,7 +127,7 @@ function WriteHintTwo(){
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintTwoShow = true
     }
-
+}
 function WriteHintThree(){
     var hintThree = document.querySelector('#hint-three')
     var imagem = document.getElementById("filtro")
