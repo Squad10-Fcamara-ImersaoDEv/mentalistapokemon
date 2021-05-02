@@ -22,8 +22,10 @@ a{
     max-width: 1200px;
     height: 8.75rem;}
 
-.containerMenu > img{
-    margin-left: 1rem;}
+#linkHomeImg{
+    border: none;
+    text-decoration: none;
+}
 
 .containerMenu nav, a{
     text-decoration: inherit;
