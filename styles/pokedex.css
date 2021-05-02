@@ -1,6 +1,10 @@
 body{
   font-family: 'Ubuntu', sans-serif;
+  cursor: url(../assets/cursores/pokebola.cur), auto;
 }
+
+a{
+  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
 
 /* Header */
 
@@ -241,7 +245,7 @@ body{
   right: 10px;
   bottom: 10px;
   z-index: 999;
-  cursor: pointer;
+  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
 .botao-seemore{
@@ -253,7 +257,7 @@ body{
   color: #FFFFFF;
   height: 3rem;
   text-transform:capitalize;
-  cursor: pointer;
+  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
 .botao-seemore:hover{
