@@ -41,7 +41,7 @@ async function dadosPokemon(){
     pokemonOnScreen = await showPokemon(getRandomPokemon())
     var containerMain = document.querySelector('#imagem-pokemon')
     
-    containerMain.innerHTML = ` <img class="card-imagempokemonMedium" src="${pokemonOnScreen.image}" >`
+    containerMain.innerHTML = ` <img class="card-imagempokemonMedium" id="filtro" src="${pokemonOnScreen.image}" >`
 
 }
 
@@ -102,8 +102,15 @@ function WriteHintOne(){
 }
 
 function WriteHintTwo(){
-    var hintOne = document.querySelector('#hint-two')
-    hintOne.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+    var hintTwo = document.querySelector('#hint-two')
+    hintTwo.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+}
+
+function WriteHintThree(){
+    var hintThree = document.querySelector('#hint-three')
+    var imagem = document.getElementById("filtro")
+    imagem.style.filter = "brightness(10%)"
+
 }
 
 // function definirDificuldade(dificuldadeSelecionada) {
