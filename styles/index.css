@@ -179,15 +179,18 @@
     background-color: #FFD84F;}
 
 .containerVideo{
+    position: relative;
     font-family: 'Noto Sans';
     max-width: 1200px;
-    max-height: 550px;
+    min-height: 550px;
     margin: auto;
     font-size: 20px;
     color: white;}
 
 .containerVideo > div{
-  transform: translate(250px, -55%);}
+    position: absolute;
+    transform: translate(250px, -55%);
+}
 
 .containerVideo div > video{
     border-radius: 20px;
@@ -195,12 +198,13 @@
     box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);}
 
 .containerVideo img{
-transform: translate(700px, -60%);
-height: 400px;}
+    transform: translate(700px, 55%);
+    height: 400px;}
+    
 
 footer{
     display: flex;
-    height: 100px;
+    height: 90px;
     max-width: 1200px;
     margin: auto;
     align-items: center;
