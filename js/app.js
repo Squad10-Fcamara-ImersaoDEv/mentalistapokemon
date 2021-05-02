@@ -45,6 +45,8 @@ async function dadosPokemon(){
 
     let moneyPlayer = document.querySelector('.money-player')
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
+    hintOneShow = false
+    hintTwoShow = false
 }
 
 //Geracoes de pokemon
@@ -101,13 +103,12 @@ function sendNamePokemon(){
 }
 
 
-var hintOneShow = false
-
 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>The pokemon is type(s): ${pokemonOnScreen.types}<\div>`
+        
         currentPlayerMoney -= 15
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
@@ -117,9 +118,15 @@ function WriteHintOne(){
 }
 
 function WriteHintTwo(){
-    var hintTwo = document.querySelector('#hint-two')
-    hintTwo.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
-}
+    if(currentPlayerMoney >= 25 & !hintTwoShow)
+        var hintTwo = document.querySelector('#hint-two')
+        hintTwo.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+
+        currentPlayerMoney -= 25
+        let moneyPlayer = document.querySelector('.money-player')
+        moneyPlayer.innerHTML = `${currentPlayerMoney}`
+        hintTwoShow = true
+    }
 
 function WriteHintThree(){
     var hintThree = document.querySelector('#hint-three')
