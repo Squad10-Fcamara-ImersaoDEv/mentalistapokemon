@@ -47,6 +47,7 @@ async function dadosPokemon(){
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
     hintOneShow = false
     hintTwoShow = false
+    hintTreeShow = false
 }
 
 //Geracoes de pokemon
@@ -129,10 +130,16 @@ function WriteHintTwo(){
     }
 }
 function WriteHintThree(){
-    var hintThree = document.querySelector('#hint-three')
-    var imagem = document.getElementById("filtro")
-    imagem.style.filter = "brightness(20%)"
-
+    if(currentPlayerMoney >= 35 & !hintTreeShow){
+        var hintThree = document.querySelector('#hint-three')
+        var imagem = document.getElementById("filtro")
+        imagem.style.filter = "brightness(20%)"
+    
+        currentPlayerMoney -= 35
+        let moneyPlayer = document.querySelector('.money-player')
+        moneyPlayer.innerHTML = `${currentPlayerMoney}`
+        hintTreeShow = true
+    }
 }
 
 // function definirDificuldade(dificuldadeSelecionada) {
