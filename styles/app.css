@@ -54,29 +54,47 @@ body {
     border: black 2px solid;
 }
 
-#imagem-pokecoin{
+#imagem-pokecoin {
     width: 3rem;
     margin-left: 0.5rem;
 }
 
-.money-player{
+.money-player {
     font-size: 1.5rem;
 
 }
 
 
-.input-pokemon {
+.form-input-pokemon {
     background-color:#D5EFF6 ;
-    font-size: 1.6rem;
     border-radius: 25px;
     border: black solid 2px;
-    text-align: center;
-    display: block;
-    margin:  auto;
+    margin:auto;
+    max-width: 20rem;
     width: 90%;
+    height: 3.5Rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.input-pokemon {
+    background-color:#D5EFF6 ;
+    border: none;
+    font-size: 1.4rem;
+    max-width: 14rem;
+    display: inline-block;
+    width: 65%;
+}
 
+.button-send {
+    background: #bbbbbb;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 25%;
+    color: rgb(0, 0, 0);
+}
 
 @media (min-width:600px) {
     /* .card-imagempokemonMedium {
