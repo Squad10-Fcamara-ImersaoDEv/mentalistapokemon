@@ -1,16 +1,16 @@
-body{
+body {
     font-family: 'Play', sans-serif;
     background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
 }
 
-#nome-game{
+#nome-game {
     font-family: 'Slackey', cursive;
     font-size: 1.5rem;
     text-align: center;
     margin-top: 25px;
 }
 
-.container-principal{
+.container-principal {
     height: 45%;
     max-width: 1440px;
     margin: auto;
@@ -27,7 +27,7 @@ body{
     position:relative;
 }
 
-.card-imagempokemonMedium{
+.card-imagempokemonMedium {
     height: 52%;
     position: absolute;
     margin-left: -98%;
@@ -35,14 +35,28 @@ body{
     filter: brightness(0);
 }
 
-.card-imagempokemonEasy{
+.card-imagempokemonEasy {
     height: 55%;
     margin-left: -250px;
     position: absolute;
     filter: brightness(0);
 }
 
-.input-pokemon{
+.money-player {
+    background-color: #FFF9C2;
+    width: 30%;
+    height: 2rem;
+    margin: 0 0 10px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: black 2px solid;
+}
+
+
+.input-pokemon {
     background-color:#D5EFF6 ;
     font-size: 1.6rem;
     border-radius: 25px;
@@ -52,6 +66,7 @@ body{
     margin:  auto;
     width: 90%;
 }
+
 
 
 @media (min-width:600px) {
