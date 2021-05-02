@@ -42,17 +42,26 @@ body {
     filter: brightness(0);
 }
 
-.money-player {
+.container-money {
     background-color: #FFF9C2;
     width: 30%;
-    height: 2rem;
+    height: 4rem;
     margin: 0 0 10px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
     border-radius: 10px;
     border: black 2px solid;
+}
+
+#imagem-pokecoin{
+    width: 3rem;
+    margin-left: 0.5rem;
+}
+
+.money-player{
+    font-size: 1.5rem;
+
 }
 
 
