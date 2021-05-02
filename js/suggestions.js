@@ -52,22 +52,3 @@ inputBox.onkeyup = (e) => {
         searchWrapper.classList.remove("active"); //hide autocomplete box
     }
 }
-
-async function getPokemon(name) {
-    let pokemonData = {}
-
-    await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
-        .then(response => response.json())
-        .then(data => {
-            pokemonData.id = data.id
-            pokemonData.name = data.name
-            pokemonData.types = data.types.map(types => { return types.type.name; })
-            pokemonData.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + ("00" + pokemonId).slice(-3) + ".png"
-            id = ("00" + pokemonId).slice(-3)
-  
-        })
-        .catch(() => {
-            console.log("Error request pokémon. Id: " + pokemonId)
-        })
-    return pokemonData;
-}
