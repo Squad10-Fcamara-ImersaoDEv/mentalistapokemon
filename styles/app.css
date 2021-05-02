@@ -60,9 +60,20 @@ body {
     margin-left: 0.5rem;
 }
 
+.imagem-hint {
+    width: 1rem;
+    display: inline-block;
+    margin-top: 1px;
+}
+
 .money-player {
     font-size: 1.5rem;
 
+}
+
+.text-hint{
+    font-size: 1rem;
+    display: inline-block;
 }
 
 
