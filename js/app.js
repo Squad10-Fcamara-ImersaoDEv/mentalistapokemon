@@ -98,9 +98,13 @@ function sendNamePokemon(){
 
 function WriteHintOne(){
     var hintOne = document.querySelector('#hint-one')
-    hintOne.innerHTML = `<div>The pokemon is type: ${pokemonOnScreen.types}<\div>`
+    hintOne.innerHTML = `<div>The pokemon is type(s): ${pokemonOnScreen.types}<\div>`
 }
 
+function WriteHintTwo(){
+    var hintOne = document.querySelector('#hint-two')
+    hintOne.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+}
 
 // function definirDificuldade(dificuldadeSelecionada) {
 //     if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
