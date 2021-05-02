@@ -101,15 +101,17 @@ function sendNamePokemon(){
 }
 
 
+var hintOneShow = false
 
 
 function WriteHintOne(){
-    if(currentPlayerMoney >= 15){
+    if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>The pokemon is type(s): ${pokemonOnScreen.types}<\div>`
         currentPlayerMoney -= 15
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
+        hintOneShow = true
     }
 
 }
