@@ -99,7 +99,9 @@ function sendNamePokemon(){
     console.log(pokemonOnScreen)
     if(inputNomePokemon == pokemonOnScreen.name){
         currentPlayerMoney += 25
-        dadosPokemon()
+        var imagemPokemon = document.getElementById('filtro')
+        imagemPokemon.style.filter = "brightness(100%)" 
+        setTimeout(dadosPokemon,3000)
     }
 }
 
