@@ -47,18 +47,28 @@ body{
 }
 
 
-/* @media (min-width:600px) {
-    .background-game {
-        width: 80%;
-    }
-
-    .card-imagempokemonMedium {
+@media (min-width:600px) {
+    /* .card-imagempokemonMedium {
         height: 250px;
         margin-left: -30%;
     } 
-    
+     */
     .card-imagempokemonEasy {
         height: 250px;
         margin-left: -30%;
     }
-} */
+}
+
+@media (min-width:800px) {
+    
+    .background-game {
+        width: 80%;  
+    }
+
+    .card-imagempokemonMedium{
+        height: 52%;
+        position: absolute;
+        margin-left: -88%;
+        margin-top: -20%;
+    }    
+}
