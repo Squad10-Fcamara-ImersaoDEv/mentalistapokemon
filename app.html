@@ -20,7 +20,6 @@
      
 </head>
 <body>
-    
     <main>
         <div id="nome-game"><h2>WHO'S THAT POKEMON?</h2></div>
 
@@ -31,10 +30,11 @@
 
         <div class="container-money"><div class="money-player"></div><img id='imagem-pokecoin' src="./assets/pokecoin.png" alt=" imagem pokecoin"> </div>
         
-
-        <input class="input-pokemon" id="nome-pokemon" type="text">
-        <button onclick="sendNamePokemon()">ENVIAR</button>
-
+        <div class="form-input-pokemon">
+            <input class="input-pokemon" id="nome-pokemon" type="text">
+            <button  class="button-send" onclick="sendNamePokemon()">&check;</button>    
+        </div>
+        
         <!-- dica um -->
         <button onclick="WriteHintOne()">Hint One</button>
         <button onclick="WriteHintTwo()">Hint Two</button>
