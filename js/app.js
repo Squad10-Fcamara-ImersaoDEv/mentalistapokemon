@@ -45,10 +45,22 @@ async function dadosPokemon(){
 
     let moneyPlayer = document.querySelector('.money-player')
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
-    hintOneShow = false
+    
+    if (hintOneShow == true){
+        var hintOne = document.querySelector('#hint-one')
+        hintOne.innerHTML = ''
+        var hintOneOriginal = document.querySelector('#hint-one-original')
+        hintOneOriginal.classList.remove('hidden-hint-one')
+        hintOneShow = false
+    }
+    
     hintTwoShow = false
     hintTreeShow = false
 }
+
+var hintTwoShow = false
+var hintTreeShow = false
+var hintOneShow = false
 
 //Geracoes de pokemon
 var Geracoes = {
@@ -109,6 +121,8 @@ function sendNamePokemon(){
 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
+        var hintOneOriginal = document.querySelector('#hint-one-original')
+        hintOneOriginal.classList.add('hidden-hint-one')
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>Pokemon type(s): ${pokemonOnScreen.types}<\div>`
         
