@@ -98,7 +98,7 @@ function sendNamePokemon(){
     console.log(inputNomePokemon)
     console.log(pokemonOnScreen)
     if(inputNomePokemon == pokemonOnScreen.name){
-        console.log("é isso ai")
+        currentPlayerMoney += 25
         dadosPokemon()
     }
 }
@@ -129,6 +129,7 @@ function WriteHintTwo(){
         hintTwoShow = true
     }
 }
+
 function WriteHintThree(){
     if(currentPlayerMoney >= 35 & !hintTreeShow){
         var hintThree = document.querySelector('#hint-three')
