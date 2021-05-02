@@ -49,8 +49,13 @@ async function dadosPokemon(){
     if (hintOneShow == true){
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = ''
+
         var hintOneOriginal = document.querySelector('#hint-one-original')
         hintOneOriginal.classList.remove('hidden-hint-one')
+
+        var buttonHintOne = document.getElementById('button-hint-one')
+        buttonHintOne.classList.remove('button-used')
+
         hintOneShow = false
     }
     
@@ -126,6 +131,9 @@ function WriteHintOne(){
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>Pokemon type(s): ${pokemonOnScreen.types}<\div>`
         
+        var buttonHintOne = document.getElementById('button-hint-one')
+        buttonHintOne.classList.add('button-used')
+
         currentPlayerMoney -= 15
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
