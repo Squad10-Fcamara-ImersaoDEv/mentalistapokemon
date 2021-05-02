@@ -110,7 +110,7 @@ function sendNamePokemon(){
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOne = document.querySelector('#hint-one')
-        hintOne.innerHTML = `<div>The pokemon is type(s): ${pokemonOnScreen.types}<\div>`
+        hintOne.innerHTML = `<div>Pokemon type(s): ${pokemonOnScreen.types}<\div>`
         
         currentPlayerMoney -= 15
         let moneyPlayer = document.querySelector('.money-player')
@@ -123,7 +123,7 @@ function WriteHintOne(){
 function WriteHintTwo(){
     if(currentPlayerMoney >= 25 & !hintTwoShow){
         var hintTwo = document.querySelector('#hint-two')
-        hintTwo.innerHTML = `<div>The firt letter of the Pokemon is : ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+        hintTwo.innerHTML = `<div>Firt letter: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
 
         currentPlayerMoney -= 25
         let moneyPlayer = document.querySelector('.money-player')
