@@ -1,6 +1,7 @@
 body {
     font-family: 'Play', sans-serif;
     background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
+    cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
 #nome-game {

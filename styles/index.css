@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;}
 
+body{
+    cursor: url(../assets/cursores/pokebola.cur), auto;}
+
+a{
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
+
 /* #responsiveMenu{
 
 } */
@@ -394,7 +400,7 @@ footer img{
     right: 10px;
     bottom: 10px;
     z-index: 999;
-    cursor: pointer;}
+    cursor: url(../pokebolaAberta.cur), pointer;
+}
 
 /* media */
-
