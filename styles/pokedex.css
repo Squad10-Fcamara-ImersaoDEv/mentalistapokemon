@@ -49,6 +49,8 @@ body{
 
 .container-title {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #006DB9;
 }
 
@@ -58,13 +60,13 @@ body{
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   padding: 2rem 0;
-  margin: 0 auto;
 }
 .container-title .title > img {
   height: 3rem;
+  margin-left: 2rem;
 }
 
 .container-title .title > h2 {
@@ -72,7 +74,7 @@ body{
   color: #BEFFEF;
 
   display:inline-block;
-  margin-right: 1rem;
+  margin-left: 2rem;
 }
 
 /* search bar */
