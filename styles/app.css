@@ -4,7 +4,7 @@ body{
 
 
 .container-principal{
-    height: 50vh;
+    height: 45%;
     max-width: 1440px;
     margin: auto;
     position: relative;
@@ -21,15 +21,15 @@ body{
 }
 
 .card-imagempokemonMedium{
-    height: 40%;
+    height: 52%;
     position: absolute;
-    margin-left: -100%;
-    margin-top: -15%;
+    margin-left: -98%;
+    margin-top: -25%;
     filter: brightness(0);
 }
 
 .card-imagempokemonEasy{
-    height: 40%;
+    height: 55%;
     margin-left: -250px;
     position: absolute;
     filter: brightness(0);
@@ -43,22 +43,22 @@ body{
     text-align: center;
     display: block;
     margin:  auto;
-    height: 10vh;
+    width: 90%;
 }
 
 
-@media (min-width:600px) {
+/* @media (min-width:600px) {
     .background-game {
         width: 80%;
     }
 
-    /* .card-imagempokemonMedium {
+    .card-imagempokemonMedium {
         height: 250px;
         margin-left: -30%;
-    } */
+    } 
     
     .card-imagempokemonEasy {
         height: 250px;
         margin-left: -30%;
     }
-}
+} */
