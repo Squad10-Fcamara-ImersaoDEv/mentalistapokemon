@@ -86,6 +86,9 @@ body {
 }
 
 
+.hidden-hint-one {
+    opacity:0;
+}
 
 .button-hint:hover {
     background-color: #FB5555;
