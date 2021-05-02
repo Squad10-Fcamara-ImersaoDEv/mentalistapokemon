@@ -60,18 +60,38 @@ body {
     margin-left: 0.5rem;
 }
 
+.money-player {
+    font-size: 1.5rem;
+
+}
+
 .imagem-hint {
     width: 1rem;
     display: inline-block;
     margin-top: 1px;
 }
 
-.money-player {
-    font-size: 1.5rem;
-
+.button-hint {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 0.3rem 10%;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #006DB9;
+    font-weight: bold;
+    padding: 0.3rem;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
-.text-hint{
+
+
+.button-hint:hover {
+    background-color: #FB5555;
+}
+
+.text-hint {
     font-size: 1rem;
     display: inline-block;
 }
