@@ -39,10 +39,12 @@ var pokemonOnScreen = []
 
 async function dadosPokemon(){
     pokemonOnScreen = await showPokemon(getRandomPokemon())
-    var containerMain = document.querySelector('#imagem-pokemon')
     
+    var containerMain = document.querySelector('#imagem-pokemon')
     containerMain.innerHTML = ` <img class="card-imagempokemonMedium" id="filtro" src="${pokemonOnScreen.image}" >`
 
+    var moneyPlayer = document.querySelector('.money-player')
+    moneyPlayer.innerHTML = `${currentPlayerMoney}`
 }
 
 //Geracoes de pokemon
@@ -83,6 +85,8 @@ var Geracoes = {
 
 dadosPokemon()
 
+//Variavel que guarda dinheiro do jogador
+var currentPlayerMoney = 100
 
 //função linkada ao botão enviar que a pessoa envia o que ta dentro do input
 function sendNamePokemon(){
@@ -109,7 +113,7 @@ function WriteHintTwo(){
 function WriteHintThree(){
     var hintThree = document.querySelector('#hint-three')
     var imagem = document.getElementById("filtro")
-    imagem.style.filter = "brightness(10%)"
+    imagem.style.filter = "brightness(20%)"
 
 }
 
