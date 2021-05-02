@@ -5,41 +5,37 @@ body{
 /* Header */
 
 #containerMenu{
+  width: 100%;
   max-width: 1200px;
   font-family: 'Play', sans-serif;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 500;
   display: flex;
-  width: 100%;
-  height: 8.75rem;
+  align-items: center;
+  justify-content: flex-start;
   margin: auto;
 }
 
-#containerMenu > img{
-  margin-left: 1rem;}
+#containerMenu nav .menu-list {
+  display: inline-block;
+}
 
-#containerMenu nav, a{
-  text-decoration: inherit;
+#containerMenu nav .menu-list li {
+  display: inline-block;
+}
+
+#containerMenu nav .menu-list li a{
+  text-decoration: none;
   color: #212121;
   width: 100%;
-  margin: auto 1.5rem;
-  text-align: center;}
+  margin-left: 1rem;
+}
 
-#containerMenu nav > a:hover{
+#containerMenu nav .menu-list li a:hover{
   color: #A8A8A8;}
 
-#containerMenu > a{
-  display: inline-block;
-  max-width: 12.5rem;
-  margin-right: 4rem;
-  padding: 0.625rem 0;
-  border-radius: 0.625rem;
-  border: 0.188rem solid #212121;}
-
-#containerMenu > a:hover{
-  border: 0.188rem solid #A8A8A8;
-  color: #A8A8A8}
-
+#containerMenu > img{
+  margin-left: 1rem;}
 
 .titulo {
   background-color: #006DB9;
