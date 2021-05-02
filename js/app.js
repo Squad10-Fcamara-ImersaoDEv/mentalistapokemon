@@ -96,6 +96,12 @@ function sendNamePokemon(){
     }
 }
 
+function WriteHintOne(){
+    var hintOne = document.querySelector('#hint-one')
+    hintOne.innerHTML = `<div>The pokemon is type: ${pokemonOnScreen.types}<\div>`
+}
+
+
 // function definirDificuldade(dificuldadeSelecionada) {
 //     if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
 //         imageDirectory = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'
