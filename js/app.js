@@ -40,10 +40,10 @@ var pokemonOnScreen = []
 async function dadosPokemon(){
     pokemonOnScreen = await showPokemon(getRandomPokemon())
     
-    var containerMain = document.querySelector('#imagem-pokemon')
+    let containerMain = document.querySelector('#imagem-pokemon')
     containerMain.innerHTML = ` <img class="card-imagempokemonMedium" id="filtro" src="${pokemonOnScreen.image}" >`
 
-    var moneyPlayer = document.querySelector('.money-player')
+    let moneyPlayer = document.querySelector('.money-player')
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
 }
 
@@ -100,9 +100,18 @@ function sendNamePokemon(){
     }
 }
 
+
+
+
 function WriteHintOne(){
-    var hintOne = document.querySelector('#hint-one')
-    hintOne.innerHTML = `<div>The pokemon is type(s): ${pokemonOnScreen.types}<\div>`
+    if(currentPlayerMoney >= 15){
+        var hintOne = document.querySelector('#hint-one')
+        hintOne.innerHTML = `<div>The pokemon is type(s): ${pokemonOnScreen.types}<\div>`
+        currentPlayerMoney -= 15
+        let moneyPlayer = document.querySelector('.money-player')
+        moneyPlayer.innerHTML = `${currentPlayerMoney}`
+    }
+
 }
 
 function WriteHintTwo(){
