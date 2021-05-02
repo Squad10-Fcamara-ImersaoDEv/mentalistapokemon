@@ -260,6 +260,7 @@ footer img{
 /* Carrosel */
 
 .gallery {
+    font-family: 'Ubuntu', sans-serif;
     position: absolute;
     right: 0;
     width: 100%;
@@ -312,7 +313,8 @@ footer img{
 .gallery__item {
     position: absolute;
     padding-top: 2rem;
-    width: 30%;
+    width: 25%;
+    min-width: 12rem;
     text-align: center;
     transition: all 1s ease 0s;
     border-radius: 1rem;}
@@ -350,7 +352,7 @@ footer img{
 .card-imagempokemon {
     padding-top: 10px;
     width: 70%;
-    margin-left: 2rem;
+    margin: 5%;
 }
 
 .card-code-pokemon {
