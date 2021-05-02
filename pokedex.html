@@ -16,6 +16,8 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <header>
@@ -41,20 +43,18 @@
             </div>
         </header>
         
-        <section>
-            <div class="pokedex-searchbar">
-                <form class="pokedex-form">
-                    <label for="pokedex-searchfield"></label>
-                    <input
-                        id="searchfield"
-                        type="search"
-                        placeholder="Busque pelo seu pokemon..."
-                        autocomplete="off"
-                    />
-                </form>
+        <div class="wrapper">
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Busque um pokemon...">
+                <div class="autocom-box">
+                <!-- here list are inserted from javascript -->
+                </div>
+                <div class="icon"><i class="fas fa-search"></i></div>
             </div>
-        </section>
+        </div>
         <div class="cards">
+            <!-- here cards are inserted from javascript -->
         </div> 
         <button class="botao-seemore" onclick="seeMore()" id="myBtn">Ver mais</button>
     </main>
