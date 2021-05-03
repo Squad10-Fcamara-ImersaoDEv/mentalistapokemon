@@ -295,12 +295,37 @@ body {
     }
 }
 
-@media (min-width:800px) {
+@media (min-width: 768px) {
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+  .modal-exit {
+    max-width: 50%;
+    width: 50%;
+    left: 25%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media (min-width:1024px) {
     /*
     left: 40%;
     top: 40%;*/
     .background-game {
         width: 80%;  
+    }
+
+    .modal-exit {
+        width: 24%;
+        left: 38%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
     }
 
     .card-imagempokemonMedium{
