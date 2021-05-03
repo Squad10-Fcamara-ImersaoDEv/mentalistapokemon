@@ -250,6 +250,25 @@ body {
     justify-content: center;
 }
 
+.skip-button {
+    background-color: darkslateblue;;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    padding: 10px 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    border: none;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
+
+.skip-button:hover {
+    background-color: rgb(76, 4, 124);
+}
+
 @media (min-width:600px) {
     /* .card-imagempokemonMedium {
         height: 250px;
