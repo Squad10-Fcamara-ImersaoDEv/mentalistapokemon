@@ -7,10 +7,10 @@ body {
 }
 
 #nome-game {
-    font-family: 'Slackey', cursive;
-    font-size: 1.5rem;
+    font-family: 'Pokemon', 'Play';
+    font-size: 2rem;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .container-principal {
@@ -338,6 +338,12 @@ body {
     
     .form-input-pokemon  {
         margin:1rem auto;
+    }
+
+    #nome-game {
+        font-size: 3rem;
+        text-align: left;
+        margin-left: 5rem;
     }
     /*
     left: 40%;
