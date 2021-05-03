@@ -51,7 +51,7 @@ async function dadosPokemon(){
         hintOne.innerHTML = ''
 
         var hintOneOriginal = document.querySelector('#hint-one-original')
-        hintOneOriginal.classList.remove('hidden-hint-one')
+        hintOneOriginal.classList.remove('hidden-hint')
 
         var buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.remove('button-used')
@@ -59,7 +59,19 @@ async function dadosPokemon(){
         hintOneShow = false
     }
     
-    hintTwoShow = false
+    if (hintTwoShow == true){
+        var hintTwo = document.querySelector('#hint-two')
+        hintTwo.innerHTML = ''
+
+        var hintTwoOriginal = document.querySelector('#hint-two-original')
+        hintTwoOriginal.classList.remove('hidden-hint')
+
+        var buttonHintTwo = document.getElementById('button-hint-two')
+        buttonHintTwo.classList.remove('button-used')
+
+        hintTwoShow = false
+    }
+
     hintTreeShow = false
 }
 
@@ -127,7 +139,7 @@ function sendNamePokemon(){
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOneOriginal = document.querySelector('#hint-one-original')
-        hintOneOriginal.classList.add('hidden-hint-one')
+        hintOneOriginal.classList.add('hidden-hint')
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>Pokemon type(s): ${pokemonOnScreen.types}<\div>`
         
@@ -144,8 +156,14 @@ function WriteHintOne(){
 
 function WriteHintTwo(){
     if(currentPlayerMoney >= 25 & !hintTwoShow){
+        var hintOneOriginal = document.querySelector('#hint-two-original')
+        hintOneOriginal.classList.add('hidden-hint')
         var hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>Firt letter: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+
+        var buttonHintTwo = document.getElementById('button-hint-two')
+        buttonHintTwo.classList.add('button-used')
+
 
         currentPlayerMoney -= 25
         let moneyPlayer = document.querySelector('.money-player')
