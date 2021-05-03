@@ -262,6 +262,7 @@ a{
 }
 
 .botao-seemore{
+  border: none;
   margin: 1% 45%; 
   width: 10%;
   font-size: 1.2rem;
