@@ -245,7 +245,7 @@ function WriteHintTwo(){
         var hintTwoOriginal = document.querySelector('#hint-two-original')
         hintTwoOriginal.classList.add('hidden-hint')
         var hintTwo = document.querySelector('#hint-two')
-        hintTwo.innerHTML = `<div>Firt letter: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+        hintTwo.innerHTML = `<div>Primeira letra: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
 
         var buttonHintTwo = document.getElementById('button-hint-two')
         buttonHintTwo.classList.add('button-used')
