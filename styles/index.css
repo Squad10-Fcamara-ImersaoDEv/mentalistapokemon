@@ -509,20 +509,40 @@ footer img{
         margin: auto 4rem auto 0;
     }
     .text1::before{
-        width: 140px;
-        height: 140px;
+        width: 125px;
+        height: 125px;
         margin-right: 2.5rem;
     }
     
     .text2::after{
-        width: 140px;
-        height: 140px;
+        min-width: 125px;
+        height: 125px;
         margin: 0 5rem 0 2.5rem;}
     
     .text3::before{
-        width: 140px;
-        height: 140px;
+        width: 125px;
+        height: 125px;
         margin-right: 2.5rem;
+    }
+    
+    .containerVideo div{
+        position: relative;
+        width: 700px;
+        transform: translateY(-55%);
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .containerVideo div > video{
+        margin-top: 1rem;
+    }
+    
+    .containerVideo img{
+        transform: none;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -585,22 +605,22 @@ footer img{
     }
 
     .text1::before{
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
         margin-right: 1.5rem;
         font-size: 50px;
     }
     
     .text2::after {
-        min-width: 120px;
-        height: 120px;
+        min-width: 110px;
+        height: 110px;
         margin: 0 2.5rem 0 1.5rem;
         font-size: 50px;    
     }
     
     .text3::before{
-        width: 120px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
         margin-right: 2.5rem;
         font-size: 50px;
     }
