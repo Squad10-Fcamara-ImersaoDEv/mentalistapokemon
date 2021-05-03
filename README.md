@@ -6,9 +6,8 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/stenioas/malpi?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/stenioas/malpi?color=violet&style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/stenioas/malpi?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/Squad10-Fcamara-ImersaoDEv/mentalistapokemon?color=violet&style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/Squad10-Fcamara-ImersaoDEv/mentalistapokemon?style=for-the-badge">
 </p>
 
 <h3 align="center">
