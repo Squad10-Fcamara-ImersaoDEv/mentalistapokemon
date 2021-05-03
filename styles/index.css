@@ -659,5 +659,45 @@ footer p{
 }
 
 @media screen and (max-width: 768px) {
-    /*  */
+
+    #responsiveMenu{
+        height: 20vh;
+    }
+
+    .containerMenu > nav {
+        display: none;
+    }
+
+    .containerMenu a:nth-child(3) {
+        display: none;
+    }
+
+    #responsiveAp {
+        height: 80vh;  
+    }
+
+    .containerAp {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        height: 80vh;  
+    }
+
+    .containerAp img{
+        height: 300px;
+        left: auto;
+    }
+
+    .containerAp div {
+        margin: 2rem auto;
+        text-align: center;
+        max-width: 20rem;
+    }
+
+    .containerAp div a{
+        margin: 1.5rem auto;
+        padding: 1rem;
+        font-size: 20px;
+    }
+    
 }
