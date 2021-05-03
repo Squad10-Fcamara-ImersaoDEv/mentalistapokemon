@@ -1,6 +1,7 @@
 body {
     font-family: 'Play', sans-serif;
     background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
+    cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
 #nome-game {
@@ -63,7 +64,43 @@ body {
     font-size: 1.5rem;
 
 }
-curso
+
+.imagem-hint {
+    width: 1rem;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.button-hint {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    height: 2rem;
+    margin: 0.3rem 10%;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #006DB9;
+    font-weight: bold;
+    padding: 0.3rem;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
+
+
+.hidden-hint{
+    opacity:0;
+}
+
+.button-hint:hover {
+    background-color: #FB5555;
+}
+
+.text-hint {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+
 
 .form-input-pokemon {
     background-color:#D5EFF6 ;
@@ -95,6 +132,15 @@ curso
     border-radius: 25%;
     color: rgb(0, 0, 0);
 }
+
+.button-used {
+    background-color: #dddddd;
+    color: black;
+}
+.button-used:hover {
+    background-color: #dddddd;
+}
+
 
 @media (min-width:600px) {
     /* .card-imagempokemonMedium {
