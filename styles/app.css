@@ -6,7 +6,11 @@ body {
     cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
-#nome-game {
+.background-game-desktop {
+    display: none;
+}
+
+#nome-game-cell {
     font-family: 'Play',cursive;
     font-size: 25px;
     font-weight: bold;
@@ -49,10 +53,10 @@ body {
 .containers-money-and-score {
     display: flex;
     width: 100%;
-    
 }
 
 .container-money , .container-score {
+    max-width: 8rem;
     width: 40%;
     height: 2rem;
     margin: 0 5% 14px 5%;
@@ -120,7 +124,7 @@ body {
 
 
 .form-input-pokemon {
-    background: #F0F0F0 #F0F0F0 ;
+    background: #F0F0F0 ;
     border-radius: 10px;
     border: #999 solid 2px;
     margin:auto;
@@ -317,15 +321,54 @@ body {
 }
 
 @media (min-width:1024px) {
+    .containers-money-and-score {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container-money , .container-score {
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    #nome-game-cell {
+        display: none;
+    }
+
+    #nome-game-desktop{
+    font-family: 'Play',cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8rem;
+    }
+
+    .body{
+        background-color: #fff;
+    }
+
+    .background-game-desktop {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: unset;
+    }
+    
+    .background-game { 
+        display:none;
+    }
+
     .responsivite {
         margin-top: 2rem;
         display:flex;
         min-width: 100%;
     }
 
-    .background-game {
-        margin: auto;
-    }
+
 
     .responsivite-left{
         min-width: 65%;
@@ -359,10 +402,17 @@ body {
         vertical-align: middle;
     }
 
+
+    #nome-game {
+        display: none;
+    }
+
     .card-imagempokemonMedium{
-        height: 100%;
         position: absolute;
-        margin-left: -95%;
-        margin-top: 5%;
+        height: 200%;
+        z-index: 10;
+        margin-left: -49%;
+        margin-top: 7%;
+
     }    
 }
