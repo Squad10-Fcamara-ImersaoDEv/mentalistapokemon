@@ -36,14 +36,28 @@
         </div>
         
         <!-- dica um -->
-        <button onclick="WriteHintOne()">Hint One</button>
-        <button onclick="WriteHintTwo()">Hint Two</button>
-        <button onclick="WriteHintThree()">Hint Three</button>
-       
-        <!-- container com os textos das dicas -->
-        <div id="hint-one"></div>
-        <div id="hint-two"></div>        
+        <button class='button-hint' id='button-hint-one' onclick="WriteHintOne()"> 
+            <div class="text-hint ">
+                <div id="hint-one"></div> 
+                <div id="hint-one-original">Type P$ 15 
+                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                </div>
+            </div> 
+        </button>
 
+        <button class='button-hint' id='button-hint-two' onclick="WriteHintTwo()"> 
+            <div class="text-hint ">
+                <div id="hint-two"></div>
+                <div id="hint-two-original">Firt Letter P$25 
+                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                </div>  
+        </button>
+
+        <button class='button-hint' onclick="WriteHintThree()">
+            <div class="text-hint">More Brightness P$35</div>  
+            <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin"> 
+        </button>
+       
     </main>
 
 
