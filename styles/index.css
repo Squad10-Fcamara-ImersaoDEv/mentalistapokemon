@@ -662,7 +662,13 @@ footer p{
 
 
 @media screen and (max-width: 768px) {
-    
+    .containerMenu > nav {
+        display: none;
+    }
+
+    .containerMenu a:nth-child(3) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -706,5 +712,19 @@ footer p{
         padding: 1rem;
         font-size: 20px;
     }
-    
+
+    #responsiveCarrosel > div{
+        margin: 2rem 2rem  0 2rem;
+    }
+
+    #responsiveCarrosel div > h1{
+        font-size: 2rem;
+    }
+
+    #responsiveCarrosel div > a{
+        font-size: 1rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
 }
