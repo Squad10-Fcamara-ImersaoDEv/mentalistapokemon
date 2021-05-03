@@ -84,14 +84,14 @@ cd mentalistapokemon
 <h6 id="contributors"></h6>
 
 ## Participantes
-| Fotinha :) | Nome | Github | Linkedin |
+| Fotinha :smile: | Nome | Github | Linkedin |
 |--|--|--|--|
-|<img src="https://github.com/Arturhen.png" width="80">|Artur Henrique| [github](https://github.com/Arturhen) |
-|<img src="https://github.com/eudouglasassis.png" width="80px">| Douglas Assis||
-	
-	&nbsp&nbspArtur Henrique
-</h4>
-<h4>
+|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
+|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
+|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
+|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
+|<img src="https://github.com/eudouglasassis.png" width="80px">|_Douglas Assis_|[github](https://github.com/eudouglasassis)|
+
 	
 	&nbsp&nbspDouglas Assis
 </h4>
