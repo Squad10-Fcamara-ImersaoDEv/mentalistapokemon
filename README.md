@@ -52,7 +52,7 @@
 
 <h6 id="get-project"></h6>
 
-## :mag: Obtendo o projeto
+## :open_file_folder: Obtendo o projeto
 
 ```bash
 # Clone o repositório
@@ -69,7 +69,7 @@ cd mentalistapokemon
 ## :zap: Tecnologias utilizadas
 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"><img  src="https://img.shields.io/static/v1?label=&message=html5&color=0D1017&style=for-the-badge&logo=html5&logoColor=E34F26&link=https://leftgithub.com"/></a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img  src="https://img.shields.io/static/v1?label=&message=css3&color=0D1017&style=for-the-badge&logo=css3&logoColor=1572B6"/></a> <a href="https://www.javascript.com/"><img  src="https://img.shields.io/static/v1?label=&message=javascript&color=0D1017&style=for-the-badge&logo=javascript&logoColor=F7DF1E"/></a>
 
-## Regras do Jogo
+## :scroll: Regras do Jogo
 
 1. Ao iniciar o jogo pela primeira vez você receberá  **100 pokécoins**;
 2. Você deverá adivinhar o pokémon que aparecerá na tela;
@@ -79,11 +79,30 @@ cd mentalistapokemon
 
 ## Extras
 
-- Uma pokédex está disponível para consulta dentre 898;
+- Pokédex disponível para consulta dentre 898 pokémons;
 
-## Referências
+<h6 id="contributors"></h6>
 
 ## Participantes
+| Fotinha :) | Nome | Github | Linkedin |
+|--|--|--|--|
+|<img src="https://github.com/Arturhen.png" width="80">|Artur Henrique| [github](https://github.com/Arturhen) |
+|<img src="https://github.com/eudouglasassis.png" width="80px">| Douglas Assis||
+	
+	&nbsp&nbspArtur Henrique
+</h4>
+<h4>
+	
+	&nbsp&nbspDouglas Assis
+</h4>
+<h4>
+	<img src="https://github.com/joseprandj.png" width="80px">
+	&nbsp&nbspStenio Almeida
+</h4>
+<h4>
+	<img src="https://github.com/stenioas.png" width="80px">
+	&nbsp&nbspStenio Almeida
+</h4>
 
 ---
 ### :heart: O Squad 10 agradece por dedicar seu tempo a conhecer o nosso projeto!
