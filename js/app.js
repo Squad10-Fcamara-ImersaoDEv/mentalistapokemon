@@ -142,6 +142,7 @@ function sendNamePokemon(){
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)" 
         setTimeout(dadosPokemon,3000)
+        document.querySelector('#nome-pokemon').value = ""
     }
 }
 
