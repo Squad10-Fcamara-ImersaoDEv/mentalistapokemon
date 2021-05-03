@@ -196,11 +196,12 @@ a{
     color: white;}
 
 .containerVideo > div{
-    position: absolute;
+    width: 700px;
     transform: translate(250px, -55%);
 }
 
 .containerVideo div > video{
+    width: 700px;
     border-radius: 20px;
     margin-top: 1rem;
     box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);}
@@ -526,30 +527,35 @@ footer img{
     }
     
     .containerVideo div{
+        width: 625px;
         position: relative;
-        width: 700px;
         transform: translateY(-55%);
         margin-left: auto;
         margin-right: auto;
-        
     }
-    
-    .containerVideo div > video{
-        margin-top: 1rem;
+
+    .containerVideo div video{
+        position: relative;
+        width: 625px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .containerVideo img{
-        transform: none;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -17.5%);
+        width: 380px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .containerMenu nav a{
         margin: auto 0.75rem;
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .containerMenu > a{
@@ -623,6 +629,32 @@ footer img{
         height: 110px;
         margin-right: 2.5rem;
         font-size: 50px;
+    }
+
+    .containerVideo div{
+        font-size: 18px;
+        width: 525px;
+        position: relative;
+        transform: translateY(-55%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .containerVideo div video{
+        position: relative;
+        width: 525px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .containerVideo img{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -17.5%);
+        width: 320px;
     }
 }
 
