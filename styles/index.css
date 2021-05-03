@@ -662,7 +662,13 @@ footer p{
 
 
 @media screen and (max-width: 768px) {
-    
+    .containerMenu > nav {
+        display: none;
+    }
+
+    .containerMenu a:nth-child(3) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -706,5 +712,136 @@ footer p{
         padding: 1rem;
         font-size: 20px;
     }
+
+    #responsiveCarrosel > div{
+        margin: 2rem 2rem  0 2rem;
+    }
+
+    #responsiveCarrosel div > h1{
+        font-size: 2rem;
+    }
+
+    #responsiveCarrosel div > a{
+        font-size: 1rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .gallery {
+        height: 60vh;
+    }
+
+    .containerRules{
+        font-size: 1.5rem;
+        height: 1400px;
+    }
     
+    .containerRules h1{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        padding: 2rem 0 0 2rem;
+
+    }
+    
+    .rulesGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:    "text1"
+                                "text2"
+                                "text3";}
+    
+    .rulesGrid img{
+        display: none;
+        grid-area: img;
+        margin-top: 50%;
+    }
+    
+    .text1{
+        margin-right: 1.5rem;
+    }
+    
+    .text2{
+        grid-area: text2;
+        display: inline-flex;
+        text-align: right;
+    }
+    
+    .text3{
+        margin: auto 6rem auto 0;
+    }
+    
+    .text1, .text2, .text3{
+        align-self: center;}
+    
+    .text1::before{
+        font-size: 2rem;
+        font-weight: 1000;
+        float: left;
+        border: 2px solid #FFFFFF;
+        border-radius: 20px;
+        width: 85px;
+        height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.5rem;
+    }
+    
+    .text2::after{
+        content: '2';
+        font-size: 4rem;
+        font-weight: 1000;
+        border: 2px solid #FFFFFF;
+        border-radius: 38px;
+        min-width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 7.5rem 0 3rem;}
+    
+    .text3::before{
+        content: '3';
+        font-size: 4rem;
+        font-weight: 1000;
+        float: left;
+        border: 2px solid #FFFFFF;
+        border-radius: 38px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 3rem;}
+    
+
+    .containerVideo{
+        position: relative;
+        font-family: 'Noto Sans';
+        max-width: 1200px;
+        height: 350px;
+        margin: auto;
+        font-size: 20px;
+        color: white;}
+    
+    .containerVideo > div{
+        width: 100%;
+        transform: translateY(-50%);
+    }
+    
+    .containerVideo div > video{
+        width: 100%;
+        border-radius: 0;
+    }
+    .containerVideo img{
+        height: 200px;
+        margin: 0px -50% 0px 0px;
+        transform: translate(-50%, -10%);  
+    }
+
+
+
+
+
+
 }

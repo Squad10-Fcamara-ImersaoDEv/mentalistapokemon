@@ -154,14 +154,80 @@ function sendNamePokemon(){
     }
 }
 
+function traduzirPokemon(pokemonTypes) {
+    var tipoPokemonTraduzido = []
+    for(let i=0 ; i < pokemonTypes.length ; i++){
+        switch (pokemonTypes[i]) {
+            case "grass":
+                tipoPokemonTraduzido[i] = "Grama"     
+                break;
+            case "fire":
+                tipoPokemonTraduzido[i] = "Fogo"  
+                break;
+            case "water":
+                tipoPokemonTraduzido[i] = "Agua"    
+                break;
+            case "poison":
+                tipoPokemonTraduzido[i] = "Veneno"                  
+                break;
+            case "psychic":
+                tipoPokemonTraduzido[i] = "Psíquico"   
+                break;
+            case "ground":
+                tipoPokemonTraduzido[i] = "Terra"
+                break;
+            case "electric":
+                tipoPokemonTraduzido[i] = "Elétrico"
+                break; 
+            case "flying":
+                tipoPokemonTraduzido[i] = "Voador"
+                break;
+            case "ice" :
+                tipoPokemonTraduzido[i] = "Gelo"
+                break;
+            case "bug" :
+                tipoPokemonTraduzido[i] = "Inseto"
+                break;    
+            case "dark" :
+                tipoPokemonTraduzido[i] = "Sombrio"
+                break;    
+            case "dragon" :
+                tipoPokemonTraduzido[i] = "Dragão"
+                break;  
+            case "fairy" :
+                tipoPokemonTraduzido[i] = "Fada"
+                break;
+            case "fighting" :
+                tipoPokemonTraduzido[i] = "Lutador"
+                break;         
+            case "ghost" :
+                tipoPokemonTraduzido[i] = "Fantasma"
+                break;  
+            case "rock" :
+                tipoPokemonTraduzido[i] = "Pedra"
+                break;   
+            case "steel" :
+                tipoPokemonTraduzido[i] = "Aço"
+                break;   
+            default:
+                tipoPokemonTraduzido[i] = "Normal"
+                break;
+        }
+    }
+    return tipoPokemonTraduzido
+}
 
 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOneOriginal = document.querySelector('#hint-one-original')
         hintOneOriginal.classList.add('hidden-hint')
+        
+        tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
+        console.log(tipoPokemon)
+        
         var hintOne = document.querySelector('#hint-one')
-        hintOne.innerHTML = `<div>Pokemon type(s): ${pokemonOnScreen.types}<\div>`
+        hintOne.innerHTML = `<div>O pokemon é tipo: ${tipoPokemon}<\div>`
         
         var buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
