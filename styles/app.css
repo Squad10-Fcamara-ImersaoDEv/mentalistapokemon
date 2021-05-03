@@ -43,16 +43,30 @@ body {
     filter: brightness(0);
 }
 
-.container-money {
-    background-color: #FFF9C2;
-    width: 30%;
+.containers-money-and-score {
+    display: flex;
+    width: 100%;
+    
+}
+
+.container-money , .container-score {
+    width: 40%;
     height: 4rem;
-    margin: 0 0 10px 10%;
+    margin: 0 5% 10px 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     border: black 2px solid;
+}
+
+
+.container-money{
+    background-color: #FFF9C2;
+}
+.container-score{
+    font-size: 1.5rem;
+    background-color: #8affa7;   
 }
 
 #imagem-pokecoin {
