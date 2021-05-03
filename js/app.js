@@ -252,3 +252,11 @@ modal.addEventListener('click', function(e) {
 
 displayModal();
 closeModal();
+
+//skip button
+
+function skipPokemon() {
+    setTimeout(dadosPokemon,1500)
+    var imagemPokemon = document.getElementById('filtro')
+    imagemPokemon.style.filter = "brightness(100%)" 
+}
