@@ -6,7 +6,7 @@ body {
     cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
-.background-game-desktop {
+.background-game-desktop , #nome-game-desktop {
     display: none;
 }
 
