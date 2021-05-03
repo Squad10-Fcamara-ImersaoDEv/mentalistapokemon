@@ -190,12 +190,13 @@ a{
     position: relative;
     font-family: 'Noto Sans';
     max-width: 1200px;
-    height: 550px;
+    height: 570px;
     margin: auto;
     font-size: 20px;
     color: white;}
 
 .containerVideo > div{
+    position: absolute;
     width: 700px;
     transform: translate(250px, -55%);
 }
@@ -207,26 +208,22 @@ a{
     box-shadow: 0px 44px 63px -12px rgba(0,0,0,0.57);}
 
 .containerVideo img{
-    transform: translate(700px, -51%);
+    transform: translate(700px, 50%);
 }
     
-
 footer{
     display: flex;
     height: 90px;
     max-width: 1200px;
     margin: auto;
     align-items: center;
-    justify-content: space-between;}
+    justify-content: center;
+}
 
 footer p{
     margin-left: 6rem;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;}
-
-footer img{
-    margin-right: 3rem;
-    height: 50px;}
 
 #responsiveCarrosel{
     max-width: 1200px;
@@ -403,73 +400,11 @@ footer img{
     width: 50px;
     height: 50px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
     z-index: 999;
     cursor: url(../pokebolaAberta.cur), pointer;
 }
-
-/* media */
-
-/* @media (width: 1100px) {
-
-    .containerMenu{
-        font-size: 19px;}
-
-    .text1{
-            margin: auto 3rem auto auto;}
-    
-    .text2::after{
-        margin: 0 4rem 0 3rem;}
-    
-    .text3{
-        grid-area: text3;
-        margin: auto 3rem auto auto;}
-    
-    .containerVideo > div{
-        transform: translate(200px, -55%);}
-    
-    .containerVideo img{
-        transform: translate(650px, 55%);    }
-     
-}
-
-@media (width: 1000px) {
-
-    .containerMenu nav, a{
-        font-size: 18px;    }
-    
-    .containerMenu > a{
-        margin-right: 1rem;    }
-    
-    .containerAp img{
-        left: 2rem;}
-
-    .containerCarrosel {
-        height: 500px;}
-        
-    .containerCarrosel > div{
-        margin: 0;}
-
-    .containerRules{
-        font-size: 1.3rem;}
-    
-    .text1{
-        margin: auto 4rem auto 0;}
-    
-    .text3{
-        margin: auto 4rem auto 0;}
-    
-    .text2::after{
-        margin: 0 4rem 0 3rem;}
-
-    .containerVideo > div{
-        transform: translate(150px, -55%);}
-
-    .containerVideo img{
-        transform: translate(570px, 55%);}
-     
-} */
 
 @media screen and (max-width: 1200px) {
     .containerMenu nav a{
@@ -485,6 +420,10 @@ footer img{
 
     .containerAp div{
         margin-left: 3rem;
+    }
+
+    #responsiveCarrosel h1 {
+        font-size: 3rem;
     }
 
     .containerCarrosel {
@@ -506,18 +445,28 @@ footer img{
     }
 
     .containerRules {
-        height: 1300px;
         font-size: 1.5rem;
+        height: 1150px;
     }
+    
+    .rulesGrid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 25vh 25vh 25vh;
+        grid-template-areas:    "img text1"
+                                "img text2"
+                                "img text3";
+        }
     
     .containerRules h1 {
         font-size: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         padding: 5rem 0 0 6rem;
     }
     
     .rulesGrid img {
-        margin-top: 50%;
+        margin-top: 20%;
+
     }
     
     .text1 {
@@ -531,22 +480,18 @@ footer img{
     .text3 {
         margin: auto 4rem auto 0;
     }
-    .text1::before{
+    .text1::before, .text3::before{
         width: 125px;
         height: 125px;
         margin-right: 2.5rem;
+        border-radius: 30px;
     }
     
     .text2::after{
         min-width: 125px;
         height: 125px;
-        margin: 0 5rem 0 2.5rem;}
-    
-    .text3::before{
-        width: 125px;
-        height: 125px;
-        margin-right: 2.5rem;
-    }
+        margin: 0 5rem 0 2.5rem;
+        border-radius: 30px;}
     
     .containerVideo div{
         width: 625px;
@@ -609,6 +554,10 @@ footer img{
         margin-bottom: 5rem;
     }
 
+    #responsiveCarrosel h1 {
+        font-size: 3rem;
+    }
+
     .gallery {
         font-family: 'Ubuntu', sans-serif;
         position: absolute;
@@ -625,7 +574,7 @@ footer img{
     }
     
     .containerRules h1 {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
         padding: 5rem 0 0 6rem;
     }
@@ -634,42 +583,48 @@ footer img{
         align-items: center;
     }
 
-    .rulesGrid img {
-        margin-top: 50%;
-        width: 24rem;
+    .containerRules {
+        font-size: 1.25rem;
+        height: 1000px;
     }
     
-    .text1 {
-        margin: auto 2.5rem auto 0;
+    .rulesGrid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 25vh 25vh 25vh;
+        grid-template-areas:    "img text1"
+                                "img text2"
+                                "img text3";
+        }
+    
+    .rulesGrid img {
+        margin-top: 20%;
+        width: 40vh;
+
+    }
+    
+    .text1, .text3 {
+        margin: auto 1.5rem auto 0;
     }
     
     .text2 {
         margin: auto 0 auto 0.5rem;
     }
-    
-    .text3 {
-        margin: auto 2.5rem auto 0;
-    }
 
-    .text1::before{
+    .text1::before, .text3::before{
         width: 110px;
         height: 110px;
         margin-right: 1.5rem;
         font-size: 50px;
+        border-radius: 25px;
     }
     
     .text2::after {
         min-width: 110px;
         height: 110px;
-        margin: 0 2.5rem 0 1.5rem;
-        font-size: 50px;    
-    }
-    
-    .text3::before{
-        width: 110px;
-        height: 110px;
-        margin-right: 2.5rem;
-        font-size: 50px;
+        margin: 0 1.5rem 0 1.5rem;
+        font-size: 50px; 
+        border-radius: 25px;   
     }
 
     .containerVideo {
