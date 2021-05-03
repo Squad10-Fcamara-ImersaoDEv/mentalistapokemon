@@ -358,9 +358,9 @@ body {
     }
 
     .card-imagempokemonMedium{
-        height: 52%;
+        height: 100%;
         position: absolute;
-        margin-left: -88%;
-        margin-top: -20%;
+        margin-left: -95%;
+        margin-top: 5%;
     }    
 }
