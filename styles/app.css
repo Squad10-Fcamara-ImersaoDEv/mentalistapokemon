@@ -2,13 +2,14 @@ body {
     min-width: 100%;
     min-height: 100%;
     font-family: 'Play', sans-serif;
-    background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
+    background-color: #F6F6F6;;
     cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
 #nome-game {
-    font-family: 'Pokemon', 'Play';
-    font-size: 2rem;
+    font-family: 'Play',cursive;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
     margin-top: 10px;
 }
@@ -26,7 +27,7 @@ body {
 
 .background-game {
     width: 100%;
-    margin: 1.5rem auto;
+    margin: 14px auto 5px auto;
     position:relative;
 }
 
@@ -53,13 +54,13 @@ body {
 
 .container-money , .container-score {
     width: 40%;
-    height: 4rem;
-    margin: 0 5% 10px 5%;
+    height: 2rem;
+    margin: 0 5% 14px 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: black 2px solid;
+    font-size: 1.2rem;
 }
 
 
@@ -67,19 +68,15 @@ body {
     background-color: #FFF9C2;
 }
 .container-score{
-    font-size: 1.5rem;
     background-color: #8affa7;   
 }
 
 #imagem-pokecoin {
-    width: 3rem;
+    width: 1.2rem;
     margin-left: 0.5rem;
 }
 
-.money-player {
-    font-size: 1.5rem;
 
-}
 
 .imagem-hint {
     width: 1rem;
@@ -92,13 +89,13 @@ body {
 }
 
 .button-hint {
-    margin: 0.3rem auto ;
+    margin: 0.4rem auto ;
     display: block;
     width: 80%;
-    max-width: 300px;
-    height: 2rem;
+    max-width: 20rem;
+    height: 2.5rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #FFFFFF;
     background-color: #006DB9;
     font-weight: bold;
@@ -123,34 +120,35 @@ body {
 
 
 .form-input-pokemon {
-    background-color:#D5EFF6 ;
-    border-radius: 25px;
-    border: black solid 2px;
+    background: #F0F0F0 #F0F0F0 ;
+    border-radius: 10px;
+    border: #999 solid 2px;
     margin:auto;
     max-width: 20rem;
-    width: 90%;
-    height: 3.5Rem;
+    width: 80%;
+    height: 2.5Rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .input-pokemon {
-    background-color:#D5EFF6 ;
+    background-color:#F0F0F0 ;
     border: none;
     font-size: 1.4rem;
-    max-width: 14rem;
+    max-width: 17.5rem;
     display: inline-block;
-    width: 65%;
+    width: 90%;
 }
 
 .button-send {
-    background: #bbbbbb;
+    background: #006DB9;
     border: none;
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    font-weight: bold;
+    width: 2.5rem;
     border-radius: 25%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .button-used {
@@ -162,10 +160,12 @@ body {
 }
 
 .back-to-home {
-    background-color: #570000;
+    width: 22%;
+    background-color: #333;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    text-align: center;
     display: inline-block;
     font-size: 0.9em;
     letter-spacing: 0.1em;
@@ -175,7 +175,7 @@ body {
   }
 
 .back-to-home:hover {
-    background-color: rgb(56, 56, 56);
+    background-color: #999;
 }  
 .showtime {
     opacity: 1 !important;
@@ -261,28 +261,30 @@ body {
 }
 
 .skip-and-exit {
+    width: 80%;
+    max-width: 20rem;
     position: relative;
-    display: flex;
-    justify-content: center;
+    margin:auto;
 }
 
 .skip-button {
-    background-color: darkslateblue;;
+    width: 60%;
+    background-color: #0C4C78;;
     border-radius: 4px;
+    margin-right: 8%;
     color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 0.9em;
     letter-spacing: 0.1em;
-    padding: 10px 10px;
-    margin-right: 10px;
+    padding: 10px;
     text-transform: uppercase;
     border: none;
     cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
 .skip-button:hover {
-    background-color: rgb(76, 4, 124);
+    background-color: #999;
 }
 
 @media (min-width:600px) {
@@ -322,7 +324,7 @@ body {
     }
 
     .background-game {
-    margin: auto;
+        margin: auto;
     }
 
     .responsivite-left{
