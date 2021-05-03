@@ -76,7 +76,7 @@ cd mentalistapokemon
 1. Ao iniciar o jogo pela primeira vez você receberá  **100 pokécoins**;
 2. Você deverá adivinhar o pokémon que aparecerá na tela;
 3. Serão disponibilizadas 3 dicas para ajudá-lo a descobrir quem é esse pokémon;
-4. As dicas não serão gratuitas, você precisa ter **pokécoins** p[enter link description here](https://codepen.io/imersao-dev/pen/vYgBwoj)ara desbloqueá-las;
+4. As dicas não serão gratuitas, você precisa ter **pokécoins** para desbloqueá-las;
 5. Acertando o **pokémon** você receberá **25 pokécoins** e avançará para a próxima conquista;
 
 <h6 id="extras"></h6>
