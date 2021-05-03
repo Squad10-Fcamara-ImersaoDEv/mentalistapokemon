@@ -1,28 +1,44 @@
-<h1 vertical-align="center">
+<h1 align="center">
+  <img src="https://github.com/Squad10-Fcamara-ImersaoDEv/mentalistapokemon/blob/main/assets/pokecoin.png?raw=true" width="40px">
   Mentalista Pokémon
-  <img src="https://github.com/Squad10-Fcamara-ImersaoDEv/mentalistapokemon/blob/main/assets/pokecoin.png?raw=true" width="100px">
+  <img src="https://github.com/Squad10-Fcamara-ImersaoDEv/mentalistapokemon/blob/main/assets/pokecoin.png?raw=true" width="40px">
+ 
+<p align="center">
+  <img src="https://img.shields.io/badge/Maintained%3F-Yes-green?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/stenioas/malpi?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/stenioas/malpi?color=violet&style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/stenioas/malpi?style=for-the-badge">
+</p>
 </h1>
 
-<h3>
+<h3 align="center">
   Conquiste todos os Pokémons e se torne um verdadeiro Mestre!
 </h3>
 
-<p>
-	<a href="#notes">Notas</a> - 
-	<a href="#requirements">Requisitos</a> - 
-	<a href="#get-project">Obtendo o projeto</a> - 
-	<a href="#technologies">Tecnologias</a> - 
-	<a href="#contributing">Contribuindo</a> - 
-	<a href="#author">Autores</a> -
+<p align="center">
+	| <a href="#notes">Notas</a> | 
+	<a href="#requirements">Requisitos</a> | 
+	<a href="#get-project">Obtendo o projeto</a> | 
+	<a href="#technologies">Tecnologias</a> | 
+	<a href="#contributing">Contribuindo</a> | 
+	<a href="#author">Autores</a> |
 </p>
-<p>Projeto realizado durante o Hackathon do programa de formação do Grupo FCamara em parceria com o evento Imersão Dev da Alura.</p>
 
-<p><a href="https://youtu.be/plAaZUxDaeU" target="_blank">Assista ao vídeo de demonstração.</a></p>
+<p align="center"><a href="https://youtu.be/plAaZUxDaeU" target="_blank">Assista ao vídeo de demonstração.</a></p>
 
 <h6 id="notes"></h6>
 
 ## Notas
-* O desafio proposto foi transformar um dos projetos desenvolvidos na Imersão Dev em uma solução.
+- Projeto realizado durante o Hackathon do programa de formação do Grupo FCamara em parceria com o evento Imersão Dev da Alura.
+- O desafio proposto foi transformar um dos projetos desenvolvidos na Imersão Dev em uma solução, melhorando-o e inovando conforme a nossa capacidade.
+
+#### Projetos realizados na Imersão Dev
+1. [Conversor de Moedas](https://codepen.io/imersao-dev/pen/zYNOZRX)
+2. [Calculadora](https://codepen.io/imersao-dev/pen/ExZYmWP)
+3. 
+
+
+
 
 <h6 id="requirements"></h6>
 
@@ -64,9 +80,9 @@ cd mentalistapokemon
 
 - Uma pokédex está disponível para consulta dentre 898;
 
-
-
 ## Referências
+
+## Participantes
 
 ---
 ### :heart: O Squad 10 agradece por dedicar seu tempo a conhecer o nosso projeto!
