@@ -1,4 +1,6 @@
 body {
+    min-width: 100%;
+    min-height: 100%;
     font-family: 'Play', sans-serif;
     background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
     cursor: url(../assets/cursores/pokebola.cur), auto;
@@ -313,12 +315,33 @@ body {
 }
 
 @media (min-width:1024px) {
+    .responsivite {
+        margin-top: 2rem;
+        display:flex;
+        min-width: 100%;
+    }
+
+    .background-game {
+    margin: auto;
+    }
+
+    .responsivite-left{
+        min-width: 65%;
+    }
+
+    .responsivite-right{
+        min-width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+    
+    .form-input-pokemon  {
+        margin:1rem auto;
+    }
     /*
     left: 40%;
     top: 40%;*/
-    .background-game {
-        width: 80%;  
-    }
 
     .modal-exit {
         width: 24%;
