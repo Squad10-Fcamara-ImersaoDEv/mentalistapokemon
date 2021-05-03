@@ -149,6 +149,10 @@ body {
     text-align: center;
 }
 
+.back-to-home:hover {
+    background-color: rgb(56, 56, 56);
+}
+
 .back-to-home-link {
     color: white;
     text-decoration: none;
