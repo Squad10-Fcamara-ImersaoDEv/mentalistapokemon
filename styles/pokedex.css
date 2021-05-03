@@ -280,22 +280,32 @@ a{
 
 footer{
     background-color:#006db9 ;
+    color: #efefef;
     display: flex;
     height: 100px;
     margin-top: 5vh;
-    
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
 }
 
 footer p{
-    margin-left: 6rem;
+    display: inline-block;
+    margin-left: 2rem;
     font-size: 16px;
 }
 
 footer img{
+    display: inline-block;
     margin-right: 3rem;
     height: 50px;
+}
+
+.footer-max {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;  
 }
 
 /* medias */
