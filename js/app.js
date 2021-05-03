@@ -35,6 +35,7 @@ async function showPokemon(id) {
     console.log(pokemonData.types[0])
     return pokemonData;
 }
+
 var pokemonOnScreen = []
 
 async function dadosPokemon(){
@@ -216,3 +217,38 @@ function WriteHintThree(){
 //         imageDirectory = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/'
 //     }
 // }
+
+
+//Modal 
+function displayModal() {
+    var modal = document.querySelector('#modal-exit')
+    var button = document.querySelector('#button')
+  
+    button.addEventListener('click', function(e) {
+      e.preventDefault()
+  
+      if (modal.classList.contains('showtime') === false) {
+        modal.classList.add('showtime')
+      } else {
+        return
+      }
+    });
+  }
+  
+function closeModal() {
+var modal = document.querySelector('#modal-exit')
+
+modal.addEventListener('click', function(e) {
+    e.preventDefault()
+    
+    if ( e.target.id === "modal-confirm") {
+    modal.classList.remove('showtime')
+    }
+    if ( e.target.id === "modal-cancel"){
+    window.location.href ='./index.html'
+    }
+})
+}
+
+displayModal();
+closeModal();
