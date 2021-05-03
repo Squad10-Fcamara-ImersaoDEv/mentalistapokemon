@@ -77,7 +77,9 @@ a{
 .containerAp div{
     position: absolute;
     max-width: 450px;
-    grid-area: a;}
+    grid-area: a;
+}
+    
 
 .containerAp div a{
     background-color: #006DB9;
@@ -658,7 +660,12 @@ footer p{
     }
 }
 
+
 @media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 380px) {
 
     #responsiveMenu{
         height: 20vh;
@@ -684,7 +691,7 @@ footer p{
     }
 
     .containerAp img{
-        height: 300px;
+        height: 45vh;
         left: auto;
     }
 
