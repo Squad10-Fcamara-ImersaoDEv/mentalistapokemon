@@ -47,6 +47,9 @@ async function dadosPokemon(){
     let moneyPlayer = document.querySelector('.money-player')
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
     
+    let scorePlayer = document.querySelector('.container-score')
+    scorePlayer.innerHTML = `SCORE : ${cureentPlayerScore}`
+
     if (hintOneShow == true){
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = ''
@@ -132,6 +135,9 @@ dadosPokemon()
 //Variavel que guarda dinheiro do jogador
 var currentPlayerMoney = 100
 
+//
+var cureentPlayerScore = 0
+ 
 //função linkada ao botão enviar que a pessoa envia o que ta dentro do input
 function sendNamePokemon(){
     var inputNomePokemon = document.querySelector('#nome-pokemon')
@@ -139,6 +145,7 @@ function sendNamePokemon(){
     console.log(inputNomePokemon)
     console.log(pokemonOnScreen)
     if(inputNomePokemon == pokemonOnScreen.name){
+        cureentPlayerScore += 1
         currentPlayerMoney += 25
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)" 
@@ -256,6 +263,7 @@ closeModal();
 //skip button
 
 function skipPokemon() {
+    cureentPlayerScore -= 1
     setTimeout(dadosPokemon,1500)
     var imagemPokemon = document.getElementById('filtro')
     imagemPokemon.style.filter = "brightness(100%)" 
