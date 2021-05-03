@@ -141,6 +141,21 @@ body {
     background-color: #dddddd;
 }
 
+.back-to-home {
+    background-color: rgb(131, 0, 0);
+    width: 5rem;
+    height: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-to-home-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
+
 
 @media (min-width:600px) {
     /* .card-imagempokemonMedium {
