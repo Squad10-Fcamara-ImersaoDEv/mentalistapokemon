@@ -20,7 +20,7 @@
 	<a href="#requirements">Requisitos</a> | 
 	<a href="#get-project">Obtendo o projeto</a> | 
 	<a href="#technologies">Tecnologias</a> | 
-	<a href="#contributing">Contribuindo</a> | 
+	<a href="#contributors">Participantes</a> | 
 	<a href="#author">Autores</a> |
 </p>
 
@@ -28,21 +28,22 @@
 
 <h6 id="notes"></h6>
 
-## Notas
+## :memo: Notas
 - Projeto realizado durante o Hackathon do programa de formação do Grupo FCamara em parceria com o evento Imersão Dev da Alura.
 - O desafio proposto foi transformar um dos projetos desenvolvidos na Imersão Dev em uma solução, melhorando-o e inovando conforme a nossa capacidade.
-
-#### Projetos realizados na Imersão Dev
+---
+#### Projetos da Imersão Dev
 1. [Conversor de Moedas](https://codepen.io/imersao-dev/pen/zYNOZRX)
 2. [Calculadora](https://codepen.io/imersao-dev/pen/ExZYmWP)
-3. 
-
-
-
+3. [Mentalista](https://codepen.io/imersao-dev/pen/vYgBwoj)
+4. [AluraFlix](https://codepen.io/imersao-dev/pen/BapaBPO)
+5. [Tabela de Classificação](https://codepen.io/imersao-dev/pen/qBRBBrx)
+6. [Super Trunfo](https://codepen.io/imersao-dev/pen/dyNyyLa)
+7. [Certificard](https://codepen.io/imersao-dev/pen/QWdGWYv)
 
 <h6 id="requirements"></h6>
 
-## Requisitos do desafio
+## :heavy_check_mark: Requisitos do desafio
 
 - Deverá ser uma aplicação web responsiva;
 - Deverá ser entregue no mínimo 3 telas do projeto;
@@ -73,7 +74,7 @@ cd mentalistapokemon
 1. Ao iniciar o jogo pela primeira vez você receberá  **100 pokécoins**;
 2. Você deverá adivinhar o pokémon que aparecerá na tela;
 3. Serão disponibilizadas 3 dicas para ajudá-lo a descobrir quem é esse pokémon;
-4. As dicas não serão gratuitas, você precisa ter **pokécoins** para desbloqueá-las;
+4. As dicas não serão gratuitas, você precisa ter **pokécoins** p[enter link description here](https://codepen.io/imersao-dev/pen/vYgBwoj)ara desbloqueá-las;
 5. Acertando o **pokémon** você receberá **25 pokécoins** e avançará para a próxima conquista;
 
 ## Extras
