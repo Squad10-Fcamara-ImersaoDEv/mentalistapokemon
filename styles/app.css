@@ -71,12 +71,16 @@ body {
     margin-top: 1px;
 }
 
+.buttons-hint {
+    position: relative;
+}
+
 .button-hint {
+    margin: 0.3rem auto ;
     display: block;
     width: 80%;
     max-width: 300px;
     height: 2rem;
-    margin: 0.3rem 10%;
     border: none;
     border-radius: 8px;
     color: #FFFFFF;
@@ -170,14 +174,15 @@ body {
     box-sizing: border-box;
     color: #303030;
     display: inline-block;
-    max-width: 360px;
+    width: 90%;
+    max-width: 400px;
     opacity: 0;
     transform: translateY(24px);
     transition: transform 0.14s, opacity 0.14s ease-in-out;
     visibility: hidden;
     position: fixed; /* Stay in place */
-    left:10%;
-    top: 50%;
+    left: 5%;
+    top: 40%;
     z-index: 10;
 }
 
@@ -211,6 +216,7 @@ body {
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
+    float: left;
     font-size: .7em;
     font-weight: 600;
     letter-spacing: .09em;
@@ -238,6 +244,12 @@ body {
     color: #121212;
 }
 
+.skip-and-exit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width:600px) {
     /* .card-imagempokemonMedium {
         height: 250px;
@@ -251,7 +263,9 @@ body {
 }
 
 @media (min-width:800px) {
-    
+    /*
+    left: 40%;
+    top: 40%;*/
     .background-game {
         width: 80%;  
     }
