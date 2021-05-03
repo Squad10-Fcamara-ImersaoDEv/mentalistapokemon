@@ -474,6 +474,14 @@ footer img{
     .containerMenu > a{
         max-width: 8rem;
     }
+
+    .containerAp img{
+        left: 3rem;
+    }
+
+    .containerAp div{
+        margin-left: 3rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -490,34 +498,18 @@ footer img{
     .containerMenu nav {
         margin: auto 1rem auto 2rem;
     }
-}
 
-@media screen and (max-width: 992px) {
-    .containerMenu nav a{
-        margin: auto 0.5rem;
+    .containerAp img{
+        left: 1rem;
     }
-    
-    .containerMenu > a{
-        max-width: 7rem;
-        margin-right: 2.75rem;
-        margin-left: 0;
-    }
-    .containerMenu nav {
-        margin: auto 1rem auto 2rem;
+
+    .containerAp div{
+        margin-left: 5rem;
+        max-width: 15rem;
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 992px) {
-    .containerMenu nav a{
-        margin: auto 0.5rem;
-    }
-    
-    .containerMenu > a{
-        max-width: 7rem;
-        margin-right: 2.75rem;
-        margin-left: 0;
-    }
-    .containerMenu nav {
-        margin: auto 1rem auto 2rem;
-    }
+@media screen and (max-width: 768px) {
+    /*  */
 }
