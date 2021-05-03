@@ -15,13 +15,13 @@
 </h3>
 
 <p align="center">
-	| <a href="#notes">Notas</a> | 
-	<a href="#requirements">Requisitos</a> | 
-	<a href="#get-project">Obtendo o projeto</a> | 
-	<a href="#technologies">Tecnologias</a> | 
-	<a href="#rules">Regras</a> | 
-	<a href="#extras">Extras</a> | 
-	<a href="#contributors">Participantes</a> |
+	<a href="#notes">Notas</a> • 
+	<a href="#requirements">Requisitos</a> • 
+	<a href="#get-project">Obtendo o projeto</a> • 
+	<a href="#technologies">Tecnologias</a> • 
+	<a href="#rules">Regras</a> • 
+	<a href="#extras">Extras</a> • 
+	<a href="#contributors">Participantes</a>
 </p>
 
 ---
