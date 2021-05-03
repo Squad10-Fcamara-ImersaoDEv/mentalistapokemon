@@ -705,12 +705,13 @@ footer p{
         margin: 2rem auto;
         text-align: center;
         max-width: 20rem;
+        font-size: 17px;
     }
 
     .containerAp div a{
         margin: 1.5rem auto;
-        padding: 1rem;
-        font-size: 20px;
+        padding: 0.8rem;
+        font-size: 18px;
     }
 
     #responsiveCarrosel > div{
@@ -726,5 +727,99 @@ footer p{
         margin-right: 0;
         text-align: center;
     }
+
+    .gallery {
+        height: 60vh;
+    }
+
+    .containerRules{
+        font-size: 1.5rem;
+        height: 105vh;
+    }
+    
+    .containerRules h1{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        padding: 2rem 0 0 2rem;
+
+    }
+    
+    .rulesGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5vh;
+        grid-template-areas:    "text1"
+                                "text2"
+                                "text3";}
+    
+    .rulesGrid img{
+        display: none;
+        grid-area: img;
+        margin-top: 50%;
+    }
+    
+    .text1, .text3{
+        margin-right: 1.5rem;
+    }
+    
+    .text2{
+        margin-left: 1.5rem;
+    }
+    
+    .text1, .text2, .text3{
+        align-self: center;
+        font-size: 16px ;
+    }
+    
+    .text1::before, .text3::before{
+        font-size: 2rem;
+        border-radius: 20px;
+        width: 85px;
+        height: 85px;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+    
+    .text2::after{
+        font-size: 2rem;
+        border-radius: 20px;
+        min-width: 85px;
+        height: 85px;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+
+    .containerVideo{
+        height: 350px;   
+    }
+    
+    .containerVideo > div{
+        width: 100%;
+        transform: translateY(-50%);
+    }
+    
+    .containerVideo div h2{
+        text-align: center;
+    }
+
+    .containerVideo div > video{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .containerVideo img{
+        height: 200px;
+        margin: 0px -50% 0px 0px;
+        transform: translate(-50%, -10%);  
+    }
+    
+    footer p{
+        margin: 0 2rem 0 2rem;
+    
+        font-size: 15px;
+    }
+
+    #back-to-top {
+        display: none;
+    }
+
 
 }
