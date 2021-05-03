@@ -72,11 +72,22 @@ async function dadosPokemon(){
         hintTwoShow = false
     }
 
-    hintTreeShow = false
+    if (hintThreeShow == true){
+        var hintThree = document.querySelector('#hint-three')
+        hintThree.innerHTML = ''
+
+        var hintThreeOriginal = document.querySelector('#hint-three-original')
+        hintThreeOriginal.classList.remove('hidden-hint')
+
+        var buttonHintThree = document.getElementById('button-hint-three')
+        buttonHintThree.classList.remove('button-used')
+
+        hintThreeShow = false
+    }
 }
 
 var hintTwoShow = false
-var hintTreeShow = false
+var hintThreeShow = false
 var hintOneShow = false
 
 //Geracoes de pokemon
@@ -156,8 +167,8 @@ function WriteHintOne(){
 
 function WriteHintTwo(){
     if(currentPlayerMoney >= 25 & !hintTwoShow){
-        var hintOneOriginal = document.querySelector('#hint-two-original')
-        hintOneOriginal.classList.add('hidden-hint')
+        var hintTwoOriginal = document.querySelector('#hint-two-original')
+        hintTwoOriginal.classList.add('hidden-hint')
         var hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>Firt letter: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
 
@@ -173,15 +184,25 @@ function WriteHintTwo(){
 }
 
 function WriteHintThree(){
-    if(currentPlayerMoney >= 35 & !hintTreeShow){
-        var hintThree = document.querySelector('#hint-three')
+    if(currentPlayerMoney >= 35 & !hintThreeShow){
         var imagem = document.getElementById("filtro")
         imagem.style.filter = "brightness(20%)"
     
+        var hintThreeOriginal = document.querySelector('#hint-three-original')
+        hintThreeOriginal.classList.add('hidden-hint')
+
+        var hintThree = document.querySelector('#hint-three')
+        hintThree.innerHTML = `<div>The image is already clearer<\div>`
+
+        var buttonHintThree = document.getElementById('button-hint-three')
+        buttonHintThree.classList.add('button-used')
+
+
         currentPlayerMoney -= 35
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
-        hintTreeShow = true
+        
+        hintThreeShow = true
     }
 }
 
