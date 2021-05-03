@@ -18,9 +18,31 @@
 ## Notas
 * O desafio proposto foi transformar um dos projetos desenvolvidos na Imersão Dev em uma solução.
 
-## Requisitos
+## Requisitos do desafio
 
 - Deverá ser uma aplicação web responsiva;
 - Deverá ser entregue no mínimo 3 telas do projeto;
 - Vocês estarão livres para utilizar qualquer tecnologia que tenham mais afinidade;
 - Seja criativo! Pensem fora da caixinha, seja inovador. Nós demos o problema, e vocês, como consultores, deverão trazer a melhor solução ;)
+
+## Obtendo o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/Squad10-Fcamara-ImersaoDEv/mentalistapokemon.git
+
+# Acesse a pasta do projeto
+cd mentalistapokemon
+
+# Dois cliques no arquivo index.html
+```
+
+## Regras do Jogo
+
+1. Você receberá **100 pokécoins** assim que iniciar o jogo pela primeira vez;
+2. Você deve adivinhar o pokémon que aparecerá na tela;
+3. Serão disponibilizadas 3 dicas para ajudá-lo a descobrir que é esse pokémon;
+4. As dicas não serão gratuitas, você precisa ter **pokécoins** para desbloqueá-las;
+5. Acertando o **pokémon** você receberá **25 pokécoins** e avançará para o próximo;
+
+## Extras
