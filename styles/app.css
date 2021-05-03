@@ -59,14 +59,17 @@ body {
     max-width: 8rem;
     width: 40%;
     height: 2rem;
-    margin: 0 5% 14px 5%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     font-size: 1.2rem;
 }
-
+.containers-money-and-score {
+    width: 80%;
+    margin: 5px auto;
+}
 
 .container-money{
     background-color: #FFF9C2;
@@ -304,6 +307,17 @@ body {
 }
 
 @media (min-width: 768px) {
+
+    .containers-money-and-score {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .container-money , .container-score {
+        padding: 0.5rem;
+        margin: auto;
+    }
+
     .modal:before {
       display: inline-block;
       vertical-align: middle;
