@@ -83,26 +83,13 @@ cd mentalistapokemon
 
 <h6 id="contributors"></h6>
 
-## Participantes
-| Fotinha :smile: | Nome | Github | Linkedin |
+## :bust_in_silhouette: Participantes
+| Fotinha :stuck_out_tongue_winking_eye: | Nome | Github | Linkedin |
 |--|--|--|--|
-|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
-|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
-|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
-|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
-|<img src="https://github.com/eudouglasassis.png" width="80px">|_Douglas Assis_|[github](https://github.com/eudouglasassis)|
-
-	
-	&nbsp&nbspDouglas Assis
-</h4>
-<h4>
-	<img src="https://github.com/joseprandj.png" width="80px">
-	&nbsp&nbspStenio Almeida
-</h4>
-<h4>
-	<img src="https://github.com/stenioas.png" width="80px">
-	&nbsp&nbspStenio Almeida
-</h4>
+|<img src="https://github.com/Arturhen.png" width="80">|_Artur Henrique_| [![Linkedin Badge](https://img.shields.io/badge/-A.H.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/Arturhen/)](https://github.com/Arturhen/) | [![Linkedin Badge](https://img.shields.io/badge/-A.H.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)](https://www.linkedin.com/in/artur-henrique-do-nascimento-souza/)|
+|<img src="https://github.com/eudouglasassis.png" width="80">|_Douglas Assis_| [![Linkedin Badge](https://img.shields.io/badge/-D.A.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/eudouglasassis/)](https://github.com/eudouglasassis/) | [![Linkedin Badge](https://img.shields.io/badge/-D.A.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/eudouglasassis/)](https://www.linkedin.com/in/eudouglasassis/)|
+|<img src="https://github.com/joseprandj.png" width="80">|_José Pereira Andrade Junior_| [![Linkedin Badge](https://img.shields.io/badge/-J.P.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/joseprandj/)](https://github.com/joseprandj/) | [![Linkedin Badge](https://img.shields.io/badge/-J.P.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/joseprandj/)](https://www.linkedin.com/in/joseprandj/)|
+|<img src="https://github.com/stenioas.png" width="80">|_Stenio Almeida_| [![Linkedin Badge](https://img.shields.io/badge/-S.A.-181717?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/stenioas/)](https://github.com/Arturhen) | [![Linkedin Badge](https://img.shields.io/badge/-S.A.-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/steniosilveira/)](https://www.linkedin.com/in/steniosilveira/)|
 
 ---
-### :heart: O Squad 10 agradece por dedicar seu tempo a conhecer o nosso projeto!
+### :heart: O Squad 10 agradece por dedicarem seu tempo a conhecer o nosso projeto!
