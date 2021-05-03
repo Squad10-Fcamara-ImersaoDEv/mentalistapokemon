@@ -31,7 +31,7 @@
 ## :memo: Notas
 - Projeto realizado durante o Hackathon do programa de formação do Grupo FCamara em parceria com o evento Imersão Dev da Alura.
 - O desafio proposto foi transformar um dos projetos desenvolvidos na Imersão Dev em uma solução, melhorando-o e inovando conforme a nossa capacidade.
----
+
 #### Projetos da Imersão Dev
 1. [Conversor de Moedas](https://codepen.io/imersao-dev/pen/zYNOZRX)
 2. [Calculadora](https://codepen.io/imersao-dev/pen/ExZYmWP)
