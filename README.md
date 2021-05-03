@@ -24,8 +24,7 @@
 	<a href="#contributors">Participantes</a> |
 </p>
 
-<p align="center"><a href="https://youtu.be/plAaZUxDaeU" target="_blank">Assista ao vídeo de demonstração.</a></p>
-
+---
 <h6 id="notes"></h6>
 
 ## :memo: Notas
