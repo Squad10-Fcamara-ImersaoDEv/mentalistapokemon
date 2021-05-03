@@ -163,7 +163,7 @@ a{
     border: 2px solid #FFFFFF;
     border-radius: 38px;
     min-width: 150px;
-    min-height: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,7 +407,7 @@ footer img{
 
 /* media */
 
-@media (width: 1100px) {
+/* @media (width: 1100px) {
 
     .containerMenu{
         font-size: 19px;}
@@ -465,4 +465,147 @@ footer img{
     .containerVideo img{
         transform: translate(570px, 55%);}
      
+} */
+
+@media screen and (max-width: 1200px) {
+    .containerMenu nav a{
+        margin: auto 1.2rem;
+    }
+    .containerMenu > a{
+        max-width: 8rem;
+    }
+
+    .containerAp img{
+        left: 3rem;
+    }
+
+    .containerAp div{
+        margin-left: 3rem;
+    }
+
+    .containerRules {
+        font-size: 1.5rem;
+    }
+    
+    .containerRules h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        padding: 5rem 0 0 6rem;
+    }
+    
+    .rulesGrid img {
+        margin-top: 50%;
+    }
+    
+    .text1 {
+        margin: auto 4rem auto 0;
+    }
+    
+    .text2 {
+        margin: auto 0 auto 0.5rem;
+    }
+    
+    .text3 {
+        margin: auto 4rem auto 0;
+    }
+    .text1::before{
+        width: 140px;
+        height: 140px;
+        margin-right: 2.5rem;
+    }
+    
+    .text2::after{
+        width: 140px;
+        height: 140px;
+        margin: 0 5rem 0 2.5rem;}
+    
+    .text3::before{
+        width: 140px;
+        height: 140px;
+        margin-right: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .containerMenu nav a{
+        margin: auto 0.75rem;
+        font-size: 20px;
+    }
+    
+    .containerMenu > a{
+        max-width: 7rem;
+        margin-right: 2.75rem;
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .containerMenu nav {
+        margin: auto 1rem auto 2rem;
+    }
+
+    .containerAp img{
+        left: 1rem;
+    }
+
+    .containerAp div{
+        margin-left: 5rem;
+        max-width: 18rem;
+        font-size: 19px;
+    }
+
+    .containerRules {
+        font-size: 1.25rem;
+    }
+    
+    .containerRules h1 {
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+        padding: 5rem 0 0 6rem;
+    }
+
+    .rulesGrid > div {
+        align-items: center;
+    }
+
+    .rulesGrid img {
+        margin-top: 50%;
+        width: 24rem;
+    }
+    
+    .text1 {
+        margin: auto 2.5rem auto 0;
+    }
+    
+    .text2 {
+        margin: auto 0 auto 0.5rem;
+    }
+    
+    .text3 {
+        margin: auto 2.5rem auto 0;
+    }
+
+    .text1::before{
+        width: 120px;
+        height: 120px;
+        margin-right: 1.5rem;
+        font-size: 50px;
+    }
+    
+    .text2::after {
+        min-width: 120px;
+        height: 120px;
+        margin: 0 2.5rem 0 1.5rem;
+        font-size: 50px;    
+    }
+    
+    .text3::before{
+        width: 120px;
+        height: 120px;
+        margin-right: 2.5rem;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*  */
 }
