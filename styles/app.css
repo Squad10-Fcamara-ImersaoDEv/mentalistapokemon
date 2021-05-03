@@ -335,6 +335,19 @@ body {
 }
 
 @media (min-width:1024px) {
+    .text-hint {
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+    .button-hint {
+        margin: 1rem auto ;
+        max-width: 20rem;
+        height:4.5rem;
+        border: none;
+        border-radius: 10px;
+        cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+    }
+
     .containers-money-and-score {
         width: 80%;
         margin: auto;
@@ -343,7 +356,7 @@ body {
     .container-money , .container-score {
         padding: 1rem;
         font-size: 1.5rem;
-        margin: auto;
+        margin: 3rem auto;
     }
 
     #nome-game-cell {
@@ -357,7 +370,6 @@ body {
     text-align: center;
     display: block;
     margin-top: 10px;
-    margin-bottom: 8rem;
     }
 
     .body{
@@ -382,8 +394,6 @@ body {
         min-width: 100%;
     }
 
-
-
     .responsivite-left{
         min-width: 65%;
     }
@@ -396,14 +406,11 @@ body {
     }    
     
     .form-input-pokemon  {
-        margin:1rem auto;
+        margin:2rem auto;
+        padding: 1rem;
+        font-size: 2.5rem;
     }
 
-    #nome-game {
-        font-size: 3rem;
-        text-align: left;
-        margin-left: 5rem;
-    }
     /*
     left: 40%;
     top: 40%;*/
