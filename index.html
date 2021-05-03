@@ -1,31 +1,241 @@
-<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentalmon</title>
-    <link rel="stylesheet" href="./home.css">
-    <link rel="icon" href="./icon/icon.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mentalmon</title>
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="icon" href="./assets/icon.png">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&amp;family=Play&amp;family=Ubuntu:ital,wght@0,500;1,300&amp;display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <div id="responsiveMenu">
+                <section class="containerMenu">
+                   <a id="linkHomeImg" href="./index.html"> <img src="./assets/logo_pokemon.svg" alt="logo"> </a> 
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="./pokedex.html">Pokédex</a>
+                        <a href="#containerRules">Como Jogar</a>
+                        <a href="#">Sobre Nós</a>
+                    </nav>
+                    <a href="#">Login</a>
+                </section>
+            </div>
 
-    <div id="containerMenu">
-        <img src="./img/logo_pokemon.svg" alt="logo">
+            <div id="responsiveAp">
+                <section class="containerAp">
+                    <img height="470px" src="./assets/ash.svg" alt="ashe e picachu">
+                    <div>
+                        <h1>Conquiste todos os seus Pokémons e se torne um verdadeiro Mestre!</h1>
+                        <a href="#">Jogue agora!</a>
+                    </div>
+                </section>
+            </div>
 
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Pokédex</a>
-            <a href="#">Como Jogar</a>
-            <a href="#">Sobre Nós</a>
-        </div>
+        </header>
 
-        <a>Login</a>
+        <main>
+            
+            <div id="responsiveCarrosel">
+                <div>
+                    <h1>Destaques</h1>
+                    <a href="./pokedex.html">Ver Todos</a>
+                </div>
+            </div>
+            
+            <div class="containerCarrosel">
 
-    </div>
+                <div class="gallery">
 
-</body>
+                    <div class="gallery__prev"></div>
+                    <div class="gallery__next"></div>
+
+                    <div class="gallery__stream">
+                        <div class="gallery__item grass">
+                            <h4><strong class="card-nome">bulbasaur </strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="imagem do Bulbasaur">
+                            <div>
+                            <span class="card-code-pokemon">#001</span>
+                            <p class="card-type-pokemon">grass,poison</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item fire">
+                            <h4><strong class="card-nome">chimchar</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/390.png" alt="imagem do caterpie">
+                            <div>
+                            <span class="card-code-pokemon">#390</span>
+                            <p class="card-type-pokemon">fire</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item water">
+                            <h4><strong class="card-nome">piplup</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/393.png" alt="imagem do piplup">
+                            <div>
+                            <span class="card-code-pokemon">#393</span>
+                            <p class="card-type-pokemon">water</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item fire">
+                            <h4><strong class="card-nome">charmander </strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="imagem do charmander">
+                            <div>
+                            <span class="card-code-pokemon">#004</span>
+                            <p class="card-type-pokemon">fire</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item normal">
+                            <h4><strong class="card-nome">meowth</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png" alt="imagem do meowth">
+                            <div>
+                            <span class="card-code-pokemon">#052</span>
+                            <p class="card-type-pokemon">normal</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item grass">
+                            <h4><strong class="card-nome">chikorita</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png" alt="imagem do chikorita">
+                            <div>
+                            <span class="card-code-pokemon">#152</span>
+                            <p class="card-type-pokemon">grass</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item psychic">
+                            <h4><strong class="card-nome">wobbuffet</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/202.png" alt="imagem do wobbuffet">
+                            <div>
+                            <span class="card-code-pokemon">#202</span>
+                            <p class="card-type-pokemon">psychic</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item normal">
+                            <h4><strong class="card-nome">pidgey</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="imagem do pidgey">
+                            <div>
+                            <span class="card-code-pokemon">#016</span>
+                            <p class="card-type-pokemon">normal,flying</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item normal">
+                            <h4><strong class="card-nome">jigglypuff</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="imagem do jigglypuff">
+                            <div>
+                            <span class="card-code-pokemon">#010</span>
+                            <p class="card-type-pokemon">normal,fairy</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item fire">
+                            <h4><strong class="card-nome">ninetales</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" alt="imagem do ninetales">
+                            <div>
+                            <span class="card-code-pokemon">#038</span>
+                            <p class="card-type-pokemon">fire</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item water">
+                            <h4><strong class="card-nome">psyduck </strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="imagem do psyduck">
+                            <div>
+                            <span class="card-code-pokemon">#054</span>
+                            <p class="card-type-pokemon">water</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item psychic">
+                            <h4><strong class="card-nome">mr. Mime</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/122.png" alt="imagem do mr. Mime">
+                            <div>
+                            <span class="card-code-pokemon">#122</span>
+                            <p class="card-type-pokemon">psychic,fairy</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item fire">
+                            <h4><strong class="card-nome">charizard</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="imagem do charizard">
+                            <div>
+                            <span class="card-code-pokemon">#006</span>
+                            <p class="card-type-pokemon">fire,flying</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery__item electric">
+                            <h4><strong class="card-nome">pikachu</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="imagem do pikachu">
+                            <div>
+                                <span class="card-code-pokemon">#025</span>
+                                <p class="card-type-pokemon">Electric</p>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery__item bug">
+                            <h4><strong class="card-nome">butterfree</strong></h4>
+                            <img class="card-imagempokemon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="imagem do Butterfree">
+                            <div>
+                            <span class="card-code-pokemon">#012</span>
+                            <p class="card-type-pokemon">bug,flying</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  
+                
+            </div>
+
+            <div id="responsiveRules">
+                <section class="containerRules">
+                    <h1>Regras do Jogo</h1>
+
+                    <div class="rulesGrid">
+                        <img height="680px" src="./assets/ash2.svg" alt="ash pokebola">
+                        <div class="text1">
+                            <p>A primeira regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
+                        </div>
+
+                        <div class="text2">
+                            <p>A segunda regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
+                        </div>
+
+                        <div class=" text3">
+                            <p>A terceira regra do jogo será descrita nessa caixa de texto: A primeira regra do jogo será descrita nessa caixa de texto</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="responsiveVideo">
+                <section class="containerVideo">
+                    <div>
+                        <h2>Assista como jogar</h2>
+                        <video id="controlsVideo"  width="700" type="video/mp4" src="./assets/video_exemplo.mp4"></video>
+                    </div>
+                    <img src="./assets/picachu.svg" alt="picachu">
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright © 2021 Mentalmon - Todos os direitos reservados</p>
+            <img src="./assets/pokebola.svg" alt="pokebola">
+        </footer>
+
+        <div id="back-to-top"><img src="./assets/pokebola.svg" alt="Pokebola"></div>
+
+        <script src="./js/index.js"></script>
+    </body>
 </html>
+
 

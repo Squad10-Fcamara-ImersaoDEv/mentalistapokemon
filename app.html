@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentalMon-Jogo</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/app.css">
+
+     <!-- flat-icon -->
+     <link rel="icon" href="./assets/icon.png">
+
+
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+     
+</head>
+<body>
+    <main>
+        <div id="nome-game"><h2>WHO'S THAT POKEMON?</h2></div>
+
+        <div class="container-principal">
+            <img class="background-game"src="./assets/bg-app.png" alt="background imagem do qual é esse pokemon">
+            <div id="imagem-pokemon"></div>
+        </div>
+
+        <div class="container-money"><div class="money-player"></div><img id='imagem-pokecoin' src="./assets/pokecoin.png" alt=" imagem pokecoin"> </div>
+        
+        <div class="form-input-pokemon">
+            <input class="input-pokemon" id="nome-pokemon" type="text">
+            <button  class="button-send" onclick="sendNamePokemon()">&check;</button>    
+        </div>
+        
+        <!-- dica um -->
+        <button class='button-hint' id='button-hint-one' onclick="WriteHintOne()"> 
+            <div class="text-hint ">
+                <div id="hint-one"></div> 
+                <div id="hint-one-original">Type P$ 15 
+                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                </div>
+            </div> 
+        </button>
+
+        <button class='button-hint' id='button-hint-two' onclick="WriteHintTwo()"> 
+            <div class="text-hint ">
+                <div id="hint-two"></div>
+                <div id="hint-two-original">Firt Letter P$25 
+                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                </div>  
+        </button>
+
+        <button class='button-hint' id='button-hint-three' onclick="WriteHintThree()"> 
+            <div class="text-hint ">
+                <div id="hint-three"></div>
+                <div id="hint-three-original">More Brightness P$35 
+                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                </div>  
+        </button>
+      
+       
+    </main>
+
+
+
+</body>
+<script src="./js/app.js"></script>
+</html>

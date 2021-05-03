@@ -1,0 +1,169 @@
+body {
+    font-family: 'Play', sans-serif;
+    background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
+    cursor: url(../assets/cursores/pokebola.cur), auto;
+}
+
+#nome-game {
+    font-family: 'Slackey', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container-principal {
+    height: 45%;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.background-game {
+    width: 100%;
+    margin: 1.5rem auto;
+    position:relative;
+}
+
+.card-imagempokemonMedium {
+    height: 52%;
+    position: absolute;
+    margin-left: -98%;
+    margin-top: -25%;
+    filter: brightness(0);
+}
+
+.card-imagempokemonEasy {
+    height: 55%;
+    margin-left: -250px;
+    position: absolute;
+    filter: brightness(0);
+}
+
+.container-money {
+    background-color: #FFF9C2;
+    width: 30%;
+    height: 4rem;
+    margin: 0 0 10px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: black 2px solid;
+}
+
+#imagem-pokecoin {
+    width: 3rem;
+    margin-left: 0.5rem;
+}
+
+.money-player {
+    font-size: 1.5rem;
+
+}
+
+.imagem-hint {
+    width: 1rem;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.button-hint {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    height: 2rem;
+    margin: 0.3rem 10%;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-color: #006DB9;
+    font-weight: bold;
+    padding: 0.3rem;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
+
+
+.hidden-hint{
+    opacity:0;
+}
+
+.button-hint:hover {
+    background-color: #FB5555;
+}
+
+.text-hint {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+
+
+.form-input-pokemon {
+    background-color:#D5EFF6 ;
+    border-radius: 25px;
+    border: black solid 2px;
+    margin:auto;
+    max-width: 20rem;
+    width: 90%;
+    height: 3.5Rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-pokemon {
+    background-color:#D5EFF6 ;
+    border: none;
+    font-size: 1.4rem;
+    max-width: 14rem;
+    display: inline-block;
+    width: 65%;
+}
+
+.button-send {
+    background: #bbbbbb;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 25%;
+    color: rgb(0, 0, 0);
+}
+
+.button-used {
+    background-color: #dddddd;
+    color: black;
+}
+.button-used:hover {
+    background-color: #dddddd;
+}
+
+
+@media (min-width:600px) {
+    /* .card-imagempokemonMedium {
+        height: 250px;
+        margin-left: -30%;
+    } 
+     */
+    .card-imagempokemonEasy {
+        height: 250px;
+        margin-left: -30%;
+    }
+}
+
+@media (min-width:800px) {
+    
+    .background-game {
+        width: 80%;  
+    }
+
+    .card-imagempokemonMedium{
+        height: 52%;
+        position: absolute;
+        margin-left: -88%;
+        margin-top: -20%;
+    }    
+}
