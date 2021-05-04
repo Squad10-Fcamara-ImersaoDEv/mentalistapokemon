@@ -267,7 +267,7 @@ function WriteHintThree(){
         hintThreeOriginal.classList.add('hidden-hint')
 
         var hintThree = document.querySelector('#hint-three')
-        hintThree.innerHTML = `<div>The image is already clearer<\div>`
+        hintThree.innerHTML = `<div>A imagem já esta mais clara<\div>`
 
         var buttonHintThree = document.getElementById('button-hint-three')
         buttonHintThree.classList.add('button-used')
