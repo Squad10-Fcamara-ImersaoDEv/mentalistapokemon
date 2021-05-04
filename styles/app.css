@@ -459,15 +459,15 @@ body {
 
     .card-imagempokemonMedium{
         position: absolute;
-        height: 140%;
+        height: 150%;
         z-index: 10;
         margin-left: -48%;
-        margin-top: 8% ;
+        margin-top: 3% ;
 
     }    
 }   
 
-@media  (min-width: 1024px) and (max-width: 1500px) {
+@media  (min-width: 1024px) and (max-width: 1400px) {
     .card-imagempokemonMedium{
         position: absolute;
         height: 135%;
