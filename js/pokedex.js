@@ -115,6 +115,8 @@ async function createDataPokemonAndWrite(inicio,controle){
                 var classeTipoPrimarioPokemon = "card-normal"
                 break;
         }
+
+        pokemonTiposTraduzido = traduzirPokemon(pokemonData.types)
         
         cards.innerHTML += `
             <div class="card-pokemon ${classeTipoPrimarioPokemon}" id=${pokemonData.name}>
@@ -122,7 +124,7 @@ async function createDataPokemonAndWrite(inicio,controle){
                 <img class="imagempokemon" src="${pokemonData.image}" alt="imagem do ${pokemonData.name}">
                 <div class="container">
                     <span class="code-pokemon">#${id}</span>
-                    <p class="type-pokemon">${pokemonData.types.join('/')}</p>
+                    <p class="type-pokemon">${pokemonTiposTraduzido.join('/')}</p>
                 </div>
             </div>
         `        
@@ -134,4 +136,68 @@ async function seeMore(){
     pokemonOnScreen += 9
     maxPokemon += 9
     await createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
+}
+
+
+function traduzirPokemon(pokemonTypes) {
+    var tipoPokemonTraduzido = []
+    for(let i=0 ; i < pokemonTypes.length ; i++){
+        switch (pokemonTypes[i]) {
+            case "grass":
+                tipoPokemonTraduzido[i] = "Planta"     
+                break;
+            case "fire":
+                tipoPokemonTraduzido[i] = "Fogo"  
+                break;
+            case "water":
+                tipoPokemonTraduzido[i] = "Água"    
+                break;
+            case "poison":
+                tipoPokemonTraduzido[i] = "Venenoso"                  
+                break;
+            case "psychic":
+                tipoPokemonTraduzido[i] = "Psíquico"   
+                break;
+            case "ground":
+                tipoPokemonTraduzido[i] = "Terra"
+                break;
+            case "electric":
+                tipoPokemonTraduzido[i] = "Elétrico"
+                break; 
+            case "flying":
+                tipoPokemonTraduzido[i] = "Voador"
+                break;
+            case "ice" :
+                tipoPokemonTraduzido[i] = "Gelo"
+                break;
+            case "bug" :
+                tipoPokemonTraduzido[i] = "Inseto"
+                break;    
+            case "dark" :
+                tipoPokemonTraduzido[i] = "Sombrio"
+                break;    
+            case "dragon" :
+                tipoPokemonTraduzido[i] = "Dragão"
+                break;  
+            case "fairy" :
+                tipoPokemonTraduzido[i] = "Fada"
+                break;
+            case "fighting" :
+                tipoPokemonTraduzido[i] = "Lutador"
+                break;         
+            case "ghost" :
+                tipoPokemonTraduzido[i] = "Fantasma"
+                break;  
+            case "rock" :
+                tipoPokemonTraduzido[i] = "Pedra"
+                break;   
+            case "steel" :
+                tipoPokemonTraduzido[i] = "Aço"
+                break;   
+            default:
+                tipoPokemonTraduzido[i] = "Normal"
+                break;
+        }
+    }
+    return tipoPokemonTraduzido
 }
