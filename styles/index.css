@@ -933,25 +933,12 @@ footer .container-copy {
 
 @media screen and (max-width: 380px) {
 
-    #responsiveMenu{
-        height: 20vh;
-    }
-
-    .containerMenu a > img{
-        width: 9rem;
-        margin: auto 0.75rem;
-    }
-
-    .containerMenu > nav {
-        display: none;
-    }
-
-    .containerMenu a:nth-child(3) {
+    .containerMenu {
         display: none;
     }
 
     #responsiveAp {
-        height: 80vh;  
+        height: 85vh;  
     }
 
     .containerAp {
@@ -1089,5 +1076,76 @@ footer .container-copy {
         display: none;
     }
 
+    #menu-phone{
+      display: flex;
+    }
 
+    #linkHomeImg{
+        margin: auto;
+    }
+
+  
+
+}
+
+/* MENU CELULAR */
+
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    padding: 12px;
+}
+
+.bar{
+    background-color: #212121;
+    height: 0.188rem;
+    width: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.barra{
+    position: absolute;
+    background-color: #FB5555;
+    height: 100%;
+    width: 50%;
+    transition: all 0.2s linear;
+    left: -18.75rem;
+}
+
+.barra nav{
+    position: absolute;
+    width: 100%;
+    top: 3.125rem;
+}
+
+.barra nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+.linkvid{
+    background-color: #FB5555;
+    padding: 0.938rem;
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    transition: all 0.2s linear;
+    border-bottom: 1px solid white;
+    opacity: 0;
+    margin-top: 12.5rem;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(18.75rem);
+}
+
+#check:checked ~ .barra nav a .linkvid{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.2s;
 }
