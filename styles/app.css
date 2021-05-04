@@ -418,7 +418,7 @@ body {
     }
 
     .responsivite {
-        margin-top: 2rem;
+        /* margin-top: 2rem; */ 
         display:flex;
         min-width: 100%;
     }
