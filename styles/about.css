@@ -8,3 +8,75 @@
 body {
     min-height: 100vh;
 }
+
+.containerMenu{
+    max-width: 1200px;
+    height: 7rem;
+    padding: 2rem;
+
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerMenu .burger-menu i {
+    font-size: 2rem;
+}
+
+#linkHomeImg{
+    text-decoration: none;
+}
+
+.containerMenu nav {
+    margin: auto 2rem auto auto;
+}
+
+.containerMenu nav a{
+    text-decoration: inherit;
+    color: #212121;
+    width: 100%;
+    margin: 2rem;
+    text-align: center;
+}
+
+.containerMenu nav > a:hover{
+    color: #A8A8A8;
+}
+
+section {
+    width: 100vw;
+}
+
+section .container-about {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* footer */
+footer {
+    display: flex;
+    height: 90px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container-copy {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;
+}
