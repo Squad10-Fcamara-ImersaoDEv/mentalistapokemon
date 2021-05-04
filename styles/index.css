@@ -212,40 +212,24 @@ a{
 .containerVideo img{
     transform: translate(700px, 50%);
 }
-    
-footer{
-    display: flex;
-    height: 90px;
-    max-width: 1200px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-copy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 2rem;}
 
 .container-copy p {
     font-family: Ubuntu;}
 
-#responsiveCarrosel{
+#responsiveCarrosel {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .containerCarrosel > div{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 0 6rem;}
+    margin-top: 6rem;}
 
 #responsiveCarrosel > div{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 0 6rem;}
+    margin-top: 4rem;}
 
 #responsiveCarrosel div > h1{
     font-family: 'Ubuntu', sans-serif;
@@ -262,11 +246,10 @@ footer{
     text-align: right;
     text-decoration: none;
     color: #6F6F6F;
-    transition: 0.7s;}
+    transition: 0.2s;}
 
 #responsiveCarrosel div > a:hover{
-    color: black;
-    font-size: 1.7rem;}
+    color: black;}
 
 .containerCarrosel {
     display: flex;
@@ -402,6 +385,22 @@ footer{
 .psychic {
     background-color: rgb(255, 249, 190);}
 
+/* footer */
+footer{
+    display: flex;
+    height: 90px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;}
 
 #back-to-top {
     width: 50px;
@@ -413,6 +412,7 @@ footer{
     cursor: url(../assets/cursores/pokebolaAberta.cur), pointer;
 }
 
+/* medias */
 @media screen and (max-width: 1200px) {
     .containerMenu nav a{
         margin: auto 1.2rem;
