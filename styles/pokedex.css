@@ -9,6 +9,10 @@ body{
   cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
+main {
+  min-height: 80vh;
+}
+
 a{
   cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
 
