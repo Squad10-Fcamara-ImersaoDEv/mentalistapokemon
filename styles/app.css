@@ -251,11 +251,13 @@ body {
 }
 
 #modal-cancel {
-    background-color: #FFA99D;
+    color: #F0F0F0;
+    background-color: #f2282f;
 }
 
 #modal-confirm {
-    background-color: #BEFFEF;
+    color: #F0F0F0;
+    background-color: #006db9;
 }
 
 .modal-exit-button:last-child {
