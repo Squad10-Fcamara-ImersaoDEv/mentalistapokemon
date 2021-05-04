@@ -78,6 +78,17 @@ async function getPokemonProps(pokemonName) {
         })
 }
 
+
+//Function for Enter call showSelectedPokemon()
+const inputEle = document.getElementById('text-input-pokemon');
+inputEle.addEventListener('keyup', function(e){
+  var key = e.key
+  if (key == 'Enter') { 
+    showSelectedPokemon()
+  }
+})
+
+
 // show selected pokemon on screen
 async function showSelectedPokemon() {
 	let pokemonFirstClass
