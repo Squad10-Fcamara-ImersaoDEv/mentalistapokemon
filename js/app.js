@@ -137,6 +137,15 @@ var currentPlayerMoney = 100
 //Variavel que guarda a pontaução do jogador
 var cureentPlayerScore = 0
  
+//Função para o Enter apertar o botão de enviar
+const inputEle = document.getElementById('nome-pokemon');
+inputEle.addEventListener('keyup', function(e){
+  var key = e.key
+  if (key == 'Enter') { 
+    sendNamePokemon()
+  }
+})
+
 //função linkada ao botão enviar que a pessoa envia o que ta dentro do input
 function sendNamePokemon(){
     var inputNomePokemon = document.querySelector('#nome-pokemon')
