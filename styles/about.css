@@ -62,6 +62,38 @@ section .container-about {
     justify-content: space-around;
 }
 
+section .container-about .container-about__title {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 2rem 1rem;
+    background-color: #006DB9;
+}
+
+section .container-about .container-about__title img {
+  height: 3rem;
+}
+
+section .container-about .container-about__title h2 {
+  font-size: 2rem;
+  color: #efefef;
+  margin-left: 2rem;
+}
+
+section .container-about .container-about__items {
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /* footer */
 footer {
     display: flex;
