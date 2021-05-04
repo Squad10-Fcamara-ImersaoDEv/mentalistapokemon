@@ -9,10 +9,6 @@ body{
 a{
     cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
 
-/* #responsiveMenu{
-
-} */
-
 .containerMenu{
     font-family: 'Play', sans-serif;
     font-size: 20px;
@@ -23,31 +19,24 @@ a{
     height: 8.75rem;}
 
 #linkHomeImg{
+    margin: auto 1rem;
     border: none;
     text-decoration: none;
 }
 
-.containerMenu nav, a{
+.containerMenu nav {
+    margin: auto 2rem auto auto;
+}
+
+.containerMenu nav a{
     text-decoration: inherit;
     color: #212121;
     width: 100%;
-    margin: auto 1.5rem;
+    margin: 2rem;
     text-align: center;}
 
 .containerMenu nav > a:hover{
     color: #A8A8A8;}
-
-.containerMenu > a{
-    display: inline-block;
-    max-width: 11rem;
-    margin-right: 4rem;
-    padding: 0.5rem;
-    border-radius: 0.625rem;
-    border: 0.188rem solid #212121;}
-
-.containerMenu > a:hover{
-    border: 0.188rem solid #A8A8A8;
-    color: #A8A8A8}
 
 #responsiveAp{
     background-color: #FFD74E;
@@ -80,7 +69,6 @@ a{
     grid-area: a;
 }
     
-
 .containerAp div a{
     background-color: #006DB9;
     display: block;
@@ -88,11 +76,13 @@ a{
     font-weight: bold;
     max-width: 220px;
     font-size: 22px;
+    text-align: center;
     padding: 20px;
     margin: 1.75rem 0;
     border-radius: 8px;
     color: #FFFFFF;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    text-decoration: none;}
 
 .containerAp div a:hover{
     background-color: #FB5555;}
@@ -387,6 +377,7 @@ a{
     background-color: rgb(255, 249, 190);}
 
 /* footer */
+
 footer{
     display: flex;
     height: 90px;
@@ -414,12 +405,15 @@ footer .container-copy {
 }
 
 /* medias */
+
 @media screen and (max-width: 1200px) {
-    .containerMenu nav a{
-        margin: auto 1.2rem;
+    
+    .containerMenu nav {
+        margin: auto;
     }
-    .containerMenu > a{
-        max-width: 8rem;
+    
+    .containerMenu nav > a{
+        margin: auto 1.5rem;
     }
 
     .containerAp img{
@@ -528,20 +522,12 @@ footer .container-copy {
 }
 
 @media screen and (max-width: 992px) {
-    .containerMenu nav a{
-        margin: auto 0.75rem;
-        font-size: 18px;
+    .containerMenu nav {
+        margin: auto;
     }
     
-    .containerMenu > a{
-        max-width: 7rem;
-        margin-right: 2.75rem;
-        margin-left: 0;
-        font-size: 18px;
-    }
-
-    .containerMenu nav {
-        margin: auto 1rem auto 2rem;
+    .containerMenu nav > a{
+        margin: auto 1.25rem;
     }
 
     .containerAp img{
@@ -666,7 +652,6 @@ footer .container-copy {
     }
 }
 
-
 @media screen and (max-width: 812px) {
     .containerMenu > nav {
         display: none;
@@ -684,7 +669,7 @@ footer .container-copy {
     }
 
     .containerMenu a > img{
-        width: 17vw;
+        width: 10rem;
         margin: auto 0.75rem;
     }
 
@@ -824,6 +809,11 @@ footer .container-copy {
         height: 20vh;
     }
 
+    .containerMenu a > img{
+        width: 9rem;
+        margin: auto 0.75rem;
+    }
+
     .containerMenu > nav {
         display: none;
     }
@@ -851,7 +841,7 @@ footer .container-copy {
     .containerAp div {
         margin: 2rem auto;
         text-align: center;
-        max-width: 20rem;
+        min-width: 80%;
         font-size: 17px;
     }
 
@@ -862,7 +852,7 @@ footer .container-copy {
     }
 
     #responsiveCarrosel > div{
-        margin: 2rem 2rem  0 2rem;
+        margin: 2rem 1rem  0 1rem;
     }
 
     #responsiveCarrosel div > h1{
@@ -872,7 +862,11 @@ footer .container-copy {
     #responsiveCarrosel div > a{
         font-size: 1rem;
         margin-right: 0;
-        text-align: center;
+        align-self: center;
+    }
+
+    .containerCarrosel {
+        height: 45vh;
     }
 
     .gallery {
@@ -881,7 +875,7 @@ footer .container-copy {
 
     .containerRules{
         font-size: 1.5rem;
-        height: 47rem;
+        height: 50rem;
         
     }
     
