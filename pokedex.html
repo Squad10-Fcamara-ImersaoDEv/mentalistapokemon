@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentalmon Pokedex</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mentalmon Pokedex</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/pokedex.css">
-    
-    <!-- flat-icon -->
-    <link rel="icon" href="./assets/icon.png">
+        <!-- css -->
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/pokedex.css">
+        
+        <!-- flat-icon -->
+        <link rel="icon" href="./assets/icon.png">
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div id="responsiveMenu">
-            <section class="containerMenu">
-                <img src="./assets/logo_pokemon.svg" alt="logo">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="./pokedex.html">Pokédex</a>
-                    <a href="#containerRules">Como Jogar</a>
-                    <a href="#">Sobre Nós</a>
-                </nav>
-                <a href="#">Login</a>
-            </section>
-        </div>
-    </header>
-
-    <main>
-        <header class="container-title">
-            <div class="title">
-                <img src="./assets/pokebola-pokedex.png" alt="pokebola">
-                <h2>Pokedex</h2>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="responsiveMenu">
+                <section class="containerMenu">
+                    <img src="./assets/logo_pokemon.svg" alt="logo">
+                    <nav>
+                        <a href="./index.html">Home</a>
+                        <a href="./pokedex.html">Pokédex</a>
+                        <a href="./index.html#containerRules">Como Jogar</a>
+                        <a href="#">Sobre Nós</a>
+                    </nav>
+                    <a href="#">Login</a>
+                </section>
             </div>
         </header>
-        
-        <div class="wrapper">
-            <div class="search-input">
-                <input type="text" placeholder="Busque um pokemon...">
-                <div class="autocom-box">
-                    <!-- here list are inserted from javascript -->
+
+        <main>
+            <header class="container-title">
+                <div class="title">
+                    <img src="./assets/pokebola-pokedex.png" alt="pokebola">
+                    <h2>Pokedex</h2>
                 </div>
-                <div class="icon" onclick="showSelectedPokemon()"><i class="fas fa-search"></i></div>
+            </header>
+            
+            <div class="wrapper">
+                <div class="search-input">
+                    <input type="text" placeholder="Ex: Pikachu">
+                    <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                    </div>
+                    <div class="icon" onclick="showSelectedPokemon()"><i class="fas fa-search"></i></div>
+                </div>
             </div>
-        </div>
-        <div class="cards">
-            <!-- here cards are inserted from javascript -->
-        </div> 
-        <button class="botao-seemore" onclick="seeMore()" id="myBtn">Ver mais</button>
-    </main>
-    
-    <div id="back-to-top"><img src="./assets/pokebola.svg" alt="Pokebola"></div>
-
-    <footer>
+            <div class="cards">
+                <!-- here cards are inserted from javascript -->
+            </div> 
+            <button class="botao-seemore" onclick="seeMore()" id="myBtn">Ver mais</button>
+        </main>
         
-        <p>Copyright © 2021 Mentalmon - Todos os direitos reservados</p>
-        
-        <img src="./assets/pokebola.svg" alt="pokebola">
-        
-    </footer>
+        <div id="back-to-top"><img src="./assets/pokebola.svg" alt="Pokebola"></div>
 
+        <footer>
+            <div class="footer-max">
+            <p>Copyright © 2021 Mentalmon - Todos os direitos reservados</p>
+            
+            <img src="./assets/pikachu-pokemon.png" alt="pokebola">
+            </div>
+            
+        </footer>
 
-</body>
+    </body>
 
-<script src="js/pokedex.js"></script>
-<script src="js/suggestions.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/pokedex.js"></script>
+    <script src="js/suggestions.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </html>

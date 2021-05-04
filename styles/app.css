@@ -1,14 +1,21 @@
 body {
+    min-width: 100%;
+    min-height: 100%;
     font-family: 'Play', sans-serif;
-    background: linear-gradient(90.14deg, rgba(142, 229, 255, 0.7) 4.1%, #FFFFFF 38.65%, rgba(225, 30, 25, 0.7) 81.52%);
+    background-color: #F6F6F6;;
     cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
-#nome-game {
-    font-family: 'Slackey', cursive;
-    font-size: 1.5rem;
+.background-game-desktop , #nome-game-desktop {
+    display: none;
+}
+
+#nome-game-cell {
+    font-family: 'Play',cursive;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .container-principal {
@@ -24,7 +31,7 @@ body {
 
 .background-game {
     width: 100%;
-    margin: 1.5rem auto;
+    margin: 10px auto 10px auto;
     position:relative;
 }
 
@@ -43,27 +50,40 @@ body {
     filter: brightness(0);
 }
 
-.container-money {
-    background-color: #FFF9C2;
-    width: 30%;
-    height: 4rem;
-    margin: 0 0 10px 10%;
+.containers-money-and-score {
+    display: flex;
+    width: 100%;
+}
+
+.container-money , .container-score {
+    max-width: 8rem;
+    width: 40%;
+    height: 2rem;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    border: black 2px solid;
+    font-size: 1.2rem;
+}
+.containers-money-and-score {
+    width: 80%;
+    margin: 5px auto;
+}
+
+.container-money{
+    background-color: #FFF9C2;
+}
+.container-score{
+    background-color: #8affa7;   
 }
 
 #imagem-pokecoin {
-    width: 3rem;
+    width: 1.2rem;
     margin-left: 0.5rem;
 }
 
-.money-player {
-    font-size: 1.5rem;
 
-}
 
 .imagem-hint {
     width: 1rem;
@@ -71,14 +91,18 @@ body {
     margin-top: 1px;
 }
 
+.buttons-hint {
+    position: relative;
+}
+
 .button-hint {
+    margin: 0.4rem auto ;
     display: block;
     width: 80%;
-    max-width: 300px;
-    height: 2rem;
-    margin: 0.3rem 10%;
+    max-width: 20rem;
+    height: 2.5rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #FFFFFF;
     background-color: #006DB9;
     font-weight: bold;
@@ -103,34 +127,35 @@ body {
 
 
 .form-input-pokemon {
-    background-color:#D5EFF6 ;
-    border-radius: 25px;
-    border: black solid 2px;
+    background: #F0F0F0 ;
+    border-radius: 10px;
+    border: #999 solid 2px;
     margin:auto;
     max-width: 20rem;
-    width: 90%;
-    height: 3.5Rem;
+    width: 80%;
+    height: 2.5Rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .input-pokemon {
-    background-color:#D5EFF6 ;
+    background-color:#F0F0F0 ;
     border: none;
     font-size: 1.4rem;
-    max-width: 14rem;
+    max-width: 17.5rem;
     display: inline-block;
-    width: 65%;
+    width: 90%;
 }
 
 .button-send {
-    background: #bbbbbb;
+    background: #006DB9;
     border: none;
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    font-weight: bold;
+    width: 2.5rem;
     border-radius: 25%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .button-used {
@@ -141,6 +166,135 @@ body {
     background-color: #dddddd;
 }
 
+.back-to-home {
+    width: 22%;
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+  }
+
+.back-to-home:hover {
+    background-color: #999;
+}  
+.showtime {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.modal-exit {
+    background-color: #efefef;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0px 0px 72px rgba(0, 0, 0, 0.18);
+    box-sizing: border-box;
+    color: #303030;
+    display: inline-block;
+    width: 90%;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: transform 0.14s, opacity 0.14s ease-in-out;
+    visibility: hidden;
+    position: fixed; /* Stay in place */
+    left: 5%;
+    top: 40%;
+    z-index: 10;
+}
+
+.modal-exit.showtime {
+    transform: translateY(0);
+}
+
+.modal-exit-content {
+    padding: 24px;
+    text-align: center;
+}
+
+.modal-exit-title {
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.modal-exit-desc {
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
+}
+
+.modal-exit-button {
+    border-right: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: .7em;
+    font-weight: 600;
+    letter-spacing: .09em;
+    padding: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.14s, color 0.14s ease-in-out;
+    width: 50%;
+}
+
+#modal-cancel {
+    color: #F0F0F0;
+    background-color: #f2282f;
+}
+
+#modal-confirm {
+    color: #F0F0F0;
+    background-color: #006db9;
+}
+
+.modal-exit-button:last-child {
+    border-right: none;
+}
+
+.modal-exit-button:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+.skip-and-exit {
+    width: 80%;
+    max-width: 20rem;
+    position: relative;
+    margin:auto;
+}
+
+.skip-button {
+    width: 60%;
+    background-color: #0C4C78;;
+    border-radius: 10px;
+    margin-right: 8%;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
+
+.skip-button:hover {
+    background-color: #999;
+}
 
 @media (min-width:600px) {
     /* .card-imagempokemonMedium {
@@ -154,16 +308,161 @@ body {
     }
 }
 
-@media (min-width:800px) {
+@media (min-width: 768px) {
+
+    #nome-game-cell {
+        font-size: 2.5rem;
+    }
+
+    .containers-money-and-score {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .container-money , .container-score {
+        padding: 0.5rem;
+        margin: auto;
+    }
+
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+  .modal-exit {
+    max-width: 50%;
+    width: 50%;
+    left: 25%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media (min-width:1024px) {
+    .text-hint {
+        font-size: 1.3rem;
+        display: inline-block;
+    }
+    .button-hint {
+        margin: 1rem auto ;
+        max-width: 20rem;
+        height:3.5rem;
+        border: none;
+        border-radius: 10px;
+        cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+    }
+
+    .skip-button {
+        margin:auto;
+        margin-right: 1rem;
+        border-radius: 10px;
+        font-size: 1.4em;
+        padding: 0.9rem;
+    }
+
+
+    .skip-and-exit {
+        width: 100%;
+        margin: 3rem auto 0 auto;
+        justify-content: space-between;
+    }
     
-    .background-game {
-        width: 80%;  
+    .back-to-home {
+        font-weight: bold;
+        margin:auto;
+        border-radius: 10px;
+        font-size: 1.4em;
+        padding: 1rem;
+      }
+
+    .containers-money-and-score {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container-money , .container-score {
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin: 3rem auto;
+    }
+
+    #nome-game-cell {
+        display: none;
+    }
+
+    #nome-game-desktop{
+    font-family: 'Play',cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    }
+
+    .body{
+        background-color: #fff;
+    }
+
+    .background-game-desktop {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: unset;
+    }
+    
+    .background-game { 
+        display:none;
+    }
+
+    .responsivite {
+        margin-top: 2rem;
+        display:flex;
+        min-width: 100%;
+    }
+
+    .responsivite-left{
+        min-width: 70%;
+    }
+
+    .responsivite-right{
+        min-width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+    
+    .form-input-pokemon  {
+        margin:2rem auto;
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+
+    /*
+    left: 40%;
+    top: 40%;*/
+
+    .modal-exit {
+        width: 24%;
+        left: 38%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+
+    #nome-game {
+        display: none;
     }
 
     .card-imagempokemonMedium{
-        height: 52%;
         position: absolute;
-        margin-left: -88%;
-        margin-top: -20%;
+        height: 35vh;
+        z-index: 10;
+        margin-left: -45%;
+        margin-top: 13% ;
+
     }    
-}
+}   

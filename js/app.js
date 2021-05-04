@@ -35,6 +35,7 @@ async function showPokemon(id) {
     console.log(pokemonData.types[0])
     return pokemonData;
 }
+
 var pokemonOnScreen = []
 
 async function dadosPokemon(){
@@ -46,6 +47,9 @@ async function dadosPokemon(){
     let moneyPlayer = document.querySelector('.money-player')
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
     
+    let scorePlayer = document.querySelector('.container-score')
+    scorePlayer.innerHTML = `SCORE : ${cureentPlayerScore}`
+
     if (hintOneShow == true){
         var hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = ''
@@ -131,6 +135,9 @@ dadosPokemon()
 //Variavel que guarda dinheiro do jogador
 var currentPlayerMoney = 100
 
+//
+var cureentPlayerScore = 0
+ 
 //função linkada ao botão enviar que a pessoa envia o que ta dentro do input
 function sendNamePokemon(){
     var inputNomePokemon = document.querySelector('#nome-pokemon')
@@ -138,21 +145,89 @@ function sendNamePokemon(){
     console.log(inputNomePokemon)
     console.log(pokemonOnScreen)
     if(inputNomePokemon == pokemonOnScreen.name){
+        cureentPlayerScore += 1
         currentPlayerMoney += 25
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)" 
         setTimeout(dadosPokemon,3000)
+        document.querySelector('#nome-pokemon').value = ""
     }
 }
 
+function traduzirPokemon(pokemonTypes) {
+    var tipoPokemonTraduzido = []
+    for(let i=0 ; i < pokemonTypes.length ; i++){
+        switch (pokemonTypes[i]) {
+            case "grass":
+                tipoPokemonTraduzido[i] = "Grama"     
+                break;
+            case "fire":
+                tipoPokemonTraduzido[i] = "Fogo"  
+                break;
+            case "water":
+                tipoPokemonTraduzido[i] = "Agua"    
+                break;
+            case "poison":
+                tipoPokemonTraduzido[i] = "Veneno"                  
+                break;
+            case "psychic":
+                tipoPokemonTraduzido[i] = "Psíquico"   
+                break;
+            case "ground":
+                tipoPokemonTraduzido[i] = "Terra"
+                break;
+            case "electric":
+                tipoPokemonTraduzido[i] = "Elétrico"
+                break; 
+            case "flying":
+                tipoPokemonTraduzido[i] = "Voador"
+                break;
+            case "ice" :
+                tipoPokemonTraduzido[i] = "Gelo"
+                break;
+            case "bug" :
+                tipoPokemonTraduzido[i] = "Inseto"
+                break;    
+            case "dark" :
+                tipoPokemonTraduzido[i] = "Sombrio"
+                break;    
+            case "dragon" :
+                tipoPokemonTraduzido[i] = "Dragão"
+                break;  
+            case "fairy" :
+                tipoPokemonTraduzido[i] = "Fada"
+                break;
+            case "fighting" :
+                tipoPokemonTraduzido[i] = "Lutador"
+                break;         
+            case "ghost" :
+                tipoPokemonTraduzido[i] = "Fantasma"
+                break;  
+            case "rock" :
+                tipoPokemonTraduzido[i] = "Pedra"
+                break;   
+            case "steel" :
+                tipoPokemonTraduzido[i] = "Aço"
+                break;   
+            default:
+                tipoPokemonTraduzido[i] = "Normal"
+                break;
+        }
+    }
+    return tipoPokemonTraduzido
+}
 
 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOneOriginal = document.querySelector('#hint-one-original')
         hintOneOriginal.classList.add('hidden-hint')
+        
+        tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
+        console.log(tipoPokemon)
+        
         var hintOne = document.querySelector('#hint-one')
-        hintOne.innerHTML = `<div>Pokemon type(s): ${pokemonOnScreen.types}<\div>`
+        hintOne.innerHTML = `<div>O pokemon é tipo: ${tipoPokemon}<\div>`
         
         var buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
@@ -170,7 +245,7 @@ function WriteHintTwo(){
         var hintTwoOriginal = document.querySelector('#hint-two-original')
         hintTwoOriginal.classList.add('hidden-hint')
         var hintTwo = document.querySelector('#hint-two')
-        hintTwo.innerHTML = `<div>Firt letter: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
+        hintTwo.innerHTML = `<div>Primeira letra: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
 
         var buttonHintTwo = document.getElementById('button-hint-two')
         buttonHintTwo.classList.add('button-used')
@@ -192,7 +267,7 @@ function WriteHintThree(){
         hintThreeOriginal.classList.add('hidden-hint')
 
         var hintThree = document.querySelector('#hint-three')
-        hintThree.innerHTML = `<div>The image is already clearer<\div>`
+        hintThree.innerHTML = `<div>A imagem já esta mais clara<\div>`
 
         var buttonHintThree = document.getElementById('button-hint-three')
         buttonHintThree.classList.add('button-used')
@@ -215,3 +290,47 @@ function WriteHintThree(){
 //         imageDirectory = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/'
 //     }
 // }
+
+
+//Modal 
+function displayModal() {
+    var modal = document.querySelector('#modal-exit')
+    var button = document.querySelector('#button')
+  
+    button.addEventListener('click', function(e) {
+      e.preventDefault()
+  
+      if (modal.classList.contains('showtime') === false) {
+        modal.classList.add('showtime')
+      } else {
+        return
+      }
+    });
+  }
+  
+function closeModal() {
+var modal = document.querySelector('#modal-exit')
+
+modal.addEventListener('click', function(e) {
+    e.preventDefault()
+    
+    if ( e.target.id === "modal-confirm") {
+    modal.classList.remove('showtime')
+    }
+    if ( e.target.id === "modal-cancel"){
+    window.location.href ='./index.html'
+    }
+})
+}
+
+displayModal();
+closeModal();
+
+//skip button
+
+function skipPokemon() {
+    cureentPlayerScore -= 1
+    setTimeout(dadosPokemon,1500)
+    var imagemPokemon = document.getElementById('filtro')
+    imagemPokemon.style.filter = "brightness(100%)" 
+}

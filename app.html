@@ -17,53 +17,97 @@
      <!-- Fonts -->
      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+     <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/> 
      
 </head>
 <body>
     <main>
-        <div id="nome-game"><h2>WHO'S THAT POKEMON?</h2></div>
+        <div id="nome-game-cell"><h2>QUAL É ESSE POKÉMON?</h2></div>
 
-        <div class="container-principal">
-            <img class="background-game"src="./assets/bg-app.png" alt="background imagem do qual é esse pokemon">
-            <div id="imagem-pokemon"></div>
-        </div>
+        <img class="background-game-desktop"src="./assets/bg-game-desktop.png" alt="background imagem do qual é esse pokemon">
 
-        <div class="container-money"><div class="money-player"></div><img id='imagem-pokecoin' src="./assets/pokecoin.png" alt=" imagem pokecoin"> </div>
-        
-        <div class="form-input-pokemon">
-            <input class="input-pokemon" id="nome-pokemon" type="text">
-            <button  class="button-send" onclick="sendNamePokemon()">&check;</button>    
-        </div>
-        
-        <!-- dica um -->
-        <button class='button-hint' id='button-hint-one' onclick="WriteHintOne()"> 
-            <div class="text-hint ">
-                <div id="hint-one"></div> 
-                <div id="hint-one-original">Type P$ 15 
-                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+        <div class="responsivite">
+
+            <div class="responsivite-left">
+                <div class="container-principal">
+                    <img class="background-game"src="./assets/bg-app.png" alt="background imagem do qual é esse pokemon">
+                    <div id="imagem-pokemon"></div>
                 </div>
-            </div> 
-        </button>
+            </div>
 
-        <button class='button-hint' id='button-hint-two' onclick="WriteHintTwo()"> 
-            <div class="text-hint ">
-                <div id="hint-two"></div>
-                <div id="hint-two-original">Firt Letter P$25 
-                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
-                </div>  
-        </button>
+            <div class="responsivite-right">
+                <div id="nome-game-desktop"><h2>QUAL É ESSE POKÉMON?</h2></div>
+                <div class="containers-money-and-score">
+                    <div class="container-money"><div class="money-player"></div><img id='imagem-pokecoin' src="./assets/pokecoin.png" alt=" imagem pokecoin"> </div>
+                    <div class="container-score"></div>
+                </div>
+                
+                <div class="form-input-pokemon">
+                    <input class="input-pokemon" id="nome-pokemon" placeholder="Digite em inglês" type="text">
+                    <button  class="button-send" onclick="sendNamePokemon()">ok</button>    
+                </div>
+                
+                <!-- dica um -->
+                <div class="buttons-hint">
+                    <button class='button-hint' id='button-hint-one' onclick="WriteHintOne()"> 
+                        <div class="text-hint ">
+                            <div id="hint-one"></div> 
+                            <div id="hint-one-original">Tipo P$ 15 
+                                <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                            </div>
+                        </div> 
+                    </button>
 
-        <button class='button-hint' id='button-hint-three' onclick="WriteHintThree()"> 
-            <div class="text-hint ">
-                <div id="hint-three"></div>
-                <div id="hint-three-original">More Brightness P$35 
-                    <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
-                </div>  
-        </button>
-      
-       
+                    <button class='button-hint' id='button-hint-two' onclick="WriteHintTwo()"> 
+                        <div class="text-hint ">
+                            <div id="hint-two"></div>
+                            <div id="hint-two-original">Primeira letra P$25 
+                                <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                            </div>  
+                    </button>
+
+                    <button class='button-hint' id='button-hint-three' onclick="WriteHintThree()"> 
+                        <div class="text-hint ">
+                            <div id="hint-three"></div>
+                            <div id="hint-three-original">Mais brilho P$35 
+                                <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                            </div>  
+                    </button>
+
+                    <div class="skip-and-exit">
+                        <button onclick="skipPokemon()" class="skip-button">PULAR</button>
+                        
+                        <div  id='button'class='back-to-home'><a  class='back-to-home-link' href="index.html">   
+                            </a>Exit</a>
+                        </div>
+                    
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>
+
+        <div class="modal">
+            <div id="modal-exit" class="modal-exit">
+            <div class="modal-exit-content">
+                <div class="modal-exit-title">
+                Back to home page?
+                </div>
+                <div class="modal-exit-desc">
+                Are you sure you wish to go Home Page? You will lose your progress.
+                </div>
+            </div>
+            <div id="modal-cancel" class="modal-exit-button">
+                Go to Home
+            </div>
+            <div id="modal-confirm" class="modal-exit-button">
+                Continue
+            </div>
+            </div>
+        </div>
     </main>
-
+        
 
 
 </body>
