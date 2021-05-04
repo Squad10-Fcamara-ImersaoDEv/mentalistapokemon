@@ -169,16 +169,16 @@ function traduzirPokemon(pokemonTypes) {
     for(let i=0 ; i < pokemonTypes.length ; i++){
         switch (pokemonTypes[i]) {
             case "grass":
-                tipoPokemonTraduzido[i] = "Grama"     
+                tipoPokemonTraduzido[i] = "Planta"     
                 break;
             case "fire":
                 tipoPokemonTraduzido[i] = "Fogo"  
                 break;
             case "water":
-                tipoPokemonTraduzido[i] = "Agua"    
+                tipoPokemonTraduzido[i] = "Água"    
                 break;
             case "poison":
-                tipoPokemonTraduzido[i] = "Veneno"                  
+                tipoPokemonTraduzido[i] = "Venenoso"                  
                 break;
             case "psychic":
                 tipoPokemonTraduzido[i] = "Psíquico"   
