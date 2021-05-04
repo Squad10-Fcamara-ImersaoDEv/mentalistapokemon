@@ -336,13 +336,13 @@ body {
 
 @media (min-width:1024px) {
     .text-hint {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         display: inline-block;
     }
     .button-hint {
         margin: 1rem auto ;
         max-width: 20rem;
-        height:4.5rem;
+        height:3.5rem;
         border: none;
         border-radius: 10px;
         cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
@@ -352,7 +352,7 @@ body {
         margin:auto;
         border-radius: 10px;
         font-size: 1.4em;
-        padding: 1.3rem;
+        padding: 0.9rem;
     }
 
     .back-to-home {
@@ -360,11 +360,11 @@ body {
         margin:auto;
         border-radius: 10px;
         font-size: 1.4em;
-        padding: 1.3rem;
+        padding: 1rem;
       }
 
     .containers-money-and-score {
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 
@@ -380,7 +380,7 @@ body {
 
     #nome-game-desktop{
     font-family: 'Play',cursive;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: bold;
     text-align: center;
     display: block;
