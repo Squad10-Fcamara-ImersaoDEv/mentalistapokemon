@@ -352,6 +352,7 @@ body {
 
     .skip-button {
         margin:auto;
+        margin-right: 1rem;
         border-radius: 10px;
         font-size: 1.4em;
         padding: 0.9rem;
@@ -360,13 +361,13 @@ body {
 
     .skip-and-exit {
         width: 100%;
-        max-width: 20rem;
-        margin-top: 3rem;
+        margin: 3rem auto 0 auto;
+        justify-content: space-between;
     }
     
     .back-to-home {
         font-weight: bold;
-        margin:0 0rem 0 1rem;
+        margin:auto;
         border-radius: 10px;
         font-size: 1.4em;
         padding: 1rem;
