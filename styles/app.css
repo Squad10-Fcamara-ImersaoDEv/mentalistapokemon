@@ -365,7 +365,7 @@ body {
 
     .skip-and-exit {
         width: 100%;
-        margin: 3rem auto 0 auto;
+        margin: 2.2rem auto 0 auto;
         justify-content: space-between;
     }
     
@@ -440,9 +440,6 @@ body {
         font-size: 2.5rem;
     }
 
-    /*
-    left: 40%;
-    top: 40%;*/
 
     .modal-exit {
         width: 24%;
@@ -467,12 +464,12 @@ body {
     }    
 }   
 
-@media  (min-width: 1024px) and (max-width: 1400px) {
+@media  (min-width: 1024px) and (max-width: 1299px) {
     .card-imagempokemonMedium{
         position: absolute;
-        height: 135%;
-        margin-left: -48%;
-        margin-top: 0% ;
+        height: 130%;
+        margin-left: -49%;
+        margin-top: -2% ;
     } 
 
     .form-input-pokemon  {
