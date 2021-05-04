@@ -222,10 +222,15 @@ footer{
     justify-content: center;
 }
 
-footer p{
-    margin-left: 6rem;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;}
+.container-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;}
+
+.container-copy p {
+    font-family: Ubuntu;}
 
 #responsiveCarrosel{
     max-width: 1200px;
