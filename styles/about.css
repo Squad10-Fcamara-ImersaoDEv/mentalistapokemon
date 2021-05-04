@@ -86,15 +86,15 @@ section {
     align-items: center;
     justify-content: flex-start;
 
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .container-about__title img {
-  height: 3rem;
+  height: 2rem;
 }
 
 .container-about__title h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #efefef;
   margin-left: 2rem;
 }
@@ -110,7 +110,7 @@ section {
     grid-gap: 2rem;
     justify-items: center;
 
-    padding: 2rem 2rem;
+    padding: 1rem;
 }
 
 .container-about__item {
@@ -124,7 +124,7 @@ section {
     align-items: center;
     justify-content: flex-start;
 
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
@@ -150,32 +150,82 @@ section {
 }
 
 .container-about__item__title {
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.container-about__item__avatar {
+    display: flex;
+    justify-content: center;
 }
 
 .container-about__item__avatar img {
-    width: 10rem;
+    width: 40%;
     border-radius: 50%;
     border: solid 2px #f0f0f0;
+
+    margin: 0 auto;
+}
+
+.container-about__item__props {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-top: .8rem;
+}
+
+.container-about__item__props h1 {
+    font-weight: 400;
 }
 
 .container-about__item__social-medias {
-    width: 15rem;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 0.8rem;
 }
 
-.container-about__item__social-medias span {
+.container-about__item__social-medias a {
     display: flex;
-    justify-content: space-around;
-    background-color: blue;
+    justify-content: space-between;
+    background-color: white;
+
+    font-size: 1rem;
     font-weight: 500;
+    text-decoration: none;
+    
     border-radius: 1.2rem;
     padding: 0.2rem 0.5rem ;
-    font-size: 1.2rem;
+}
+
+.container-about__item__social-medias a:nth-child(1) {
+    background-color: #181717;
+    color: #f0f0f0;
+}
+
+.container-about__item__social-medias a:nth-child(2) {
+    margin-left: .5rem;
+    background-color: #0A66C2;
+    color: #f0f0f0;
+}
+
+.container-about__item__description {
+    height: 100%;
+    min-height: 6rem;
+    margin-top: 1rem;
+    border-radius: 0.6rem;
+
+    background-color: #f0f0f0;
+
+    padding: 1rem;
+}
+
+.container-about__item__description h2 {
+    font-size: 1rem;
 }
 
 /* footer */
