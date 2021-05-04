@@ -279,7 +279,7 @@ body {
 .skip-button {
     width: 60%;
     background-color: #0C4C78;;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-right: 8%;
     color: #fff;
     cursor: pointer;
@@ -309,6 +309,10 @@ body {
 }
 
 @media (min-width: 768px) {
+
+    #nome-game-cell {
+        font-size: 2.5rem;
+    }
 
     .containers-money-and-score {
         width: 80%;
