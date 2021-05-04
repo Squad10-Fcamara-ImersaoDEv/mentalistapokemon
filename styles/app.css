@@ -53,7 +53,7 @@ body {
 .containers-money-and-score {
     display: flex;
     width: 100%;
-    max-width: 25rem;
+    max-width: 22rem;
 }
 
 .container-money , .container-score {
@@ -67,10 +67,7 @@ body {
     border-radius: 10px;
     font-size: 1.1rem;
 }
-.containers-money-and-score {
-    width: 80%;
-    margin: 5px auto;
-}
+
 
 .container-money{
     background-color: #FFF9C2;
