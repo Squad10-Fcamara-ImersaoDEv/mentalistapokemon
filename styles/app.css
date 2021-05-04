@@ -53,6 +53,7 @@ body {
 .containers-money-and-score {
     display: flex;
     width: 100%;
+    max-width: 25rem;
 }
 
 .container-money , .container-score {
