@@ -9,7 +9,14 @@ body {
     min-height: 100vh;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .containerMenu{
+    width: 100%;
     max-width: 1200px;
     height: 7rem;
     padding: 2rem;
@@ -49,6 +56,9 @@ body {
 
 section {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section .container-about {
@@ -85,14 +95,42 @@ section .container-about .container-about__title h2 {
 
 section .container-about .container-about__items {
     width: 100%;
-    max-width: 1200px;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+
+    padding-top: 2rem;
 }
+
+section .container-about .container-about__items .container-about__item {
+    width: 100%;
+    background-color: #de5b8f;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem 1rem;
+}
+
+section .container-about .container-about__items .container-about__item:nth-child(2) {
+    background-color: #fda14e;
+}
+
+section .container-about .container-about__items .container-about__item:nth-child(3) {
+    background-color: #FFF9BE;
+}
+
+section .container-about .container-about__items .container-about__item:nth-child(4) {
+    background-color: #C29DFF;
+}
+
+
 
 /* footer */
 footer {
