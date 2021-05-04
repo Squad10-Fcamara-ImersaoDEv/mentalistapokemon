@@ -116,7 +116,7 @@ async function createDataPokemonAndWrite(inicio,controle){
                 break;
         }
 
-        pokemonTiposTraduzido = traduzirPokemon(pokemonData.types)
+        let pokemonTiposTraduzido = traduzirPokemon(pokemonData.types)
         
         cards.innerHTML += `
             <div class="card-pokemon ${classeTipoPrimarioPokemon}" id=${pokemonData.name}>
