@@ -10,7 +10,10 @@ body{
 }
 
 main {
-  min-height: 80vh;
+  min-height: 70vh;
+}
+footer {
+  min-height: 10.5vh;
 }
 
 a{
