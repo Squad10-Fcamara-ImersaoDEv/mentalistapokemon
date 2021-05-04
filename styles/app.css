@@ -156,6 +156,7 @@ body {
     width: 2.5rem;
     border-radius: 25%;
     color: rgb(255, 255, 255);
+    cursor:  url(../assets/cursores/pokebolaAberta.cur), pointer;
 }
 
 .button-used {
@@ -169,14 +170,14 @@ body {
 .back-to-home {
     width: 22%;
     background-color: #333;
-    border-radius: 4px;
+    border-radius: 10px;
+    padding: 12px;
     color: #fff;
     cursor: pointer;
     text-align: center;
     display: inline-block;
     font-size: 0.9em;
     letter-spacing: 0.1em;
-    padding: 10px 10px;
     text-transform: uppercase;
     cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
   }
@@ -280,7 +281,7 @@ body {
     width: 60%;
     background-color: #0C4C78;;
     border-radius: 10px;
-    margin-right: 8%;
+    margin-right: 7%;
     color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -345,6 +346,7 @@ body {
         font-size: 1.3rem;
         display: inline-block;
     }
+
     .button-hint {
         margin: 1rem auto ;
         max-width: 20rem;
@@ -353,6 +355,11 @@ body {
         border-radius: 10px;
         cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
     }
+    .skip-and-exit {
+            width: 80%;
+            margin: 2.2rem auto 0 auto;
+            justify-content: space-between;
+        }
 
     .skip-button {
         margin:auto;
@@ -360,13 +367,6 @@ body {
         border-radius: 10px;
         font-size: 1.4em;
         padding: 0.9rem;
-    }
-
-
-    .skip-and-exit {
-        width: 100%;
-        margin: 2.2rem auto 0 auto;
-        justify-content: space-between;
     }
     
     .back-to-home {
@@ -378,7 +378,7 @@ body {
       }
 
     .containers-money-and-score {
-        width: 100%;
+        width: 80%;
         margin: auto;
     }
 
@@ -435,8 +435,9 @@ body {
     }    
     
     .form-input-pokemon  {
+        width: 78%;
         margin:2rem auto;
-        padding: 1rem;
+        padding: 0.5rem;
         font-size: 2.5rem;
     }
 
@@ -498,9 +499,19 @@ body {
 
     
     .skip-and-exit {
-        width: 100%;
+        width: 80%;
         margin: 1.4rem auto 0 auto;
-        justify-content: space-between;
     }
+
+    .skip-button {
+        margin:auto;
+        margin-right: 1rem;
+        padding: 0.6rem;
+    }
+    
+    .back-to-home {
+        font-weight: bold;
+        padding: 0.7rem;
+      }
 
 }
