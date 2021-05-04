@@ -357,9 +357,16 @@ body {
         padding: 0.9rem;
     }
 
+
+    .skip-and-exit {
+        width: 100%;
+        max-width: 20rem;
+        margin-top: 3rem;
+    }
+    
     .back-to-home {
         font-weight: bold;
-        margin:auto;
+        margin:0 0rem 0 1rem;
         border-radius: 10px;
         font-size: 1.4em;
         padding: 1rem;
