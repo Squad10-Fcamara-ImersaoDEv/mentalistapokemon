@@ -185,6 +185,7 @@ body {
 .back-to-home:hover {
     background-color: #999;
 }  
+
 .showtime {
     opacity: 1 !important;
     visibility: visible !important;
@@ -198,8 +199,7 @@ body {
     box-sizing: border-box;
     color: #303030;
     display: inline-block;
-    width: 90%;
-    max-width: 400px;
+    width: 90%;  
     opacity: 0;
     transform: translateY(24px);
     transition: transform 0.14s, opacity 0.14s ease-in-out;
@@ -330,8 +330,7 @@ body {
       vertical-align: middle;
       content: " ";
       height: 100%;
-    }
-  }
+    } 
   .modal-exit {
     max-width: 50%;
     width: 50%;
@@ -339,6 +338,7 @@ body {
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+    }
 }
 
 @media (min-width:1024px) {
@@ -383,7 +383,7 @@ body {
     }
 
     .container-money , .container-score {
-        padding: 1rem;
+        padding: 0.9rem;
         font-size: 1.4rem;
         margin: 3rem auto;
     }
