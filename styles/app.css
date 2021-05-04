@@ -457,7 +457,8 @@ body {
 
     .card-imagempokemonMedium{
         position: absolute;
-        height: 150%;
+        width: 43%;
+        height: auto;
         z-index: 10;
         margin-left: -48%;
         margin-top: 3% ;
@@ -465,14 +466,7 @@ body {
     }    
 }   
 
-@media  (min-width: 1024px) and (max-width: 1299px) {
-    .card-imagempokemonMedium{
-        position: absolute;
-        height: 130%;
-        margin-left: -49%;
-        margin-top: -2% ;
-    } 
-
+@media  (min-width: 1024px) and (max-width: 1400px) {
     .form-input-pokemon  {
         margin: 1rem auto;
         padding: 0.5rem;
