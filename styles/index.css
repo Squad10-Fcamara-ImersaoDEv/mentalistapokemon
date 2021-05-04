@@ -25,7 +25,7 @@ a{
 }
 
 .containerMenu nav {
-    margin: auto 2rem auto auto;
+    margin: auto ;
 }
 
 .containerMenu nav a{
@@ -270,7 +270,8 @@ a{
     top: 0px;
     width: 0%;
     height: 100%;
-    z-index: 3;}
+    z-index: 3;
+}
 
 .gallery::before {
     left: 0px;
@@ -289,13 +290,16 @@ a{
     width: 40%;
     height: 100%;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 .gallery__prev {
-    left: 0px;}
+    left: 0px;
+}
 
 .gallery__next {
-    left: 100%;}
+    left: 100%;
+}
 
 .gallery__stream {
     position: relative;
@@ -312,15 +316,18 @@ a{
     min-width: 12rem;
     text-align: center;
     transition: all 1s ease 0s;
-    border-radius: 1rem;}
+    border-radius: 1rem;
+}
 
 .gallery__item:nth-child(1) {
     left: 0px;
     z-index: 1;
-    transform: translateX(-100%) scale(0.8);}
+    transform: translateX(-100%) scale(0.8);
+}
 
 .gallery__item:nth-child(2) {
     left: 0px;
+    opacity: 0.3;
     z-index: 2;
     transform: translateX(-50%) scale(0.8);}
 
@@ -331,6 +338,7 @@ a{
 
 .gallery__item:nth-child(4) {
     left: 100%;
+    opacity: 0.3;
     z-index: 2;
     transform: translateX(-50%) scale(0.8);}
 
@@ -408,14 +416,6 @@ footer .container-copy {
 /* medias */
 
 @media screen and (max-width: 1200px) {
-    
-    .containerMenu nav {
-        margin: auto;
-    }
-    
-    .containerMenu nav > a{
-        margin: auto 1.5rem;
-    }
 
     .containerAp img{
         left: 3rem;
@@ -523,14 +523,7 @@ footer .container-copy {
 }
 
 @media screen and (max-width: 992px) {
-    .containerMenu nav {
-        margin: auto;
-    }
     
-    .containerMenu nav > a{
-        margin: auto 1.25rem;
-    }
-
     .containerAp img{
         left: 1rem;
     }
