@@ -48,7 +48,7 @@ async function dadosPokemon(){
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
     
     let scorePlayer = document.querySelector('.container-score')
-    scorePlayer.innerHTML = `SCORE : ${cureentPlayerScore}`
+    scorePlayer.innerHTML = `PONTOS : ${cureentPlayerScore}`
 
     if (hintOneShow == true){
         var hintOne = document.querySelector('#hint-one')
