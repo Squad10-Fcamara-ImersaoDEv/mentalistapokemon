@@ -294,27 +294,17 @@ footer{
     height: 100px;
     margin-top: 5vh;
     align-items: center;
-    justify-content:center;
-}
-
-footer p{
-    display: inline-block;
-    margin-left: 2rem;
-    font-size: 16px;
-}
-
-footer img{
-    display: inline-block;
-    margin-right: 3rem;
-    height: 50px;
+    justify-content: center;
 }
 
 .footer-max {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  max-width: 1200px;  
+  max-width: 1200px;
+
+  padding: 0 1rem;
 }
 
 /* medias */
