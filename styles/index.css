@@ -714,15 +714,20 @@ footer .container-copy {
     }
 
     .containerCarrosel {
-        display: flex;
-        position: relative;
-        height: 38vh;
-        width: 100%;
-        margin-bottom: 5rem;
+        height: 80vh;
     }
 
-    #responsiveCarrosel h1 {
-        font-size: 3rem;
+    #responsiveCarrosel > div{
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    #responsiveCarrosel div > h1{
+        font-size: 2rem;
+    }
+
+    #responsiveCarrosel div > a{
+        font-size: 1.25rem;
+        margin-right: 0;
     }
 
     .gallery {
@@ -730,7 +735,7 @@ footer .container-copy {
         position: absolute;
         right: 0;
         width: 100%;
-        height: 42vh;
+        height: 100%;
         overflow: hidden;
         align-self: center;
     }
