@@ -237,7 +237,7 @@ function WriteHintOne(){
         console.log(tipoPokemon)
         
         var hintOne = document.querySelector('#hint-one')
-        hintOne.innerHTML = `<div>O pokemon é tipo: ${tipoPokemon}<\div>`
+        hintOne.innerHTML = `<div>Tipo: ${tipoPokemon}<\div>`
         
         var buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
