@@ -410,7 +410,7 @@ footer{
     right: 20px;
     bottom: 20px;
     z-index: 999;
-    cursor: url(..assets/cursores/pokebolaAberta.cur), pointer;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), pointer;
 }
 
 @media screen and (max-width: 1200px) {
