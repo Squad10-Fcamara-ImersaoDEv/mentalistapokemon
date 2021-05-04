@@ -667,7 +667,7 @@ footer .container-copy {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
     .containerMenu > nav {
         display: none;
     }
@@ -678,7 +678,159 @@ footer .container-copy {
 }
 
 @media screen and (max-width: 667px){
+
+    .containerMenu {
+        height: 20vh;
+    }
+
+    .containerMenu a > img{
+        width: 7rem;
+        margin: auto 0.75rem;
+    }
+
+    #responsiveAp {
+        height: 80vh;
+    }
+
+    .containerAp img{
+        height: 72.5vh;
+    }
+
+    .containerAp {
+        height: 80vh;
+    }
+
+    .containerAp div{
+        text-align: center;
+        font-size: 16px;
+        width: 40vw;
+        margin: 0;
+    }
+
+    .containerAp div > a {
+        padding: 0.75rem;
+        font-size: 19px;
+        margin: 1.5rem auto;
+    }
+
+    .containerCarrosel {
+        height: 80vh;
+    }
+
+    #responsiveCarrosel > div{
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    #responsiveCarrosel div > h1{
+        font-size: 2rem;
+    }
+
+    #responsiveCarrosel div > a{
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+
+    .gallery {
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        align-self: center;
+    }
+
+    .containerRules {
+        font-size: 1.2rem;
+        height: 1200px;
+    }
     
+    .containerRules h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        padding-top: 4rem;
+    }
+
+    .rulesGrid > div {
+        align-items: center;
+    }
+
+    .containerRules {
+        font-size: 1.25rem;
+        height: 1000px;
+    }
+    
+    .rulesGrid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 25vh 25vh 25vh;
+        grid-template-areas:    "img text1"
+                                "img text2"
+                                "img text3";
+        }
+    
+    .rulesGrid img {
+        margin-top: 20%;
+        width: 40vh;
+
+    }
+    
+    .text1, .text3 {
+        margin: auto 1.5rem auto 0;
+    }
+    
+    .text2 {
+        margin: auto 0 auto 0.5rem;
+    }
+
+    .text1::before, .text3::before{
+        width: 110px;
+        height: 110px;
+        margin-right: 1.5rem;
+        font-size: 50px;
+        border-radius: 25px;
+    }
+    
+    .text2::after {
+        min-width: 110px;
+        height: 110px;
+        margin: 0 1.5rem 0 1.5rem;
+        font-size: 50px; 
+        border-radius: 25px;   
+    }
+
+    .containerVideo {
+        height: 440px;
+    }
+
+    .containerVideo div{
+        font-size: 18px;
+        width: 525px;
+        position: relative;
+        transform: translateY(-55%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .containerVideo div video{
+        position: relative;
+        width: 525px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .containerVideo img{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -17.5%);
+        width: 320px;
+    }
+    #back-to-top {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 380px) {
