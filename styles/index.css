@@ -677,6 +677,10 @@ footer .container-copy {
     }
 }
 
+@media screen and (max-width: 667px){
+    
+}
+
 @media screen and (max-width: 380px) {
 
     #responsiveMenu{
@@ -740,7 +744,8 @@ footer .container-copy {
 
     .containerRules{
         font-size: 1.5rem;
-        height: 105vh;
+        height: 47rem;
+        
     }
     
     .containerRules h1{
@@ -760,8 +765,6 @@ footer .container-copy {
     
     .rulesGrid img{
         display: none;
-        grid-area: img;
-        margin-top: 50%;
     }
     
     .text1, .text3{
