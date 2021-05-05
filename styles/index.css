@@ -967,7 +967,7 @@ footer .container-copy {
 /* Menu hamburguer */
 
 .ham {
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 1rem;
     right: 1rem;
@@ -1010,7 +1010,7 @@ li {
 .menuLink {
     display: inline;
     font-size: 2rem;
-    color: #212121;
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
@@ -1040,7 +1040,30 @@ li {
     margin: 0.5rem 0;
 }
 
-.mobile-nav-button__line--1 {
+.xIcon .mobile-nav-button__line {
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .mobile-nav-button__line--1 {
     transform: rotate(45deg);
     top: 13px;
     position: absolute;
@@ -1053,5 +1076,5 @@ li {
 .mobile-nav-button__line--3 {
     transform: rotate(135deg);
     top: 13px;
-    position: absolute;        
-}
+    position: absolute;
+} */
