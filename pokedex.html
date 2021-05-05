@@ -22,25 +22,44 @@
         <header>
             <div id="responsiveMenu">
                 <section class="containerMenu">
-                    <img src="./assets/logo_pokemon.svg" alt="logo">
+                   <a id="linkHomeImg" href="./index.html"> <img src="./assets/logo_pokemon.svg" alt="logo"> </a> 
                     <nav>
                         <a href="./index.html">Home</a>
-                        <a href="./pokedex.html">Pokédex</a>
+                        <a href="#">Pokédex</a>
                         <a href="./index.html#responsiveRules">Como Jogar</a>
-                        <a href="./about.html">Sobre Nós</a>
+                        <a href="./about.html">Sobre</a>
                     </nav>
-                    <a href="#">Login</a>
+                    <div class="menuHamburguer">
+                        <button class="ham">
+                            <span class="menuIcon">
+                                <div class="mobile-nav-button__line"></div>
+                                <div class="mobile-nav-button__line"></div>
+                                <div class="mobile-nav-button__line"></div>
+                            </span>
+                            <span class="xIcon">
+                                <div class="mobile-nav-button__line--1"></div>
+                                <div class="mobile-nav-button__line--2"></div>
+                                <div class="mobile-nav-button__line--3"></div>
+                            </span>
+                        </button>
+                    </div>
+                    <ul class="menu">
+                        <li><a class="menuLink" href="./index.html">Home</a></li>
+                        <li><a class="menuLink" href="#">Pokédex</a></li>
+                        <li><a class="menuLink" href="./index.html#responsiveRules">Como Jogar</a></li>
+                        <li><a class="menuLink" href="./about.html">Sobre</a></li>
+                    </ul>
                 </section>
             </div>
         </header>
 
         <main>
-            <header class="container-title">
+            <div class="container-title">
                 <div class="title">
                     <img src="./assets/pokebola-pokedex.png" alt="pokebola">
                     <h2>Pokedex</h2>
                 </div>
-            </header>
+            </div>
             
             <div class="wrapper">
                 <div class="search-input">
