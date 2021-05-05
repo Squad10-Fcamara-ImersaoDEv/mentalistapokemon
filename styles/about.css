@@ -17,25 +17,30 @@ body {
     display: flex;
     margin: auto;
     max-width: 1200px;
-    height: 8.75rem;
+    height: 6rem;
+    padding: 0 1rem;
 }
 
 #linkHomeImg{
     margin: auto 1rem;
-    border: none;
-    text-decoration: none;
+}
+
+#linkHomeImg img {
+    width: 6rem;
 }
 
 .containerMenu nav {
-    margin: auto 2rem auto auto;
+    display: none;
+    margin: auto 0 auto auto;
 }
 
 .containerMenu nav a{
     text-decoration: inherit;
     color: #212121;
     width: 100%;
-    margin: 2rem;
+    margin: 0 1.5rem;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .containerMenu nav > a:hover{
@@ -43,11 +48,10 @@ body {
 }
 
 .menuHamburguer {
-    display: none;
+    display: inherit;
 }
 
 .ham {
-    position: absolute;
     z-index: 100;
     top: 1rem;
     right: 1rem;
@@ -102,7 +106,7 @@ li {
 .menuIcon, .xIcon {
     width:35px;
     position:absolute;
-    margin:2rem;
+    margin: 2rem;
     right:0;
     top:0;
     z-index:9999;
@@ -386,6 +390,13 @@ footer .container-copy {
 
 /* mobile styles */
 @media only screen and (min-width: 480px) {
+    .containerMenu{
+        height: 8.75rem;
+    }
+
+    #linkHomeImg img {
+        width: 8rem;
+    }
 
     .container-about__title img {
         height: 3rem;
@@ -399,6 +410,22 @@ footer .container-copy {
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
+    .menuHamburguer {
+        display: none;
+    }
+
+    .containerMenu {
+        display: flex;
+    }
+
+    .containerMenu nav {
+        display: inline-block;
+    }
+
+    .containerMenu nav a{
+        margin: 0 2rem;
+    }
+
     .container-about__title img {
         height: 4rem;
     }
@@ -432,3 +459,14 @@ footer .container-copy {
         transition: 0.3s;
     }
 }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    #linkHomeImg img {
+        width: 10rem;
+    }
+
+    .containerMenu nav a{
+        font-size: 1.3rem;
+    }
+  }
