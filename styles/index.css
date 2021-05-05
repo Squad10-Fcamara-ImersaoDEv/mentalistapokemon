@@ -805,6 +805,10 @@ footer .container-copy {
 
 @media screen and (max-width: 667px){
 
+    .menu > li {
+        padding: 0;
+    }
+
     .containerMenu {
         height: 10%;
     }
