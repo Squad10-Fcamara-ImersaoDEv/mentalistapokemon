@@ -90,14 +90,14 @@ section {
 }
 
 .container-about__title img {
-    height: 2rem;
+    height: 6rem;
     margin-left: 1rem;
 }
 
 .container-about__title h2 {
     font-family: Ubuntu;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #efefef;
     margin-left: 2rem;
 }
@@ -143,7 +143,7 @@ section {
 }
 
 .container-about__item:nth-child(3) {
-    background-color: #FFF9BE;
+    background-color: #9DEDFF;
     grid-area: j;
 }
 
@@ -246,7 +246,10 @@ section {
 }
 
 /* footer */
+
 footer {
+    background-color:#006db9 ;
+    color: white;
     display: flex;
     height: 90px;
     margin: auto;
