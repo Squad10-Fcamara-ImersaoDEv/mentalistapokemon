@@ -721,6 +721,12 @@ footer .container-copy {
 
 @media screen and (max-width: 812px) {
 
+    #linkHomeImg{
+        margin: auto 2rem;
+        border: none;
+        text-decoration: none;
+    }
+
     .menuHamburguer {
         display: block;
     }
@@ -804,14 +810,6 @@ footer .container-copy {
 }
 
 @media screen and (max-width: 667px){
-
-    .menu > li {
-        padding: 0;
-    }
-
-    .containerMenu {
-        height: 10%;
-    }
 
     .containerMenu a > img{
         width: 10rem;
@@ -953,6 +951,12 @@ footer .container-copy {
 }
 
 @media screen and (max-width: 453px) and (min-width: 300px){
+    #linkHomeImg{
+        margin: auto 1.5rem;
+        border: none;
+        text-decoration: none;
+    }
+
 
     #responsiveMenu{
         height: 20vh;
@@ -1108,8 +1112,6 @@ footer .container-copy {
         display: none;
     }
 }
-
-/* Menu hamburguer */
 
 .ham {
     position: absolute;
