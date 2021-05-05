@@ -27,6 +27,12 @@
                         <a href="./index.html#responsiveRules">Como Jogar</a>
                         <a href="#">Sobre</a>
                     </nav>
+                    <ul class="menu">
+                        <li><a class="menuLink" href="./index.html">Home</a></li>
+                        <li><a class="menuLink" href="./pokedex.html">Pokédex</a></li>
+                        <li><a class="menuLink" href="#responsiveRules">Como Jogar</a></li>
+                        <li><a class="menuLink" href="./about.html">Sobre</a></li>
+                    </ul>
                     <div class="menuHamburguer">
                         <button class="ham">
                             <span class="menuIcon">
@@ -37,16 +43,9 @@
                             <span class="xIcon">
                                 <div class="mobile-nav-button__line--1"></div>
                                 <div class="mobile-nav-button__line--2"></div>
-                                <div class="mobile-nav-button__line--3"></div>
                             </span>
                         </button>
                     </div>
-                    <ul class="menu">
-                        <li><a class="menuLink" href="./index.html">Home</a></li>
-                        <li><a class="menuLink" href="./pokedex.html">Pokédex</a></li>
-                        <li><a class="menuLink" href="#responsiveRules">Como Jogar</a></li>
-                        <li><a class="menuLink" href="./about.html">Sobre</a></li>
-                    </ul>
                 </section>
             </div>
         </header>
@@ -145,5 +144,35 @@
                 <p>Copyright © 2021 Squad 10 - Todos os direitos reservados</p>
             </div>
         </footer>
+        <script type="text/javascript">
+            // Ativação menu hamburguer
+            var menu = document.querySelector(".menu")
+            var ham = document.querySelector(".ham")
+            var xIcon = document.querySelector(".xIcon")
+            var menuIcon = document.querySelector(".menuIcon")
+            
+            ham.addEventListener("click", toggleMenu)
+            
+            function toggleMenu() {
+              if (menu.classList.contains("showMenu")) {
+                menu.classList.remove("showMenu");
+                xIcon.style.display = "none";
+                menuIcon.style.display = "block";
+              } else {
+                menu.classList.add("showMenu");
+                xIcon.style.display = "block";
+                menuIcon.style.display = "none";
+              }
+            }
+            
+            var menuLinks = document.querySelectorAll(".menuLink")
+            var divAp = document.querySelectorAll("#responsiveAp")
+            
+            menuLinks.forEach(
+              function (menuLink) {
+                menuLink.addEventListener("click", toggleMenu)
+              }
+            )
+        </script>
     </body>
 </html>
