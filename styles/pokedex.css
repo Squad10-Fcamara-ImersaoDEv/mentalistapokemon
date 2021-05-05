@@ -12,12 +12,14 @@ body{
 main {
   min-height: 70vh;
 }
+
 footer {
   min-height: 10.5vh;
 }
 
-a{
-  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
+a {
+  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
 
 /* Header */
 
@@ -25,39 +27,45 @@ a{
 
 } */
 
-.containerMenu{
+.containerMenu {
   font-family: 'Play', sans-serif;
   font-size: 20px;
   font-weight: 700;
   display: flex;
   margin: auto;
   max-width: 1200px;
-  height: 8.75rem;}
+  height: 8.75rem;
+}
 
-.containerMenu > img{
-  margin-left: 1rem;}
+.containerMenu > img {
+  margin-left: 1rem;
+}
 
-.containerMenu nav, a{
+.containerMenu nav, a {
   text-decoration: inherit;
   color: #212121;
   width: 100%;
   margin: auto 1.5rem;
-  text-align: center;}
+  text-align: center;
+}
 
-.containerMenu nav > a:hover{
-  color: #A8A8A8;}
+.containerMenu nav > a:hover {
+  color: #A8A8A8;
+}
 
-.containerMenu > a{
+.containerMenu > a {
   display: inline-block;
   max-width: 11rem;
   margin-right: 4rem;
   padding: 0.5rem;
   border-radius: 0.625rem;
-  border: 0.188rem solid #212121;}
+  border: 0.188rem solid #212121;
+}
 
-.containerMenu > a:hover{
+.containerMenu > a:hover {
   border: 0.188rem solid #A8A8A8;
-  color: #A8A8A8}
+  color: #A8A8A8
+}
 
 .container-title {
   display: flex;
@@ -69,13 +77,12 @@ a{
 .container-title .title {
   width: 100%;
   max-width: 1200px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   padding: 2rem 0;
 }
+
 .container-title .title > img {
   height: 6rem;
   margin-left: 2rem;
@@ -84,7 +91,6 @@ a{
 .container-title .title > h2 {
   font-size: 3rem;
   color: #efefef;
-
   display:inline-block;
   margin-left: 2rem;
 }
@@ -150,6 +156,7 @@ a{
 .search-input.active .autocom-box li {
   display: block;
 }
+
 .autocom-box li:hover {
   background: #efefef;
 }
