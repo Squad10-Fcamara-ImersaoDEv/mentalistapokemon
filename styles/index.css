@@ -968,13 +968,12 @@ footer .container-copy {
 
 .ham {
     position: fixed;
-    /* keep the hamburger button above everything */
     z-index: 100;
     top: 1rem;
     right: 1rem;
     width: 3rem;
     height: 3rem;
-    border: black solid 1px;
+    border: none;
     background: white;
     cursor: pointer;
 }
@@ -993,13 +992,13 @@ footer .container-copy {
     bottom: 0;
     width: 100%;
     height: 100vh;
-    background: black;
+    background: #006DB9;
     color: white;
     transform: translateY(-100%);
-    transition: transform 0.2s;
+    transition: 0.2s;
     list-style: none;
-    padding-top: 4rem;
-    
+    padding: 5rem 4rem;
+    font-family: 'Play', sans-serif;
 }
 
 .showMenu {
@@ -1021,4 +1020,42 @@ li {
 
 .menuLink:hover {
     text-decoration: underline;
+}
+
+.mobile-nav-button {
+    width:35px;
+    position:absolute;
+    margin:2rem;
+    right:0;
+    top:0;
+    z-index:9999;
+    cursor:pointer;
+    width:35px;
+    height:30px;
+}
+
+.mobile-nav-button__line {
+    width:100%;
+    height:4px;
+    background:#212121;
+    position:relative;
+    transition:1s ease;
+    margin: 0.5rem 0;
+
+}
+
+.mobile-nav-button__line--1 {
+    transform: rotate(45deg);
+    top: 13px;
+    position: absolute;
+}
+
+.mobile-nav-button__line--2 {
+    display: none;
+}
+
+.mobile-nav-button__line--3 {
+    transform: rotate(135deg);
+    top: 13px;
+    position: absolute;        
 }
