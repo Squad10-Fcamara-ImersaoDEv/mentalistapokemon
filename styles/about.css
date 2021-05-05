@@ -143,7 +143,7 @@ section {
 }
 
 .container-about__item:nth-child(3) {
-    background-color: #FFF9BE;
+    background-color: #9DEDFF;
     grid-area: j;
 }
 
@@ -246,7 +246,10 @@ section {
 }
 
 /* footer */
+
 footer {
+    background-color:#006db9 ;
+    color: white;
     display: flex;
     height: 90px;
     margin: auto;
