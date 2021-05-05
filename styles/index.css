@@ -82,8 +82,7 @@ a{
     border-radius: 8px;
     color: #FFFFFF;
     text-transform: uppercase;
-    text-decoration: none;
-    transition: .3s;}
+    text-decoration: none;}
 
 .containerAp div a:hover{
     background-color: #FB5555;}
