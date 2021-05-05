@@ -442,7 +442,6 @@ body {
     }
 
     .card-imagempokemonMedium{
-        position: absolute;
         width: 43%;
         height: auto;
         z-index: 10;
@@ -452,8 +451,7 @@ body {
     }    
 }   
 
-@media  (min-width: 1024px) and (max-width: 1400px) {
-    
+@media  (min-width: 1024px) and (max-width: 1350px) {
     .form-input-pokemon  {
         margin: 1rem auto;
         padding: 0.5rem;
@@ -497,3 +495,19 @@ body {
     }
 
 }
+@media  (min-width: 1024px) and (max-width: 1350px) and (orientation: landscape) {
+    
+    .background-game-desktop {
+        height:100%;
+        width: 100%;
+    }
+
+    .card-imagempokemonMedium{
+        width: 43%;
+        height: auto;
+        z-index: 10;
+        margin-left: -48%;
+        margin-top: 14% ;
+
+    }
+}    
