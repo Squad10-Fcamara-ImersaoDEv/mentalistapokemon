@@ -18,15 +18,36 @@
     <body>
 
         <header>
-            <div class="containerMenu">
-                <div class="burger-menu"><i class="fas fa-bars"></i></div>
-                <a id="linkHomeImg" href="./index.html"><img src="./assets/logo_pokemon.svg" alt="logo"></a> 
-                <nav style="display: none">
-                    <a href="./index.html">Home</a>
-                    <a href="./pokedex.html">Pokédex</a>
-                    <a href="./index.html#responsiveRules">Como Jogar</a>
-                    <a href="#">Sobre</a>
-                </nav>
+            <div id="responsiveMenu">
+                <section class="containerMenu">
+                   <a id="linkHomeImg" href="./index.html"> <img src="./assets/logo_pokemon.svg" alt="logo"> </a> 
+                    <nav>
+                        <a href="#">Home</a>
+                        <a href="./pokedex.html">Pokédex</a>
+                        <a href="#responsiveRules">Como Jogar</a>
+                        <a href="./about.html">Sobre Nós</a>
+                    </nav>
+                    <div class="menuHamburguer">
+                        <button class="ham">
+                            <span class="menuIcon">
+                                <div class="mobile-nav-button__line"></div>
+                                <div class="mobile-nav-button__line"></div>
+                                <div class="mobile-nav-button__line"></div>
+                            </span>
+                            <span class="xIcon">
+                                <div class="mobile-nav-button__line--1"></div>
+                                <div class="mobile-nav-button__line--2"></div>
+                                <div class="mobile-nav-button__line--3"></div>
+                            </span>
+                        </button>
+                    </div>
+                    <ul class="menu">
+                        <li><a class="menuLink" href="./index.html">Home</a></li>
+                        <li><a class="menuLink" href="./pokedex.html">Pokédex</a></li>
+                        <li><a class="menuLink" href="#responsiveRules">Como Jogar</a></li>
+                        <li><a class="menuLink" href="./about.html">Sobre Nós</a></li>
+                    </ul>
+                </section>
             </div>
         </header>
 
@@ -112,7 +133,7 @@
                         </div>                            
                         <div class="container-about__item__description">
                             <h2>Sobre:</h2><br>
-                            <p>Sou um cara legal e bla bla bla, aqui vai o texto sobre de cada integrante da equipe.</p>
+                            <p>Estudante de desenvolvimento web e mobile, entusiasta apaixonado por tecnologia, matemática, música, cinema, esportes, games e culinária.</p>
                         </div>
                     </div>
                 </div>
