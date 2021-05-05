@@ -166,10 +166,11 @@ body {
 
 .back-to-home {
     width: 22%;
-    background-color: #333;
+    background-color: transparent;
+    border: #333 solid 2px;
     border-radius: 10px;
     padding: 12px;
-    color: #fff;
+    color: #333;
     cursor: pointer;
     text-align: center;
     display: inline-block;
