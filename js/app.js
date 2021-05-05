@@ -8,11 +8,6 @@ function getRandomPokemon() {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// Busca dados do jogador
-//function getPlayerData() {}
-
-// Seta o tempo para 30 seg
-
 // Carrega o card da sorte
 async function showPokemon(id) {
     let pokemonData = {};
@@ -38,6 +33,10 @@ async function showPokemon(id) {
 
 var pokemonOnScreen = []
 
+//primeira chamada para iniciar o jogo
+dadosPokemon()
+
+// Função que escreve o pokemon na tela e reseta as dicas
 async function dadosPokemon(){
     pokemonOnScreen = await showPokemon(getRandomPokemon())
     
@@ -48,7 +47,7 @@ async function dadosPokemon(){
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
     
     let scorePlayer = document.querySelector('.container-score')
-    scorePlayer.innerHTML = `SCORE : ${cureentPlayerScore}`
+    scorePlayer.innerHTML = `PONTOS : ${cureentPlayerScore}`
 
     if (hintOneShow == true){
         var hintOne = document.querySelector('#hint-one')
@@ -130,14 +129,23 @@ var Geracoes = {
     },
 };
 
-dadosPokemon()
+
 
 //Variavel que guarda dinheiro do jogador
 var currentPlayerMoney = 100
 
-//
+//Variavel que guarda a pontaução do jogador
 var cureentPlayerScore = 0
  
+//Função para o Enter apertar o botão de enviar
+const inputEle = document.getElementById('nome-pokemon');
+inputEle.addEventListener('keyup', function(e){
+  var key = e.key
+  if (key == 'Enter') { 
+    sendNamePokemon()
+  }
+})
+
 //função linkada ao botão enviar que a pessoa envia o que ta dentro do input
 function sendNamePokemon(){
     var inputNomePokemon = document.querySelector('#nome-pokemon')
@@ -154,21 +162,23 @@ function sendNamePokemon(){
     }
 }
 
+
+// Função para traduzir o tipo de pokemon para português
 function traduzirPokemon(pokemonTypes) {
     var tipoPokemonTraduzido = []
     for(let i=0 ; i < pokemonTypes.length ; i++){
         switch (pokemonTypes[i]) {
             case "grass":
-                tipoPokemonTraduzido[i] = "Grama"     
+                tipoPokemonTraduzido[i] = "Planta"     
                 break;
             case "fire":
                 tipoPokemonTraduzido[i] = "Fogo"  
                 break;
             case "water":
-                tipoPokemonTraduzido[i] = "Agua"    
+                tipoPokemonTraduzido[i] = "Água"    
                 break;
             case "poison":
-                tipoPokemonTraduzido[i] = "Veneno"                  
+                tipoPokemonTraduzido[i] = "Venenoso"                  
                 break;
             case "psychic":
                 tipoPokemonTraduzido[i] = "Psíquico"   
@@ -217,7 +227,7 @@ function traduzirPokemon(pokemonTypes) {
     return tipoPokemonTraduzido
 }
 
-
+//Função para escrever na tela a dica 1 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
         var hintOneOriginal = document.querySelector('#hint-one-original')
@@ -227,7 +237,7 @@ function WriteHintOne(){
         console.log(tipoPokemon)
         
         var hintOne = document.querySelector('#hint-one')
-        hintOne.innerHTML = `<div>O pokemon é tipo: ${tipoPokemon}<\div>`
+        hintOne.innerHTML = `<div>Tipo: ${tipoPokemon}<\div>`
         
         var buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
@@ -240,6 +250,7 @@ function WriteHintOne(){
 
 }
 
+//Função para escrever na tela a dica 2
 function WriteHintTwo(){
     if(currentPlayerMoney >= 25 & !hintTwoShow){
         var hintTwoOriginal = document.querySelector('#hint-two-original')
@@ -258,6 +269,7 @@ function WriteHintTwo(){
     }
 }
 
+//Função para escrever na tela a dica 3 
 function WriteHintThree(){
     if(currentPlayerMoney >= 35 & !hintThreeShow){
         var imagem = document.getElementById("filtro")
@@ -281,6 +293,7 @@ function WriteHintThree(){
     }
 }
 
+// Função para seleção de imagem dado a dificuldade
 // function definirDificuldade(dificuldadeSelecionada) {
 //     if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
 //         imageDirectory = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'

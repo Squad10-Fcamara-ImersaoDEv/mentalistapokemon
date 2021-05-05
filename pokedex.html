@@ -16,6 +16,7 @@
         <!-- font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Play&family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
     </head>
     <body>
         <header>
@@ -25,8 +26,8 @@
                     <nav>
                         <a href="./index.html">Home</a>
                         <a href="./pokedex.html">Pokédex</a>
-                        <a href="./index.html#containerRules">Como Jogar</a>
-                        <a href="#">Sobre Nós</a>
+                        <a href="./index.html#responsiveRules">Como Jogar</a>
+                        <a href="./about.html">Sobre Nós</a>
                     </nav>
                     <a href="#">Login</a>
                 </section>
@@ -43,33 +44,31 @@
             
             <div class="wrapper">
                 <div class="search-input">
-                    <input type="text" placeholder="Ex: Pikachu">
+                    <input id='text-input-pokemon' type="text" placeholder="Ex: Pikachu ou 25">
                     <div class="autocom-box">
                         <!-- here list are inserted from javascript -->
                     </div>
-                    <div class="icon" onclick="showSelectedPokemon()"><i class="fas fa-search"></i></div>
+                    <div class="icon" onclick="showSelectedPokemon()"><img src="./assets/Lupa.webp" alt=""></div>
                 </div>
             </div>
             <div class="cards">
                 <!-- here cards are inserted from javascript -->
-            </div> 
-            <button class="botao-seemore" onclick="seeMore()" id="myBtn">Ver mais</button>
+            </div>
+            <div class="container-seemore">
+                <button class="botao-seemore" onclick="seeMore()" id="myBtn">Ver mais</button>
+            </div>
         </main>
         
-        <div id="back-to-top"><img src="./assets/pokebola.svg" alt="Pokebola"></div>
+        <div id="back-to-top"><img src="./assets/Pokemon_Arrow.svg" alt="seta pokemon"></div>
 
         <footer>
             <div class="footer-max">
-            <p>Copyright © 2021 Mentalmon - Todos os direitos reservados</p>
-            
-            <img src="./assets/pikachu-pokemon.png" alt="pokebola">
+                <p>Copyright © 2021 Squad 10 - Todos os direitos reservados</p>
             </div>
-            
         </footer>
 
     </body>
 
     <script src="js/pokedex.js"></script>
     <script src="js/suggestions.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </html>

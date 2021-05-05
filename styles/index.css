@@ -9,10 +9,6 @@ body{
 a{
     cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
 
-/* #responsiveMenu{
-
-} */
-
 .containerMenu{
     font-family: 'Play', sans-serif;
     font-size: 20px;
@@ -23,31 +19,24 @@ a{
     height: 8.75rem;}
 
 #linkHomeImg{
+    margin: auto 1rem;
     border: none;
     text-decoration: none;
 }
 
-.containerMenu nav, a{
+.containerMenu nav {
+    margin: auto 2rem auto auto;
+}
+
+.containerMenu nav a{
     text-decoration: inherit;
     color: #212121;
     width: 100%;
-    margin: auto 1.5rem;
+    margin: 2rem;
     text-align: center;}
 
 .containerMenu nav > a:hover{
     color: #A8A8A8;}
-
-.containerMenu > a{
-    display: inline-block;
-    max-width: 11rem;
-    margin-right: 4rem;
-    padding: 0.5rem;
-    border-radius: 0.625rem;
-    border: 0.188rem solid #212121;}
-
-.containerMenu > a:hover{
-    border: 0.188rem solid #A8A8A8;
-    color: #A8A8A8}
 
 #responsiveAp{
     background-color: #FFD74E;
@@ -80,7 +69,6 @@ a{
     grid-area: a;
 }
     
-
 .containerAp div a{
     background-color: #006DB9;
     display: block;
@@ -88,11 +76,13 @@ a{
     font-weight: bold;
     max-width: 220px;
     font-size: 22px;
+    text-align: center;
     padding: 20px;
     margin: 1.75rem 0;
     border-radius: 8px;
     color: #FFFFFF;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    text-decoration: none;}
 
 .containerAp div a:hover{
     background-color: #FB5555;}
@@ -106,15 +96,15 @@ a{
     color: #FFFFFF;
     max-width: 1200px;
     height: 1400px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .containerRules h1{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     font-size: 3.15rem;
-    margin-bottom: 1rem;
-    padding: 5rem 0 0 6rem;
+    padding-top: 4rem;
     text-transform: uppercase;}
 
 .rulesGrid{
@@ -212,35 +202,25 @@ a{
 .containerVideo img{
     transform: translate(700px, 50%);
 }
-    
-footer{
-    display: flex;
-    height: 90px;
-    max-width: 1200px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
 
-footer p{
-    margin-left: 6rem;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;}
+.container-copy p {
+    font-family: Ubuntu;}
 
-#responsiveCarrosel{
+#responsiveCarrosel {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .containerCarrosel > div{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 0 6rem;}
+    margin-top: 6rem;}
 
 #responsiveCarrosel > div{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 0 0 6rem;}
+    margin-top: 4rem;}
 
 #responsiveCarrosel div > h1{
     font-family: 'Ubuntu', sans-serif;
@@ -257,11 +237,10 @@ footer p{
     text-align: right;
     text-decoration: none;
     color: #6F6F6F;
-    transition: 0.7s;}
+    transition: 0.2s;}
 
 #responsiveCarrosel div > a:hover{
-    color: black;
-    font-size: 1.7rem;}
+    color: black;}
 
 .containerCarrosel {
     display: flex;
@@ -397,23 +376,45 @@ footer p{
 .psychic {
     background-color: rgb(255, 249, 190);}
 
+/* footer */
 
-#back-to-top {
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 999;
-    cursor: url(../pokebolaAberta.cur), pointer;
+footer{
+    display: flex;
+    height: 90px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
+footer .container-copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 2rem;}
+
+#back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
+        
+#back-to-top img {
+    width: 40px;
+}
+/* medias */
+
 @media screen and (max-width: 1200px) {
-    .containerMenu nav a{
-        margin: auto 1.2rem;
+    
+    .containerMenu nav {
+        margin: auto;
     }
-    .containerMenu > a{
-        max-width: 8rem;
+    
+    .containerMenu nav > a{
+        margin: auto 1.5rem;
     }
 
     .containerAp img{
@@ -463,7 +464,7 @@ footer p{
     .containerRules h1 {
         font-size: 3rem;
         margin-bottom: 3rem;
-        padding: 5rem 0 0 6rem;
+        padding-top: 4rem;
     }
     
     .rulesGrid img {
@@ -522,20 +523,12 @@ footer p{
 }
 
 @media screen and (max-width: 992px) {
-    .containerMenu nav a{
-        margin: auto 0.75rem;
-        font-size: 18px;
+    .containerMenu nav {
+        margin: auto;
     }
     
-    .containerMenu > a{
-        max-width: 7rem;
-        margin-right: 2.75rem;
-        margin-left: 0;
-        font-size: 18px;
-    }
-
-    .containerMenu nav {
-        margin: auto 1rem auto 2rem;
+    .containerMenu nav > a{
+        margin: auto 1.25rem;
     }
 
     .containerAp img{
@@ -578,7 +571,7 @@ footer p{
     .containerRules h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-        padding: 5rem 0 0 6rem;
+        padding-top: 4rem;
     }
 
     .rulesGrid > div {
@@ -660,8 +653,7 @@ footer p{
     }
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 812px) {
     .containerMenu > nav {
         display: none;
     }
@@ -671,10 +663,156 @@ footer p{
     }
 }
 
+@media screen and (max-width: 667px){
+
+    .containerMenu {
+        height: 20vh;
+    }
+
+    .containerMenu a > img{
+        width: 10rem;
+        margin: auto 0.75rem;
+    }
+
+    #responsiveAp {
+        height: 80vh;
+    }
+
+    .containerAp img{
+        height: 72.5vh;
+    }
+
+    .containerAp {
+        height: 80vh;
+    }
+
+    .containerAp div{
+        text-align: center;
+        font-size: 16px;
+        width: 40vw;
+        margin: 0;
+    }
+
+    .containerAp div > a {
+        padding: 0.75rem;
+        font-size: 19px;
+        margin: 1.5rem auto;
+    }
+
+    .containerCarrosel {
+        height: 80vh;
+    }
+
+    #responsiveCarrosel > div{
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    #responsiveCarrosel div > h1{
+        font-size: 2rem;
+    }
+
+    #responsiveCarrosel div > a{
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+
+    .gallery {
+        height: 100vh;
+    }
+
+    .containerRules{
+        font-size: 1.5rem;
+        height: 210vh;
+        
+    }
+    
+    .containerRules h1{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        padding: 2rem 0 0 2rem;
+
+    }
+    
+    .rulesGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10vh;
+        grid-template-areas:    "text1"
+                                "text2"
+                                "text3";}
+    
+    .rulesGrid img{
+        display: none;
+    }
+    
+    .text1, .text3{
+        margin-right: 1.5rem;
+    }
+    
+    .text2{
+        margin-left: 1.5rem;
+    }
+    
+    .text1, .text2, .text3{
+        align-self: center;
+        font-size: 18px ;
+    }
+    
+    .text1::before, .text3::before{
+        font-size: 2rem;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+    
+    .text2::after{
+        font-size: 2rem;
+        border-radius: 20px;
+        min-width: 100px;
+        height: 100px;
+        margin: 0 1.5rem 0 1.5rem;
+    }
+
+    .containerVideo{
+        height: 130vh;   
+    }
+    
+    .containerVideo > div{
+        width: 100%;
+        transform: translateY(-50%);
+    }
+    
+    .containerVideo div h2{
+        text-align: center;
+    }
+
+    .containerVideo div > video{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .containerVideo img{
+        height: 200px;
+        margin: 0px -50% 0px 0px;
+        transform: translate(-50%, 15%);  
+    }
+
+
+    #back-to-top {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 380px) {
 
     #responsiveMenu{
         height: 20vh;
+    }
+
+    .containerMenu a > img{
+        width: 9rem;
+        margin: auto 0.75rem;
     }
 
     .containerMenu > nav {
@@ -704,7 +842,7 @@ footer p{
     .containerAp div {
         margin: 2rem auto;
         text-align: center;
-        max-width: 20rem;
+        min-width: 80%;
         font-size: 17px;
     }
 
@@ -715,7 +853,7 @@ footer p{
     }
 
     #responsiveCarrosel > div{
-        margin: 2rem 2rem  0 2rem;
+        margin: 2rem 1rem  0 1rem;
     }
 
     #responsiveCarrosel div > h1{
@@ -725,7 +863,11 @@ footer p{
     #responsiveCarrosel div > a{
         font-size: 1rem;
         margin-right: 0;
-        text-align: center;
+        align-self: center;
+    }
+
+    .containerCarrosel {
+        height: 45vh;
     }
 
     .gallery {
@@ -734,7 +876,8 @@ footer p{
 
     .containerRules{
         font-size: 1.5rem;
-        height: 105vh;
+        height: 50rem;
+        
     }
     
     .containerRules h1{
@@ -754,8 +897,6 @@ footer p{
     
     .rulesGrid img{
         display: none;
-        grid-area: img;
-        margin-top: 50%;
     }
     
     .text1, .text3{

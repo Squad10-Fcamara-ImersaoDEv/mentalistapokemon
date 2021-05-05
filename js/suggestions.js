@@ -78,6 +78,17 @@ async function getPokemonProps(pokemonName) {
         })
 }
 
+
+//Function for Enter call showSelectedPokemon()
+const inputEle = document.getElementById('text-input-pokemon');
+inputEle.addEventListener('keyup', function(e){
+  var key = e.key
+  if (key == 'Enter') { 
+    showSelectedPokemon()
+  }
+})
+
+
 // show selected pokemon on screen
 async function showSelectedPokemon() {
 	let pokemonFirstClass
@@ -142,6 +153,8 @@ async function showSelectedPokemon() {
 				break;
 		}
 		
+        let pokemonTiposTraduzido = traduzirPokemon(selectedPokemonData.types)
+
 		cardsBox.innerHTML =
 		`
 			<div class="card-pokemon ${pokemonFirstClass}" id=${selectedPokemonData.name}>
@@ -149,7 +162,7 @@ async function showSelectedPokemon() {
 				<img class="imagempokemon" src="${selectedPokemonData.image}" alt="imagem do ${selectedPokemonData.name}">
 				<div class="container">
 					<span class="code-pokemon">#${selectedPokemonData.index}</span>
-					<p class="type-pokemon">${selectedPokemonData.types.join('/')}</p>
+					<p class="type-pokemon">${pokemonTiposTraduzido.join('/')}</p>
 				</div>
 			</div>
 		`
@@ -167,4 +180,67 @@ async function showSelectedPokemon() {
         inputBox.value = ''
         botaoSeemore.setAttribute('hidden','hidden')
     }
+}
+
+function traduzirPokemon(pokemonTypes) {
+    var tipoPokemonTraduzido = []
+    for(let i=0 ; i < pokemonTypes.length ; i++){
+        switch (pokemonTypes[i]) {
+            case "grass":
+                tipoPokemonTraduzido[i] = "Planta"     
+                break;
+            case "fire":
+                tipoPokemonTraduzido[i] = "Fogo"  
+                break;
+            case "water":
+                tipoPokemonTraduzido[i] = "Água"    
+                break;
+            case "poison":
+                tipoPokemonTraduzido[i] = "Venenoso"                  
+                break;
+            case "psychic":
+                tipoPokemonTraduzido[i] = "Psíquico"   
+                break;
+            case "ground":
+                tipoPokemonTraduzido[i] = "Terra"
+                break;
+            case "electric":
+                tipoPokemonTraduzido[i] = "Elétrico"
+                break; 
+            case "flying":
+                tipoPokemonTraduzido[i] = "Voador"
+                break;
+            case "ice" :
+                tipoPokemonTraduzido[i] = "Gelo"
+                break;
+            case "bug" :
+                tipoPokemonTraduzido[i] = "Inseto"
+                break;    
+            case "dark" :
+                tipoPokemonTraduzido[i] = "Sombrio"
+                break;    
+            case "dragon" :
+                tipoPokemonTraduzido[i] = "Dragão"
+                break;  
+            case "fairy" :
+                tipoPokemonTraduzido[i] = "Fada"
+                break;
+            case "fighting" :
+                tipoPokemonTraduzido[i] = "Lutador"
+                break;         
+            case "ghost" :
+                tipoPokemonTraduzido[i] = "Fantasma"
+                break;  
+            case "rock" :
+                tipoPokemonTraduzido[i] = "Pedra"
+                break;   
+            case "steel" :
+                tipoPokemonTraduzido[i] = "Aço"
+                break;   
+            default:
+                tipoPokemonTraduzido[i] = "Normal"
+                break;
+        }
+    }
+    return tipoPokemonTraduzido
 }

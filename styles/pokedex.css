@@ -9,8 +9,17 @@ body{
   cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
-a{
-  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;}
+main {
+  min-height: 70vh;
+}
+
+footer {
+  min-height: 10.5vh;
+}
+
+a {
+  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+}
 
 /* Header */
 
@@ -18,39 +27,45 @@ a{
 
 } */
 
-.containerMenu{
+.containerMenu {
   font-family: 'Play', sans-serif;
   font-size: 20px;
   font-weight: 700;
   display: flex;
   margin: auto;
   max-width: 1200px;
-  height: 8.75rem;}
+  height: 8.75rem;
+}
 
-.containerMenu > img{
-  margin-left: 1rem;}
+.containerMenu > img {
+  margin-left: 1rem;
+}
 
-.containerMenu nav, a{
+.containerMenu nav, a {
   text-decoration: inherit;
   color: #212121;
   width: 100%;
   margin: auto 1.5rem;
-  text-align: center;}
+  text-align: center;
+}
 
-.containerMenu nav > a:hover{
-  color: #A8A8A8;}
+.containerMenu nav > a:hover {
+  color: #A8A8A8;
+}
 
-.containerMenu > a{
+.containerMenu > a {
   display: inline-block;
   max-width: 11rem;
   margin-right: 4rem;
   padding: 0.5rem;
   border-radius: 0.625rem;
-  border: 0.188rem solid #212121;}
+  border: 0.188rem solid #212121;
+}
 
-.containerMenu > a:hover{
+.containerMenu > a:hover {
   border: 0.188rem solid #A8A8A8;
-  color: #A8A8A8}
+  color: #A8A8A8
+}
 
 .container-title {
   display: flex;
@@ -62,13 +77,12 @@ a{
 .container-title .title {
   width: 100%;
   max-width: 1200px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   padding: 2rem 0;
 }
+
 .container-title .title > img {
   height: 6rem;
   margin-left: 2rem;
@@ -77,7 +91,6 @@ a{
 .container-title .title > h2 {
   font-size: 3rem;
   color: #efefef;
-
   display:inline-block;
   margin-left: 2rem;
 }
@@ -143,6 +156,7 @@ a{
 .search-input.active .autocom-box li {
   display: block;
 }
+
 .autocom-box li:hover {
   background: #efefef;
 }
@@ -150,7 +164,7 @@ a{
 .wrapper .search-input .icon {
   position: absolute;
   right: 1rem;
-  top: 0.25rem;
+  top: 0.5rem;
   height: 55px;
   width: 55px;
   text-align: center;
@@ -158,6 +172,18 @@ a{
   font-size: 20px;
   color: #212121;
   cursor: pointer;
+}
+
+.icon img {
+  width: 38px;
+  margin-top: 6px;
+}
+
+.cards { 
+  text-align: center;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .card-pokemon {
@@ -169,13 +195,6 @@ a{
   margin: 20px 10px 0 10px;
   padding: 30px 0 0 0;
   border-radius: 1rem;
-}
-
-.cards { 
-  text-align: center;
-  max-width: 1440px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -241,7 +260,7 @@ a{
   background-color: #a7a7a785;
   font-weight: 500;
   border-radius: 10px;
-  padding: 0.1rem 0.4rem ;
+  padding: 0.1rem 0.4rem;
   font-size: 0.8rem;
 }
 
@@ -252,19 +271,28 @@ a{
 }
 
 #back-to-top {
-  width: 50px;
-  height: 50px;
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  right: 30px;
+  bottom: 30px;
   z-index: 999;
   cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
+#back-to-top img {
+  width: 40px;
+}
+
+.container-seemore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
 .botao-seemore{
   border: none;
-  margin: 1% 45%; 
-  width: 10%;
+  width: 20rem;
   font-size: 1.2rem;
   background-color: #006DB9;
   border-radius: 8px;
@@ -286,35 +314,21 @@ footer{
     height: 100px;
     margin-top: 5vh;
     align-items: center;
-    justify-content:center;
-}
-
-footer p{
-    display: inline-block;
-    margin-left: 2rem;
-    font-size: 16px;
-}
-
-footer img{
-    display: inline-block;
-    margin-right: 3rem;
-    height: 50px;
+    justify-content: center;
 }
 
 .footer-max {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  max-width: 1200px;  
+  max-width: 1200px;
+
+  padding: 0 1rem;
 }
 
 /* medias */
 @media (max-width:800px) {
-  .botao-seemore{
-    margin: 1% 30%; 
-    width: 40%;
-  }
   #searchfield {
     width: 70vw;
     margin: auto;
@@ -326,10 +340,6 @@ footer img{
 }
 
 @media (max-width:600px) {
-  .botao-seemore{
-    margin: 1% 20%; 
-    width: 60%;
-  }
   .card-pokemon {
     width: 90%;
   }

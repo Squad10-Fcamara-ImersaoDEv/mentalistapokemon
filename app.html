@@ -44,18 +44,18 @@
                 
                 <div class="form-input-pokemon">
                     <input class="input-pokemon" id="nome-pokemon" placeholder="Digite em inglês" type="text">
-                    <button  class="button-send" onclick="sendNamePokemon()">ok</button>    
+                    <button class="button-send" onclick="sendNamePokemon()">ok</button>
                 </div>
                 
                 <!-- dica um -->
                 <div class="buttons-hint">
                     <button class='button-hint' id='button-hint-one' onclick="WriteHintOne()"> 
                         <div class="text-hint ">
-                            <div id="hint-one"></div> 
-                            <div id="hint-one-original">Tipo P$ 15 
-                                <img class='imagem-hint' src="./assets/pokecoin.png" alt=" imagem pokecoin">
+                            <div id="hint-one"></div>
+                            <div id="hint-one-original">Tipo P$ 15
+                                <img class='imagem-hint' src="./assets/pokecoin.png" alt="Imagem Pokecoin">
                             </div>
-                        </div> 
+                        </div>
                     </button>
 
                     <button class='button-hint' id='button-hint-two' onclick="WriteHintTwo()"> 
@@ -78,7 +78,7 @@
                         <button onclick="skipPokemon()" class="skip-button">PULAR</button>
                         
                         <div  id='button'class='back-to-home'><a  class='back-to-home-link' href="index.html">   
-                            </a>Exit</a>
+                            </a>SAIR</a>
                         </div>
                     
                     </div>
@@ -90,20 +90,20 @@
 
         <div class="modal">
             <div id="modal-exit" class="modal-exit">
-            <div class="modal-exit-content">
-                <div class="modal-exit-title">
-                Back to home page?
+                <div class="modal-exit-content">
+                    <div class="modal-exit-title">
+                    Voltar para home?
+                    </div>
+                    <div class="modal-exit-desc">
+                    Você tem certeza que quer voltar para home? Você perderá todo seu progresso
+                    </div>
                 </div>
-                <div class="modal-exit-desc">
-                Are you sure you wish to go Home Page? You will lose your progress.
+                <div id="modal-cancel" class="modal-exit-button">
+                    Ir para Home
                 </div>
-            </div>
-            <div id="modal-cancel" class="modal-exit-button">
-                Go to Home
-            </div>
-            <div id="modal-confirm" class="modal-exit-button">
-                Continue
-            </div>
+                <div id="modal-confirm" class="modal-exit-button">
+                    Continuar
+                </div>
             </div>
         </div>
     </main>
