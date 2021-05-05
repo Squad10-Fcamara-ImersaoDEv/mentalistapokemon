@@ -971,10 +971,7 @@ footer .container-copy {
     z-index: 100;
     top: 1rem;
     right: 1rem;
-    width: 3rem;
-    height: 3rem;
     border: none;
-    background: white;
     cursor: pointer;
 }
 
@@ -993,11 +990,10 @@ footer .container-copy {
     width: 100%;
     height: 100vh;
     background: #006DB9;
-    color: white;
     transform: translateY(-100%);
     transition: 0.2s;
     list-style: none;
-    padding: 5rem 4rem;
+    padding: 5rem 5rem;
     font-family: 'Play', sans-serif;
 }
 
@@ -1014,7 +1010,8 @@ li {
 .menuLink {
     display: inline;
     font-size: 2rem;
-    color: white;
+    color: #212121;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -1022,7 +1019,7 @@ li {
     text-decoration: underline;
 }
 
-.mobile-nav-button {
+.menuIcon, .xIcon {
     width:35px;
     position:absolute;
     margin:2rem;
@@ -1041,7 +1038,6 @@ li {
     position:relative;
     transition:1s ease;
     margin: 0.5rem 0;
-
 }
 
 .mobile-nav-button__line--1 {
