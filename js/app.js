@@ -159,6 +159,17 @@ function sendNamePokemon(){
         imagemPokemon.style.filter = "brightness(100%)" 
         setTimeout(dadosPokemon,3000)
         document.querySelector('#nome-pokemon').value = ""
+
+        win.play();
+    } else {
+        cureentPlayerScore -= 1
+        setTimeout(dadosPokemon,1500)
+        var imagemPokemon = document.getElementById('filtro')
+        imagemPokemon.style.filter = "brightness(100%)"
+
+        document.querySelector('#nome-pokemon').value = ""
+
+        wrong.play()
     }
 }
 
@@ -248,6 +259,8 @@ function WriteHintOne(){
         hintOneShow = true
     }
 
+    buyTip.play();
+
 }
 
 //Função para escrever na tela a dica 2
@@ -267,6 +280,8 @@ function WriteHintTwo(){
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintTwoShow = true
     }
+
+    buyTip.play();
 }
 
 //Função para escrever na tela a dica 3 
@@ -291,6 +306,8 @@ function WriteHintThree(){
         
         hintThreeShow = true
     }
+
+    buyTip.play();
 }
 
 // Função para seleção de imagem dado a dificuldade
@@ -318,6 +335,8 @@ function displayModal() {
       } else {
         return
       }
+
+      exit.play();
     });
   }
   
@@ -346,4 +365,14 @@ function skipPokemon() {
     setTimeout(dadosPokemon,1500)
     var imagemPokemon = document.getElementById('filtro')
     imagemPokemon.style.filter = "brightness(100%)" 
+
+    nextPokemon.play();
 }
+
+// sounds effects
+
+var win = new Audio('./assets/win_sound.wav')
+var wrong = new Audio('./assets/wrong_sound.wav')
+var buyTip = new Audio('./assets/tip_sound.wav')
+var nextPokemon = new Audio("https://freesound.org/data/previews/536/536782_1415754-lq.mp3");
+var exit = new Audio('./assets/click_sound.wav')
