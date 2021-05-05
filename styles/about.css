@@ -90,14 +90,14 @@ section {
 }
 
 .container-about__title img {
-    height: 2rem;
+    height: 6rem;
     margin-left: 1rem;
 }
 
 .container-about__title h2 {
     font-family: Ubuntu;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #efefef;
     margin-left: 2rem;
 }
