@@ -169,7 +169,7 @@ body {
     background-color: transparent;
     border: #333 solid 2px;
     border-radius: 10px;
-    padding: 12px;
+    padding: 10px;
     color: #333;
     cursor: pointer;
     text-align: center;
@@ -487,7 +487,7 @@ body {
 
     .skip-button {
         margin:auto;
-        margin-right: 1rem;
+        margin-right: 0.8rem;
         padding: 0.6rem;
     }
     
