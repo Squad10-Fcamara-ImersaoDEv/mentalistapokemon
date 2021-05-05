@@ -6,7 +6,6 @@
 
 body{
   font-family: 'Ubuntu', sans-serif;
-  cursor: url(../assets/cursores/pokebola.cur), auto;
 }
 
 main {
@@ -15,10 +14,6 @@ main {
 
 footer {
   min-height: 10.5vh;
-}
-
-a {
-  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
 /* Header */
@@ -275,7 +270,6 @@ a {
   right: 30px;
   bottom: 30px;
   z-index: 999;
-  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
 #back-to-top img {
@@ -299,7 +293,6 @@ a {
   color: #FFFFFF;
   height: 3rem;
   text-transform:capitalize;
-  cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
 .botao-seemore:hover{
