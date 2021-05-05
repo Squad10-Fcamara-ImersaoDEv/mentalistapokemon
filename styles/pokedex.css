@@ -284,7 +284,7 @@ footer {
   padding: 2rem;
 }
 
-.botao-seemore{
+.botao-seemore {
   border: none;
   width: 20rem;
   font-size: 1.2rem;
@@ -295,12 +295,12 @@ footer {
   text-transform:capitalize;
 }
 
-.botao-seemore:hover{
+.botao-seemore:hover {
   transition: 0.5s;
   background-color: #FB5555;
 }
 
-footer{
+footer {
     background-color:#006db9 ;
     color: #efefef;
     display: flex;
