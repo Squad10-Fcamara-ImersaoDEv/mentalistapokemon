@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    cursor: url(../assets/cursores/pokebola.cur), auto;
-}
-
-a{
-    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
-}
-
 .containerMenu{
     font-family: 'Play', sans-serif;
     font-size: 20px;
@@ -464,7 +456,6 @@ footer .container-copy {
     right: 30px;
     bottom: 30px;
     z-index: 999;
-    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
         
 #back-to-top img {
