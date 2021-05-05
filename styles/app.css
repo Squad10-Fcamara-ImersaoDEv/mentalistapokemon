@@ -41,6 +41,7 @@ body {
     margin-left: -98%;
     margin-top: -25%;
     filter: brightness(0);
+    pointer-events: none;
 }
 
 .card-imagempokemonEasy {
