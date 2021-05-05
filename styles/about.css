@@ -90,14 +90,14 @@ section {
 }
 
 .container-about__title img {
-    height: 6rem;
+    height: 2rem;
     margin-left: 1rem;
 }
 
 .container-about__title h2 {
     font-family: Ubuntu;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #efefef;
     margin-left: 2rem;
 }
@@ -269,8 +269,29 @@ footer .container-copy {
 
 /* media querys */
 
+/* mobile styles */
+@media only screen and (min-width: 480px) {
+
+    .container-about__title img {
+        height: 3rem;
+    }
+    
+    .container-about__title h2 {
+        font-size: 3rem;
+        margin-left: 3rem;
+    }
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
+    .container-about__title img {
+        height: 4rem;
+    }
+    
+    .container-about__title h2 {
+        font-size: 4rem;
+    }
+
     .container-about__items {
         width: 100%;
         max-width: 1200px;
