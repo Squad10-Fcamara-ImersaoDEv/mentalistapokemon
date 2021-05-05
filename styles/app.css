@@ -109,7 +109,7 @@ body {
     cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
 }
 
-.hidden-hint{
+.hidden-hint {
     display: none;
 }
 
@@ -401,7 +401,6 @@ body {
         display: unset;
     }
 
-    
     .background-game { 
         display:none;
     }
@@ -443,7 +442,7 @@ body {
         display: none;
     }
 
-    .card-imagempokemonMedium{
+    .card-imagempokemonMedium {
         width: 43%;
         height: auto;
         z-index: 10;
@@ -471,7 +470,7 @@ body {
         margin: 1.5rem auto;
     }
 
-    #nome-game-desktop{
+    #nome-game-desktop {
         font-family: 'Play',cursive;
         font-size: 2.5rem;
         font-weight: bold;
@@ -504,7 +503,7 @@ body {
         width: 100%;
     }
 
-    .card-imagempokemonMedium{
+    .card-imagempokemonMedium {
         width: 43%;
         height: auto;
         z-index: 10;

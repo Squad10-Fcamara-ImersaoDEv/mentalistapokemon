@@ -23,10 +23,6 @@ a {
 
 /* Header */
 
-/* #responsiveMenu{
-
-} */
-
 .containerMenu{
   font-family: 'Play', sans-serif;
   font-size: 20px;
@@ -410,13 +406,13 @@ li {
 }
 
 footer{
-    background-color:#006db9 ;
-    color: #efefef;
-    display: flex;
-    height: 100px;
-    margin-top: 5vh;
-    align-items: center;
-    justify-content: center;
+  background-color:#006db9 ;
+  color: #efefef;
+  display: flex;
+  height: 100px;
+  margin-top: 5vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-max {
@@ -425,7 +421,6 @@ footer{
   justify-content: center;
   width: 100%;
   max-width: 1200px;
-
   padding: 0 1rem;
 }
 
