@@ -721,12 +721,33 @@ footer .container-copy {
 
 @media screen and (max-width: 812px) {
 
+    #linkHomeImg{
+        margin: auto 2rem;
+        border: none;
+        text-decoration: none;
+    }
+
     .menuHamburguer {
         display: block;
     }
 
     .containerMenu > nav {
         display: none;
+    }
+
+    #responsiveAp div {
+        font-size: 17px;
+        width: 65%;
+    }
+
+    #responsiveAp div > a{
+        font-size: 1.15rem;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .containerAp img{
+        height: 90%;
     }
 
     #responsiveCarrosel > div{
@@ -744,7 +765,7 @@ footer .container-copy {
    
     .containerRules{
         font-size: 1.5rem;
-        height: 110vh;
+        height: 60rem;
     }
     
     .containerRules h1{
@@ -790,42 +811,44 @@ footer .container-copy {
 
 @media screen and (max-width: 667px){
 
-    .containerMenu {
-        height: 20vh;
-    }
-
     .containerMenu a > img{
         width: 10rem;
         margin: auto 0.75rem;
     }
 
     #responsiveAp {
-        height: 80vh;
-    }
-
-    .containerAp img{
-        height: 72.5vh;
+        height: 20rem;
     }
 
     .containerAp {
-        height: 80vh;
+        height: 20rem;
+    }
+
+    .containerAp img{
+        height: 90%;
     }
 
     .containerAp div{
-        text-align: center;
-        font-size: 16px;
-        width: 40vw;
-        margin: 0;
+        min-width: 11rem;
+        right: 1.5rem;
+    }
+
+    .containerAp div h1 {
+        font-size: 1.25rem;
+    }
+
+    .containerAp img {
+        left: 0;
     }
 
     .containerAp div > a {
         padding: 0.75rem;
-        font-size: 19px;
+        font-size: 1.25rem;
         margin: 1.5rem auto;
     }
 
     .containerCarrosel {
-        height: 80vh;
+        height: 16rem;
     }
 
     #responsiveCarrosel > div{
@@ -842,12 +865,12 @@ footer .container-copy {
     }
 
     .gallery {
-        height: 100vh;
+        height: 20rem;
     }
 
     .containerRules{
         font-size: 1.5rem;
-        height: 210vh;
+        height: 50rem;
     }
     
     .containerRules h1{
@@ -899,7 +922,7 @@ footer .container-copy {
     }
 
     .containerVideo{
-        height: 130vh;   
+        height: 28rem;   
     }
     
     .containerVideo > div{
@@ -919,7 +942,7 @@ footer .container-copy {
     .containerVideo img{
         height: 200px;
         margin: 0px -50% 0px 0px;
-        transform: translate(-50%, 15%);  
+        transform: translate(-50%, 10%);  
     }
 
     #back-to-top {
@@ -927,7 +950,13 @@ footer .container-copy {
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 453px) and (min-width: 300px){
+    #linkHomeImg{
+        margin: auto 1.5rem;
+        border: none;
+        text-decoration: none;
+    }
+
 
     #responsiveMenu{
         height: 20vh;
@@ -1084,8 +1113,6 @@ footer .container-copy {
     }
 }
 
-/* Menu hamburguer */
-
 .ham {
     position: absolute;
     z-index: 100;
@@ -1164,11 +1191,10 @@ li {
     background: white;
 }
 
-
 .mobile-nav-button__line--1 {
     width:100%;
     height:4px;
-    background:#212121;
+    background:#f0f0f0;
     position:relative;
     transition:1s ease;
     margin: 0.5rem 0;
@@ -1184,7 +1210,7 @@ li {
 .mobile-nav-button__line--3 {
     width:100%;
     height:4px;
-    background:#212121;
+    background:#f0f0f0;
     position:relative;
     transition:1s ease;
     margin: 0.5rem 0;
