@@ -80,11 +80,11 @@
     font-family: 'Play', sans-serif;
     font-weight: bold;
     max-width: 220px;
-    font-size: 22px;
+    font-size: 1.1rem;
     text-align: center;
     padding: 20px;
     margin: 1.75rem 0;
-    border-radius: 8px;
+    border-radius: 2.5rem;
     color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
@@ -256,9 +256,10 @@
 
 #responsiveCarrosel div > a{
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-right: 6rem;
+    margin-bottom: 1rem;
     align-self: flex-end;
     text-align: right;
     text-decoration: none;
@@ -764,7 +765,7 @@ footer .container-copy {
     }
 
     #responsiveAp div > a{
-        font-size: 1.15rem;
+        font-size: 1rem;
         width: 90%;
         padding: 1rem;
     }
@@ -866,7 +867,7 @@ footer .container-copy {
 
     .containerAp div > a {
         padding: 0.75rem;
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin: 1.5rem auto;
     }
 
@@ -1045,7 +1046,7 @@ footer .container-copy {
     .containerAp div a{
         margin: 1.5rem auto;
         padding: 0.8rem;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     #responsiveCarrosel > div{

@@ -100,9 +100,10 @@ body {
     max-width: 20rem;
     height: 2.5rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 2.5rem;
     color: #FFFFFF;
     background-color: #006DB9;
+    font-family: Play, Ubuntu, sans-serif;
     font-weight: bold;
     padding: 0.3rem;
 }
@@ -162,22 +163,25 @@ body {
 }
 
 .back-to-home {
-    width: 22%;
+    width: 25%;
     background-color: transparent;
-    border: #333 solid 2px;
-    border-radius: 10px;
-    padding: 10px;
-    color: #333;
+    border: #FB5555 solid 2px;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    color: #FB5555;
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    font-size: 0.9em;
-    letter-spacing: 0.1em;
+    font-size: 1rem;
+    /* letter-spacing: 0.1em; */
     text-transform: uppercase;
+    /* margin-left: 1rem; */
+    transition: all .3s ease-in-out;
 }
 
 .back-to-home:hover {
-    background-color: #999;
+    background-color: #FB5555;
+    color: #f0f0f0;
 }  
 
 .showtime {
@@ -267,26 +271,31 @@ body {
     width: 80%;
     max-width: 20rem;
     position: relative;
+    display: flex;
+    justify-content: space-between;
     margin:auto;
 }
 
 .skip-button {
     width: 60%;
     background-color: #0C4C78;;
-    border-radius: 10px;
-    margin-right: 7%;
+    border-radius: 2.5rem;
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-size: 0.9em;
+    font-family: Play, Ubuntu, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.1em;
-    padding: 10px;
+    padding: 1rem;
     text-transform: uppercase;
     border: none;
+    transition: all .3s ease-in-out;
 }
 
 .skip-button:hover {
-    background-color: #999;
+    background-color: #FFD74E;
+    color: #222222;
 }
 
 @media (min-width: 768px) {
@@ -333,29 +342,29 @@ body {
         max-width: 20rem;
         height:3.5rem;
         border: none;
-        border-radius: 10px;
+        border-radius: 2.5rem;
     }
 
     .skip-and-exit {
-            width: 80%;
-            margin: 2.2rem auto 0 auto;
-            justify-content: space-between;
+        width: 80%;
+        margin: 2.2rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
     }
 
     .skip-button {
-        margin:auto;
-        margin-right: 1rem;
-        border-radius: 10px;
+        /* margin: auto; */
+        border-radius: 2.5rem;
         font-size: 1.4em;
-        padding: 0.9rem;
+        padding: 1rem;
     }
     
     .back-to-home {
         font-weight: bold;
-        margin:auto;
-        border-radius: 10px;
+        /* margin:auto; */
+        border-radius: 3rem;
         font-size: 1.4em;
-        padding: 1rem;
+        padding: 0.9rem;
     }
 
     .containers-money-and-score {
@@ -478,15 +487,14 @@ body {
     }
 
     .skip-button {
-        margin:auto;
-        margin-right: 0.8rem;
-        padding: 0.6rem;
+        /* margin:auto; */
+        padding: 1rem;
     }
     
-    .back-to-home {
+    /* .back-to-home {
         font-weight: bold;
         padding: 0.7rem;
-    }
+    } */
 
 }
 @media  (min-width: 1024px) and (max-width: 1350px) and (orientation: landscape) {
