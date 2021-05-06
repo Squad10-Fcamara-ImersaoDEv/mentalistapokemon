@@ -33,41 +33,6 @@ async function showPokemon(id) {
 
 var pokemonOnScreen = []
 
-//Geracoes de pokemon
-var Geracoes = {
-    1: {
-        inicio: 1,
-        fim: 151,
-    },
-    2: {
-        inicio: 152,
-        fim: 251,
-    },
-    3: {
-        inicio: 252,
-        fim: 386,
-    },
-    4: {
-        inicio: 387,
-        fim: 493,
-    },
-    5: {
-        inicio: 494,
-        fim: 649,
-    },
-    6: {
-        inicio: 650,
-        fim: 721,
-    },
-    7: {
-        inicio: 722,
-        fim: 807,
-    },
-    8: {
-        inicio: 808,
-        fim: 898,
-    },
-};
 
 var geracaoAtual = 1
 var inicio = Geracoes[geracaoAtual].inicio
@@ -105,39 +70,39 @@ async function dadosPokemon(){
     scorePlayer.innerHTML = `PONTOS : ${currentPlayerScore}`
 
     if (hintOneShow == true){
-        var hintOne = document.querySelector('#hint-one')
+        let hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = ''
 
-        var hintOneOriginal = document.querySelector('#hint-one-original')
+        let hintOneOriginal = document.querySelector('#hint-one-original')
         hintOneOriginal.classList.remove('hidden-hint')
 
-        var buttonHintOne = document.getElementById('button-hint-one')
+        let buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.remove('button-used')
 
         hintOneShow = false
     }
     
     if (hintTwoShow == true){
-        var hintTwo = document.querySelector('#hint-two')
+        let hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = ''
 
-        var hintTwoOriginal = document.querySelector('#hint-two-original')
+        let hintTwoOriginal = document.querySelector('#hint-two-original')
         hintTwoOriginal.classList.remove('hidden-hint')
 
-        var buttonHintTwo = document.getElementById('button-hint-two')
+        let buttonHintTwo = document.getElementById('button-hint-two')
         buttonHintTwo.classList.remove('button-used')
 
         hintTwoShow = false
     }
 
     if (hintThreeShow == true){
-        var hintThree = document.querySelector('#hint-three')
+        let hintThree = document.querySelector('#hint-three')
         hintThree.innerHTML = ''
 
-        var hintThreeOriginal = document.querySelector('#hint-three-original')
+        let hintThreeOriginal = document.querySelector('#hint-three-original')
         hintThreeOriginal.classList.remove('hidden-hint')
 
-        var buttonHintThree = document.getElementById('button-hint-three')
+        let buttonHintThree = document.getElementById('button-hint-three')
         buttonHintThree.classList.remove('button-used')
 
         hintThreeShow = false
@@ -365,18 +330,18 @@ function displayModal() {
   }
   
 function closeModal() {
-var modal = document.querySelector('#modal-exit')
+    var modal = document.querySelector('#modal-exit')
 
-modal.addEventListener('click', function(e) {
-    e.preventDefault()
-    
-    if ( e.target.id === "modal-confirm") {
-    modal.classList.remove('showtime')
-    }
-    if ( e.target.id === "modal-cancel"){
-    window.location.href ='./index.html'
-    }
-})
+    modal.addEventListener('click', function(e) {
+        e.preventDefault()
+        
+        if ( e.target.id === "modal-confirm") {
+        modal.classList.remove('showtime')
+        }
+        if ( e.target.id === "modal-cancel"){
+        window.location.href ='./index.html'
+        }
+    })
 }
 
 displayModal();
