@@ -165,6 +165,21 @@ li {
     position: absolute;        
 }
 
+#playNow {
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    color: white;
+    background-color: #006DB9;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    transition: .3s;
+}
+
+#playNow:hover {
+    background-color: #fb5555;
+}
+
+/* section about */
 #container-about {
     width: calc(100vw - var(--scrollbar-width));
     display: flex;
@@ -404,7 +419,7 @@ footer .container-copy {
     }
 
     #linkHomeImg img {
-        width: 10rem;
+        width: 7rem;
     }
 
     .container-about__title img {
@@ -447,12 +462,16 @@ footer .container-copy {
         display: flex;
     }
 
+    #linkHomeImg img {
+        width: 9rem;
+    }
+
     .containerMenu nav {
         display: inline-block;
     }
 
-    .containerMenu nav a{
-        margin: 0 2rem;
+    .containerMenu nav a {
+        margin: 0 1rem;
     }
 
     .container-about__title img {
@@ -498,14 +517,10 @@ footer .container-copy {
 @media only screen and (min-width: 961px) {
     .containerMenu nav a {
         font-size: 1.3rem;
+        margin: 0 1.5rem;
     }
-  }
 
-#playNow{
-    font-size: 1.1rem;
-    font-family: 'Play', sans-serif;
-    color: white;
-    background-color: #006DB9;
-    border-radius: 2rem;
-    padding: 1rem 2rem 1rem 2rem;
+    #linkHomeImg img {
+        width: 11rem;
+    }
 }

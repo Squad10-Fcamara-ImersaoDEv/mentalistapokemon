@@ -13,8 +13,8 @@ const getPokemonsList = async function() {
 getPokemonsList()
 
 // getting all required elements
-const cardsBox = document.querySelector('.cards')
-const botaoSeemore = document.querySelector('.botao-seemore')
+const cardsBox = document.querySelector('.cards');
+const botaoSeemore = document.querySelector('.botao-seemore');
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const suggBox = searchWrapper.querySelector(".autocom-box");
