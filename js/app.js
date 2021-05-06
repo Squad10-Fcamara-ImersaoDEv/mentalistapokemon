@@ -187,7 +187,10 @@ function sendNamePokemon(){
 
         win.play();
     } else {
-        currentPlayerScore -= 1
+        if (currentPlayerScore > 0){
+            currentPlayerScore -= 1
+        }
+        
         setTimeout(dadosPokemon,1500)
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)"
@@ -386,7 +389,9 @@ closeModal();
 //skip button
 
 function skipPokemon() {
-    currentPlayerScore -= 1
+    if (currentPlayerScore > 0){
+        currentPlayerScore -= 1
+    }
     setTimeout(dadosPokemon,1500)
     var imagemPokemon = document.getElementById('filtro')
     imagemPokemon.style.filter = "brightness(100%)" 
