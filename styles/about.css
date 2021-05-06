@@ -500,3 +500,12 @@ footer .container-copy {
         font-size: 1.3rem;
     }
   }
+
+#playNow{
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    color: white;
+    background-color: #006DB9;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
