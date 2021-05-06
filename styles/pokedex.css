@@ -419,6 +419,12 @@ footer {
 }
 
 /* medias */
+@media (max-width:1000px) {
+  .containerMenu nav a{
+    margin: 0.75rem;
+  } 
+}
+
 @media (max-width:812px) {
   .menuHamburguer {
     display: block;
@@ -490,11 +496,15 @@ footer {
   }
 }
 
-#playNow{
+#playNow {
   font-size: 1.1rem;
   font-family: 'Play', sans-serif;
   color: white;
   background-color: #006DB9;
   border-radius: 2rem;
   padding: 1rem 2rem 1rem 2rem;
+}
+
+#playNow:hover {
+  background-color: #FB5555;
 }
