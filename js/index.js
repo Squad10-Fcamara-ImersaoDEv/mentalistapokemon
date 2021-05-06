@@ -1,10 +1,12 @@
-//botao voltar ao topo com sensação de scroll
+//Botao voltar ao topo com sensação de scroll
 var btn = document.querySelector("#back-to-top");
 btn.addEventListener('click', () => window.scrollTo({
     top ,
     behavior: 'smooth',
 }));
 
+
+//Função para trocar a carta principal do carrossel
 document.addEventListener('DOMContentLoaded', function() {
     var stream = document.querySelector('.gallery__stream');
     var items = document.querySelectorAll('.gallery__item');
@@ -20,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       stream.appendChild(items[0]);
       items = document.querySelectorAll('.gallery__item');
     });
-  });
+});
 
 //Função para mostrar os controles do video quando o mouse estiver em cima
 function controlesVideo() {
@@ -30,7 +32,7 @@ function controlesVideo() {
 };
 window.addEventListener('load', controlesVideo, false);
 
-// Ativação menu hamburguer
+//Ativação menu hamburguer
 
 var menu = document.querySelector(".menu")
 var ham = document.querySelector(".ham")
