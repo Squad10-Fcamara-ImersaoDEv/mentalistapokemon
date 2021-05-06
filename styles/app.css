@@ -409,7 +409,7 @@ body {
 
     .background-game-desktop {
         z-index: -1;
-        max-height: 100%;
+        height: 100%;
         width: 100%;
         position: absolute;
         display: unset;
@@ -510,12 +510,6 @@ body {
 
 }
 @media  (min-width: 1024px) and (max-width: 1350px) and (orientation: landscape) {
-    
-    .background-game-desktop {
-        height:100%;
-        width: 100%;
-    }
-
     .card-imagempokemonMedium {
         width: 43%;
         height: auto;
