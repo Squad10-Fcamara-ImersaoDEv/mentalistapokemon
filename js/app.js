@@ -2,9 +2,9 @@
 let baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
 // Gera um número inteiro aleatório entre 1 e 898
-function getRandomPokemon() {
-    min = Math.ceil(1);
-    max = Math.floor(150);
+function getRandomPokemon(menor,maior) {
+    min = Math.ceil(menor);
+    max = Math.floor(maior);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -32,66 +32,6 @@ async function showPokemon(id) {
 }
 
 var pokemonOnScreen = []
-
-//primeira chamada para iniciar o jogo
-dadosPokemon()
-
-// Função que escreve o pokemon na tela e reseta as dicas
-async function dadosPokemon(){
-    pokemonOnScreen = await showPokemon(getRandomPokemon())
-    
-    let containerMain = document.querySelector('#imagem-pokemon')
-    containerMain.innerHTML = ` <img class="card-imagempokemonMedium" id="filtro" src="${pokemonOnScreen.image}" >`
-
-    let moneyPlayer = document.querySelector('.money-player')
-    moneyPlayer.innerHTML = `${currentPlayerMoney}`
-    
-    let scorePlayer = document.querySelector('.container-score')
-    scorePlayer.innerHTML = `PONTOS : ${cureentPlayerScore}`
-
-    if (hintOneShow == true){
-        var hintOne = document.querySelector('#hint-one')
-        hintOne.innerHTML = ''
-
-        var hintOneOriginal = document.querySelector('#hint-one-original')
-        hintOneOriginal.classList.remove('hidden-hint')
-
-        var buttonHintOne = document.getElementById('button-hint-one')
-        buttonHintOne.classList.remove('button-used')
-
-        hintOneShow = false
-    }
-    
-    if (hintTwoShow == true){
-        var hintTwo = document.querySelector('#hint-two')
-        hintTwo.innerHTML = ''
-
-        var hintTwoOriginal = document.querySelector('#hint-two-original')
-        hintTwoOriginal.classList.remove('hidden-hint')
-
-        var buttonHintTwo = document.getElementById('button-hint-two')
-        buttonHintTwo.classList.remove('button-used')
-
-        hintTwoShow = false
-    }
-
-    if (hintThreeShow == true){
-        var hintThree = document.querySelector('#hint-three')
-        hintThree.innerHTML = ''
-
-        var hintThreeOriginal = document.querySelector('#hint-three-original')
-        hintThreeOriginal.classList.remove('hidden-hint')
-
-        var buttonHintThree = document.getElementById('button-hint-three')
-        buttonHintThree.classList.remove('button-used')
-
-        hintThreeShow = false
-    }
-}
-
-var hintTwoShow = false
-var hintThreeShow = false
-var hintOneShow = false
 
 //Geracoes de pokemon
 var Geracoes = {
@@ -130,12 +70,92 @@ var Geracoes = {
 };
 
 
+var geracaoAtual = 1
+var inicio = Geracoes[geracaoAtual].inicio
+var fim = Geracoes[geracaoAtual].fim
+
+function trocaDeGeracao(){
+    if (fim < 898){
+    geracaoAtual += 1
+    inicio = Geracoes[geracaoAtual].inicio
+    fim = Geracoes[geracaoAtual].fim
+    }
+    else {
+        geracaoAtual = 1
+        inicio = Geracoes[geracaoAtual].inicio
+        fim = Geracoes[geracaoAtual].fim
+    }
+}
+
+
+
+//primeira chamada para iniciar o jogo
+dadosPokemon()
+
+// Função que escreve o pokemon na tela e reseta as dicas
+async function dadosPokemon(){
+    pokemonOnScreen = await showPokemon(getRandomPokemon(inicio,fim))
+    
+    let containerMain = document.querySelector('#imagem-pokemon')
+    containerMain.innerHTML = ` <img class="card-imagempokemonMedium" id="filtro" src="${pokemonOnScreen.image}" >`
+
+    let moneyPlayer = document.querySelector('.money-player')
+    moneyPlayer.innerHTML = `${currentPlayerMoney}`
+    
+    let scorePlayer = document.querySelector('.container-score')
+    scorePlayer.innerHTML = `PONTOS : ${currentPlayerScore}`
+
+    if (hintOneShow == true){
+        let hintOne = document.querySelector('#hint-one')
+        hintOne.innerHTML = ''
+
+        let hintOneOriginal = document.querySelector('#hint-one-original')
+        hintOneOriginal.classList.remove('hidden-hint')
+
+        let buttonHintOne = document.getElementById('button-hint-one')
+        buttonHintOne.classList.remove('button-used')
+
+        hintOneShow = false
+    }
+    
+    if (hintTwoShow == true){
+        let hintTwo = document.querySelector('#hint-two')
+        hintTwo.innerHTML = ''
+
+        let hintTwoOriginal = document.querySelector('#hint-two-original')
+        hintTwoOriginal.classList.remove('hidden-hint')
+
+        let buttonHintTwo = document.getElementById('button-hint-two')
+        buttonHintTwo.classList.remove('button-used')
+
+        hintTwoShow = false
+    }
+
+    if (hintThreeShow == true){
+        let hintThree = document.querySelector('#hint-three')
+        hintThree.innerHTML = ''
+
+        let hintThreeOriginal = document.querySelector('#hint-three-original')
+        hintThreeOriginal.classList.remove('hidden-hint')
+
+        let buttonHintThree = document.getElementById('button-hint-three')
+        buttonHintThree.classList.remove('button-used')
+
+        hintThreeShow = false
+    }
+}
+
+var hintTwoShow = false
+var hintThreeShow = false
+var hintOneShow = false
+
+
 
 //Variavel que guarda dinheiro do jogador
 var currentPlayerMoney = 100
 
 //Variavel que guarda a pontaução do jogador
-var cureentPlayerScore = 0
+var currentPlayerScore = 0
  
 //Função para o Enter apertar o botão de enviar
 const inputEle = document.getElementById('nome-pokemon');
@@ -152,17 +172,22 @@ function sendNamePokemon(){
     inputNomePokemon = inputNomePokemon.value.toLowerCase()
     console.log(inputNomePokemon)
     console.log(pokemonOnScreen)
+
     if(inputNomePokemon == pokemonOnScreen.name){
-        cureentPlayerScore += 1
+        currentPlayerScore += 1
         currentPlayerMoney += 25
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)" 
         setTimeout(dadosPokemon,3000)
         document.querySelector('#nome-pokemon').value = ""
 
+        if ((currentPlayerScore%5) == 0){
+            trocaDeGeracao()
+        }
+
         win.play();
     } else {
-        cureentPlayerScore -= 1
+        currentPlayerScore -= 1
         setTimeout(dadosPokemon,1500)
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)"
@@ -241,37 +266,37 @@ function traduzirPokemon(pokemonTypes) {
 //Função para escrever na tela a dica 1 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
-        var hintOneOriginal = document.querySelector('#hint-one-original')
-        hintOneOriginal.classList.add('hidden-hint')
-        
         tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
         console.log(tipoPokemon)
         
-        var hintOne = document.querySelector('#hint-one')
+        let hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>Tipo: ${tipoPokemon}<\div>`
+       
+        let hintOneOriginal = document.querySelector('#hint-one-original')
+        hintOneOriginal.classList.add('hidden-hint')
         
-        var buttonHintOne = document.getElementById('button-hint-one')
+        let buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
 
         currentPlayerMoney -= 15
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintOneShow = true
-    }
 
-    buyTip.play();
-
+        buyTip.play();
+    }  
 }
 
 //Função para escrever na tela a dica 2
 function WriteHintTwo(){
     if(currentPlayerMoney >= 25 & !hintTwoShow){
-        var hintTwoOriginal = document.querySelector('#hint-two-original')
-        hintTwoOriginal.classList.add('hidden-hint')
-        var hintTwo = document.querySelector('#hint-two')
+        let hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>Primeira letra: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
-
-        var buttonHintTwo = document.getElementById('button-hint-two')
+        
+        let hintTwoOriginal = document.querySelector('#hint-two-original')
+        hintTwoOriginal.classList.add('hidden-hint')
+       
+        let buttonHintTwo = document.getElementById('button-hint-two')
         buttonHintTwo.classList.add('button-used')
 
 
@@ -279,9 +304,9 @@ function WriteHintTwo(){
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintTwoShow = true
-    }
-
-    buyTip.play();
+        
+        buyTip.play();
+    }    
 }
 
 //Função para escrever na tela a dica 3 
@@ -305,9 +330,9 @@ function WriteHintThree(){
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         
         hintThreeShow = true
-    }
-
-    buyTip.play();
+        
+        buyTip.play();
+    } 
 }
 
 // Função para seleção de imagem dado a dificuldade
@@ -341,18 +366,18 @@ function displayModal() {
   }
   
 function closeModal() {
-var modal = document.querySelector('#modal-exit')
+    var modal = document.querySelector('#modal-exit')
 
-modal.addEventListener('click', function(e) {
-    e.preventDefault()
-    
-    if ( e.target.id === "modal-confirm") {
-    modal.classList.remove('showtime')
-    }
-    if ( e.target.id === "modal-cancel"){
-    window.location.href ='./index.html'
-    }
-})
+    modal.addEventListener('click', function(e) {
+        e.preventDefault()
+        
+        if ( e.target.id === "modal-confirm") {
+        modal.classList.remove('showtime')
+        }
+        if ( e.target.id === "modal-cancel"){
+        window.location.href ='./index.html'
+        }
+    })
 }
 
 displayModal();
@@ -361,7 +386,7 @@ closeModal();
 //skip button
 
 function skipPokemon() {
-    cureentPlayerScore -= 1
+    currentPlayerScore -= 1
     setTimeout(dadosPokemon,1500)
     var imagemPokemon = document.getElementById('filtro')
     imagemPokemon.style.filter = "brightness(100%)" 

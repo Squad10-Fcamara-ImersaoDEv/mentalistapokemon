@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    cursor: url(../assets/cursores/pokebola.cur), auto;
-}
-
-a{
-    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
-}
-
 .containerMenu{
     font-family: 'Play', sans-serif;
     font-size: 20px;
@@ -88,11 +80,11 @@ a{
     font-family: 'Play', sans-serif;
     font-weight: bold;
     max-width: 220px;
-    font-size: 22px;
+    font-size: 1.1rem;
     text-align: center;
     padding: 20px;
     margin: 1.75rem 0;
-    border-radius: 8px;
+    border-radius: 2.5rem;
     color: #FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
@@ -264,9 +256,10 @@ a{
 
 #responsiveCarrosel div > a{
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5rem;
     margin-right: 6rem;
+    margin-bottom: 1rem;
     align-self: flex-end;
     text-align: right;
     text-decoration: none;
@@ -281,7 +274,7 @@ a{
 .containerCarrosel {
     display: flex;
     position: relative;
-    height: 57vh;
+    height: 65vh;
     width: 100%;
     margin-bottom: 5rem;
 }
@@ -293,7 +286,7 @@ a{
     position: absolute;
     right: 0;
     width: 100%;
-    height: 57vh;
+    height: 65vh;
     overflow: hidden;
     align-self: center;
 }
@@ -321,19 +314,35 @@ a{
 .gallery__prev, .gallery__next {
     position: absolute;
     top: 50%;
-    z-index: 4;
-    width: 40%;
+    z-index: 5;
+    width: 5rem;
     height: 100%;
-    transform: translateX(-50%) translateY(-50%) scale(0.8);
     cursor: pointer;
 }
 
 .gallery__prev {
     left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(-50%) scale(0.8);
+}
+
+.gallery__prev img {
+    width: 4rem;
 }
 
 .gallery__next {
     left: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(-100%) translateY(-50%) scale(0.8);
+}
+
+.gallery__next img {
+    transform: rotate(-180deg);
+    width: 4rem;
 }
 
 .gallery__stream {
@@ -348,42 +357,58 @@ a{
     position: absolute;
     padding-top: 2rem;
     width: 25%;
-    min-width: 12rem;
+    min-width: 15rem;
     text-align: center;
     transition: all 1s ease 0s;
     border-radius: 1rem;
 }
 
 .gallery__item:nth-child(1) {
-    left: 0px;
+    left: 0%;
     z-index: 1;
-    transform: translateX(-100%) scale(0.8);
+    transform: translateX(-100%) scale(0.1);
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
 }
 
 .gallery__item:nth-child(2) {
-    left: 0px;
+    left: 15%;
     z-index: 2;
-    transform: translateX(-50%) scale(0.8);
-    opacity: 50%;
+    transform: translateX(-50%) scale(0.7);
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
 }
 
 .gallery__item:nth-child(3) {
-    left: 50%;
-    z-index: 4;
-    transform: translateX(-50%) scale(1);
+    left: 30%;
+    z-index: 3;
+    transform: translateX(-50%) scale(0.85);
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
 }
 
 .gallery__item:nth-child(4) {
-    left: 100%;
-    z-index: 2;
-    transform: translateX(-50%) scale(0.8);
-    opacity: 50%;
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
 }
 
-.gallery__item:nth-child(n+5) {
+.gallery__item:nth-child(5) {
+    left: 70%;
+    z-index: 3;
+    transform: translateX(-50%) scale(0.8);
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
+}
+
+.gallery__item:nth-child(6) {
+    left: 85%;
+    z-index: 2;
+    transform: translateX(-50%) scale(0.7);
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.05);
+}
+
+.gallery__item:nth-child(n+7) {
     left: 100%;
     z-index: 1;
-    transform: scale(0.8);
+    transform: scale(0.1);
 }
 
 .card-nome {
@@ -462,9 +487,9 @@ footer .container-copy {
 #back-to-top {
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 20px;
     z-index: 999;
-    cursor: url(../assets/cursores/pokebolaAberta.cur), auto;
+    cursor: pointer;
 }
         
 #back-to-top img {
@@ -497,7 +522,7 @@ footer .container-copy {
     .containerCarrosel {
         display: flex;
         position: relative;
-        height: 44vh;
+        height: 60vh;
         width: 100%;
         margin-bottom: 5rem;
     }
@@ -507,7 +532,6 @@ footer .container-copy {
         position: absolute;
         right: 0;
         width: 100%;
-        height: 45vh;
         overflow: hidden;
         align-self: center;
     }
@@ -611,7 +635,7 @@ footer .container-copy {
     .containerCarrosel {
         display: flex;
         position: relative;
-        height: 38vh;
+        height: 55vh;
         width: 100%;
         margin-bottom: 5rem;
     }
@@ -625,7 +649,7 @@ footer .container-copy {
         position: absolute;
         right: 0;
         width: 100%;
-        height: 42vh;
+        height: 55vh;
         overflow: hidden;
         align-self: center;
     }
@@ -741,7 +765,7 @@ footer .container-copy {
     }
 
     #responsiveAp div > a{
-        font-size: 1.15rem;
+        font-size: 1rem;
         width: 90%;
         padding: 1rem;
     }
@@ -843,12 +867,8 @@ footer .container-copy {
 
     .containerAp div > a {
         padding: 0.75rem;
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin: 1.5rem auto;
-    }
-
-    .containerCarrosel {
-        height: 16rem;
     }
 
     #responsiveCarrosel > div{
@@ -862,10 +882,6 @@ footer .container-copy {
     #responsiveCarrosel div > a{
         font-size: 1.25rem;
         margin-right: 0;
-    }
-
-    .gallery {
-        height: 20rem;
     }
 
     .containerRules{
@@ -956,14 +972,43 @@ footer .container-copy {
         border: none;
         text-decoration: none;
     }
+    
+    .menuIcon, .xIcon {
+        margin: 0 !important;
+        right: 1rem !important;
+        top: 0.5rem !important;
+        z-index:9999;
+        cursor:pointer;
+        width: 28px !important;
+        height: 28px !important;
+    }
+    
+    .mobile-nav-button__line {
+        width:100%;
+        height:4px;
+        background:#212121;
+        position:relative;
+        transition:1s ease;
+    }
+    
+    .mobile-nav-button__line:nth-child(1) {
+        margin-bottom: 0.4rem;
+    }
+    
+    .mobile-nav-button__line:nth-child(2) {
+        margin: 0.4rem 0;
+    }
+    
+    .mobile-nav-button__line:nth-child(3) {
+        margin-top: 0.4rem;
+    }
 
-
-    #responsiveMenu{
-        height: 20vh;
+    .containerMenu {
+        height: 6rem;
     }
 
     .containerMenu a > img{
-        width: 9rem;
+        width: 6rem;
         margin: auto 0.75rem;
     }
 
@@ -1001,7 +1046,7 @@ footer .container-copy {
     .containerAp div a{
         margin: 1.5rem auto;
         padding: 0.8rem;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     #responsiveCarrosel > div{
@@ -1009,7 +1054,7 @@ footer .container-copy {
     }
 
     #responsiveCarrosel div > h1{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     #responsiveCarrosel div > a{
@@ -1019,25 +1064,25 @@ footer .container-copy {
     }
 
     .containerCarrosel {
-        height: 45vh;
+        height: 50vh;
     }
 
     .gallery {
         height: 60vh;
     }
 
-    .containerRules{
+    .containerRules {
         font-size: 1.5rem;
         height: 50rem;
     }
     
-    .containerRules h1{
-        font-size: 2rem;
+    .containerRules h1 {
+        font-size: 1.4rem;
         margin-bottom: 3rem;
         padding: 2rem 0 0 2rem;
     }
     
-    .rulesGrid{
+    .rulesGrid {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 5vh;
