@@ -31,9 +31,10 @@ async function showPokemon(id) {
     return pokemonData;
 }
 
+//variavel com os dados do pokemon em tela
 var pokemonOnScreen = []
 
-//Geracoes de pokemon
+//Dicionario com inicio e fim das Geracoes de pokemon
 var Geracoes = {
     1: {
         inicio: 1,
@@ -73,7 +74,7 @@ var Geracoes = {
 var geracaoAtual = 1
 var inicio = Geracoes[geracaoAtual].inicio
 var fim = Geracoes[geracaoAtual].fim
-
+// Função que troca as gerações a cada 5 acertos
 function trocaDeGeracao(){
     if (fim < 898){
     geracaoAtual += 1
@@ -365,7 +366,7 @@ function displayModal() {
       }
 
       exit.play();
-    });
+    })
   }
   
 function closeModal() {
@@ -383,8 +384,8 @@ function closeModal() {
     })
 }
 
-displayModal();
-closeModal();
+displayModal()
+closeModal()
 
 //skip button
 

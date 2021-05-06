@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-
+//Função para mostrar os controles do video quando o mouse estiver em cima
 function controlesVideo() {
   let controle = document.getElementById("controlsVideo")
   controle.addEventListener("mouseover", function(){this.controls = true;}, false);
