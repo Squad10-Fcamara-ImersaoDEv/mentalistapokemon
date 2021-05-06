@@ -459,6 +459,11 @@ footer .container-copy {
         height: 4rem;
     }
 
+    .container-about__title h2 {
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+
     .container-about__items {
         width: 100%;
         max-width: 1200px;

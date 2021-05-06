@@ -125,33 +125,36 @@ body {
 }
 
 .form-input-pokemon {
-    background: #F0F0F0 ;
+    background: #F0F0F0;
     border-radius: 2.5rem;
     border: #999 solid 2px;
-    margin:auto;
-    max-width: 20rem;
+    margin: auto;
     width: 80%;
-    height: 2.5Rem;
+    max-width: 20rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .input-pokemon {
     background-color:#F0F0F0 ;
     border: none;
-    font-size: 1.4rem;
-    display: inline-block;
+    font-family: Play, Ubuntu, sans-serif;
+    font-size: 1rem;
     width: 80%;
+    outline: none;
+    margin-left: 1rem;
 }
 
 .button-send {
     background: #006DB9;
-    border: none;
-    height: 2.2rem;
-    font-weight: bold;
+    height: 2.5rem;
     width: 2.5rem;
-    border-radius: 1.1rem;
+    border: none;
+    font-family: Play, Ubuntu, sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
     color: rgb(255, 255, 255);
     cursor: pointer;
     text-transform: uppercase;
@@ -338,9 +341,9 @@ body {
 
 @media (min-width:1024px) {
     .button-send {
-        height: 2.8rem;
-        width: 3.6rem;
-        border-radius: 2.5rem;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
         font-size: 1.2rem;
     }
 
@@ -433,13 +436,16 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }    
+    }
     
     .form-input-pokemon  {
-        width: 78%;
-        margin:2rem auto;
-        padding: 0.5rem;
+        margin: 2rem auto;
+        padding: 0.5rem 0;
         font-size: 2.5rem;
+    }
+
+    .input-pokemon {
+        font-size: 1.3rem;
     }
 
 
@@ -469,7 +475,7 @@ body {
 @media  (min-width: 1024px) and (max-width: 1350px) {
     .form-input-pokemon  {
         margin: 1rem auto;
-        padding: 0.5rem;
+        padding: 0.5rem 0;
         font-size: 2.5rem;
     }
 
