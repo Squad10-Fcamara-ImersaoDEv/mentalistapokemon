@@ -5,6 +5,7 @@ btn.addEventListener('click', () => window.scrollTo({
     behavior: 'smooth',
 }));
 
+//Função que pega o pokemon na api e transforma em um objeto
 async function getPokemon(pokemonId) {
     let id
     let pokemonData = {}
@@ -138,7 +139,7 @@ async function seeMore(){
     await createDataPokemonAndWrite(pokemonOnScreen,maxPokemon)
 }
 
-
+// Função para traduzir o tipo de pokemon para português
 function traduzirPokemon(pokemonTypes) {
     var tipoPokemonTraduzido = []
     for(let i=0 ; i < pokemonTypes.length ; i++){
@@ -202,6 +203,8 @@ function traduzirPokemon(pokemonTypes) {
     return tipoPokemonTraduzido
 }
 
+
+//Funções do menu Hamburguer
 var menu = document.querySelector(".menu")
 var ham = document.querySelector(".ham")
 var xIcon = document.querySelector(".xIcon")

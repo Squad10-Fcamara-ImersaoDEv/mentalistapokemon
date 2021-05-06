@@ -384,16 +384,17 @@ li {
   cursor: pointer;
   border: none;
   width: 20rem;
+  font-family: Play, Ubuntu, sans-serif;
   font-size: 1.2rem;
   background-color: #006DB9;
-  border-radius: 8px;
+  border-radius: 2.5rem;
   color: #FFFFFF;
   height: 3rem;
-  text-transform:capitalize;
+  text-transform: capitalize;
+  transition: 0.3s;
 }
 
 .botao-seemore:hover {
-  transition: 0.5s;
   background-color: #FB5555;
 }
 

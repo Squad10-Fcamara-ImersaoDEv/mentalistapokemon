@@ -31,9 +31,10 @@ async function showPokemon(id) {
     return pokemonData;
 }
 
+//variavel com os dados do pokemon em tela
 var pokemonOnScreen = []
 
-//Geracoes de pokemon
+//Dicionario com inicio e fim das Geracoes de pokemon
 var Geracoes = {
     1: {
         inicio: 1,
@@ -73,7 +74,7 @@ var Geracoes = {
 var geracaoAtual = 1
 var inicio = Geracoes[geracaoAtual].inicio
 var fim = Geracoes[geracaoAtual].fim
-
+// Função que troca as gerações a cada 5 acertos
 function trocaDeGeracao(){
     if (fim < 898){
     geracaoAtual += 1
@@ -187,7 +188,10 @@ function sendNamePokemon(){
 
         win.play();
     } else {
-        currentPlayerScore -= 1
+        if (currentPlayerScore > 0){
+            currentPlayerScore -= 1
+        }
+        
         setTimeout(dadosPokemon,1500)
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)"
@@ -265,7 +269,7 @@ function traduzirPokemon(pokemonTypes) {
 
 //Função para escrever na tela a dica 1 
 function WriteHintOne(){
-    if(currentPlayerMoney >= 15 & !hintOneShow){
+    if(currentPlayerMoney >= 10 & !hintOneShow){
         tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
         console.log(tipoPokemon)
         
@@ -278,7 +282,7 @@ function WriteHintOne(){
         let buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
 
-        currentPlayerMoney -= 15
+        currentPlayerMoney -= 10
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintOneShow = true
@@ -289,7 +293,7 @@ function WriteHintOne(){
 
 //Função para escrever na tela a dica 2
 function WriteHintTwo(){
-    if(currentPlayerMoney >= 25 & !hintTwoShow){
+    if(currentPlayerMoney >= 20 & !hintTwoShow){
         let hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>Primeira letra: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
         
@@ -300,7 +304,7 @@ function WriteHintTwo(){
         buttonHintTwo.classList.add('button-used')
 
 
-        currentPlayerMoney -= 25
+        currentPlayerMoney -= 20
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintTwoShow = true
@@ -311,7 +315,7 @@ function WriteHintTwo(){
 
 //Função para escrever na tela a dica 3 
 function WriteHintThree(){
-    if(currentPlayerMoney >= 35 & !hintThreeShow){
+    if(currentPlayerMoney >= 30 & !hintThreeShow){
         var imagem = document.getElementById("filtro")
         imagem.style.filter = "brightness(20%)"
     
@@ -325,7 +329,7 @@ function WriteHintThree(){
         buttonHintThree.classList.add('button-used')
 
 
-        currentPlayerMoney -= 35
+        currentPlayerMoney -= 30
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         
@@ -362,7 +366,7 @@ function displayModal() {
       }
 
       exit.play();
-    });
+    })
   }
   
 function closeModal() {
@@ -380,13 +384,15 @@ function closeModal() {
     })
 }
 
-displayModal();
-closeModal();
+displayModal()
+closeModal()
 
 //skip button
 
 function skipPokemon() {
-    currentPlayerScore -= 1
+    if (currentPlayerScore > 0){
+        currentPlayerScore -= 1
+    }
     setTimeout(dadosPokemon,1500)
     var imagemPokemon = document.getElementById('filtro')
     imagemPokemon.style.filter = "brightness(100%)" 
