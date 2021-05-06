@@ -33,6 +33,42 @@ async function showPokemon(id) {
 
 var pokemonOnScreen = []
 
+//Geracoes de pokemon
+var Geracoes = {
+    1: {
+        inicio: 1,
+        fim: 151,
+    },
+    2: {
+        inicio: 152,
+        fim: 251,
+    },
+    3: {
+        inicio: 252,
+        fim: 386,
+    },
+    4: {
+        inicio: 387,
+        fim: 493,
+    },
+    5: {
+        inicio: 494,
+        fim: 649,
+    },
+    6: {
+        inicio: 650,
+        fim: 721,
+    },
+    7: {
+        inicio: 722,
+        fim: 807,
+    },
+    8: {
+        inicio: 808,
+        fim: 898,
+    },
+};
+
 
 var geracaoAtual = 1
 var inicio = Geracoes[geracaoAtual].inicio
