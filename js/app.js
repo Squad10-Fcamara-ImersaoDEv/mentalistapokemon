@@ -152,6 +152,7 @@ function sendNamePokemon(){
     inputNomePokemon = inputNomePokemon.value.toLowerCase()
     console.log(inputNomePokemon)
     console.log(pokemonOnScreen)
+
     if(inputNomePokemon == pokemonOnScreen.name){
         cureentPlayerScore += 1
         currentPlayerMoney += 25
@@ -241,37 +242,37 @@ function traduzirPokemon(pokemonTypes) {
 //Função para escrever na tela a dica 1 
 function WriteHintOne(){
     if(currentPlayerMoney >= 15 & !hintOneShow){
-        var hintOneOriginal = document.querySelector('#hint-one-original')
-        hintOneOriginal.classList.add('hidden-hint')
-        
         tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
         console.log(tipoPokemon)
         
-        var hintOne = document.querySelector('#hint-one')
+        let hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>Tipo: ${tipoPokemon}<\div>`
+       
+        let hintOneOriginal = document.querySelector('#hint-one-original')
+        hintOneOriginal.classList.add('hidden-hint')
         
-        var buttonHintOne = document.getElementById('button-hint-one')
+        let buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
 
         currentPlayerMoney -= 15
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintOneShow = true
-    }
 
-    buyTip.play();
-
+        buyTip.play();
+    }  
 }
 
 //Função para escrever na tela a dica 2
 function WriteHintTwo(){
     if(currentPlayerMoney >= 25 & !hintTwoShow){
-        var hintTwoOriginal = document.querySelector('#hint-two-original')
-        hintTwoOriginal.classList.add('hidden-hint')
-        var hintTwo = document.querySelector('#hint-two')
+        let hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>Primeira letra: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
-
-        var buttonHintTwo = document.getElementById('button-hint-two')
+        
+        let hintTwoOriginal = document.querySelector('#hint-two-original')
+        hintTwoOriginal.classList.add('hidden-hint')
+       
+        let buttonHintTwo = document.getElementById('button-hint-two')
         buttonHintTwo.classList.add('button-used')
 
 
@@ -279,9 +280,9 @@ function WriteHintTwo(){
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintTwoShow = true
-    }
-
-    buyTip.play();
+        
+        buyTip.play();
+    }    
 }
 
 //Função para escrever na tela a dica 3 
@@ -305,9 +306,9 @@ function WriteHintThree(){
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         
         hintThreeShow = true
-    }
-
-    buyTip.play();
+        
+        buyTip.play();
+    } 
 }
 
 // Função para seleção de imagem dado a dificuldade
