@@ -268,7 +268,7 @@ function traduzirPokemon(pokemonTypes) {
 
 //Função para escrever na tela a dica 1 
 function WriteHintOne(){
-    if(currentPlayerMoney >= 15 & !hintOneShow){
+    if(currentPlayerMoney >= 10 & !hintOneShow){
         tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
         console.log(tipoPokemon)
         
@@ -281,7 +281,7 @@ function WriteHintOne(){
         let buttonHintOne = document.getElementById('button-hint-one')
         buttonHintOne.classList.add('button-used')
 
-        currentPlayerMoney -= 15
+        currentPlayerMoney -= 10
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintOneShow = true
@@ -292,7 +292,7 @@ function WriteHintOne(){
 
 //Função para escrever na tela a dica 2
 function WriteHintTwo(){
-    if(currentPlayerMoney >= 25 & !hintTwoShow){
+    if(currentPlayerMoney >= 20 & !hintTwoShow){
         let hintTwo = document.querySelector('#hint-two')
         hintTwo.innerHTML = `<div>Primeira letra: ${pokemonOnScreen.name[0].toUpperCase()}<\div>`
         
@@ -303,7 +303,7 @@ function WriteHintTwo(){
         buttonHintTwo.classList.add('button-used')
 
 
-        currentPlayerMoney -= 25
+        currentPlayerMoney -= 20
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         hintTwoShow = true
@@ -314,7 +314,7 @@ function WriteHintTwo(){
 
 //Função para escrever na tela a dica 3 
 function WriteHintThree(){
-    if(currentPlayerMoney >= 35 & !hintThreeShow){
+    if(currentPlayerMoney >= 30 & !hintThreeShow){
         var imagem = document.getElementById("filtro")
         imagem.style.filter = "brightness(20%)"
     
@@ -328,7 +328,7 @@ function WriteHintThree(){
         buttonHintThree.classList.add('button-used')
 
 
-        currentPlayerMoney -= 35
+        currentPlayerMoney -= 30
         let moneyPlayer = document.querySelector('.money-player')
         moneyPlayer.innerHTML = `${currentPlayerMoney}`
         
