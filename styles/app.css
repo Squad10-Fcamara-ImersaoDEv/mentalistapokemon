@@ -94,6 +94,7 @@ body {
 }
 
 .button-hint {
+    cursor: pointer;
     margin: 0.4rem auto ;
     display: block;
     width: 80%;
@@ -151,9 +152,11 @@ body {
     width: 2.5rem;
     border-radius: 25%;
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .button-used {
+    cursor: unset;
     background-color: #dddddd;
     color: black;
 }

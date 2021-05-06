@@ -361,6 +361,7 @@ li {
 }
 
 #back-to-top {
+  cursor: pointer;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -380,6 +381,7 @@ li {
 }
 
 .botao-seemore {
+  cursor: pointer;
   border: none;
   width: 20rem;
   font-size: 1.2rem;
