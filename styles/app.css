@@ -71,10 +71,12 @@ body {
 
 
 .container-money {
+    border-radius: 2.5rem;
     background-color: #FFF9C2;
 }
 
 .container-score {
+    border-radius: 2.5rem;
     background-color: #8affa7;   
 }
 
@@ -124,7 +126,7 @@ body {
 
 .form-input-pokemon {
     background: #F0F0F0 ;
-    border-radius: 10px;
+    border-radius: 2.5rem;
     border: #999 solid 2px;
     margin:auto;
     max-width: 20rem;
@@ -139,20 +141,20 @@ body {
     background-color:#F0F0F0 ;
     border: none;
     font-size: 1.4rem;
-    max-width: 17.5rem;
     display: inline-block;
-    width: 90%;
+    width: 80%;
 }
 
 .button-send {
     background: #006DB9;
     border: none;
-    height: 2.5rem;
+    height: 2.2rem;
     font-weight: bold;
     width: 2.5rem;
-    border-radius: 25%;
+    border-radius: 1.1rem;
     color: rgb(255, 255, 255);
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .button-used {
@@ -335,6 +337,13 @@ body {
 }
 
 @media (min-width:1024px) {
+    .button-send {
+        height: 2.8rem;
+        width: 3.6rem;
+        border-radius: 2.5rem;
+        font-size: 1.2rem;
+    }
+
     .text-hint {
         font-size: 1.3rem;
         display: inline-block;
