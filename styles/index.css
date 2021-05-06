@@ -548,7 +548,7 @@ footer .container-copy {
     .rulesGrid{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 25vh 25vh 25vh;
+        grid-template-rows: 15rem 15rem 15rem;
         grid-template-areas:    "img text1"
                                 "img text2"
                                 "img text3";
@@ -1077,7 +1077,7 @@ footer .container-copy {
 
     .containerRules {
         font-size: 1.5rem;
-        height: 50rem;
+        height: 44rem;
     }
     
     .containerRules h1 {
