@@ -2,9 +2,9 @@
 let baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
 // Gera um número inteiro aleatório entre 1 e 898
-function getRandomPokemon() {
-    min = Math.ceil(1);
-    max = Math.floor(150);
+function getRandomPokemon(menor,maior) {
+    min = Math.ceil(menor);
+    max = Math.floor(maior);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
@@ -33,12 +33,67 @@ async function showPokemon(id) {
 
 var pokemonOnScreen = []
 
+//Geracoes de pokemon
+var Geracoes = {
+    1: {
+        inicio: 1,
+        fim: 151,
+    },
+    2: {
+        inicio: 152,
+        fim: 251,
+    },
+    3: {
+        inicio: 252,
+        fim: 386,
+    },
+    4: {
+        inicio: 387,
+        fim: 493,
+    },
+    5: {
+        inicio: 494,
+        fim: 649,
+    },
+    6: {
+        inicio: 650,
+        fim: 721,
+    },
+    7: {
+        inicio: 722,
+        fim: 807,
+    },
+    8: {
+        inicio: 808,
+        fim: 898,
+    },
+};
+
+var geracaoAtual = 1
+var inicio = Geracoes[geracaoAtual].inicio
+var fim = Geracoes[geracaoAtual].fim
+
+function trocaDeGeracao(){
+    if (fim < 898){
+    geracaoAtual += 1
+    inicio = Geracoes[geracaoAtual].inicio
+    fim = Geracoes[geracaoAtual].fim
+    }
+    else {
+        geracaoAtual = 1
+        inicio = Geracoes[geracaoAtual].inicio
+        fim = Geracoes[geracaoAtual].fim
+    }
+}
+
+
+
 //primeira chamada para iniciar o jogo
 dadosPokemon()
 
 // Função que escreve o pokemon na tela e reseta as dicas
 async function dadosPokemon(){
-    pokemonOnScreen = await showPokemon(getRandomPokemon())
+    pokemonOnScreen = await showPokemon(getRandomPokemon(inicio,fim))
     
     let containerMain = document.querySelector('#imagem-pokemon')
     containerMain.innerHTML = ` <img class="card-imagempokemonMedium" id="filtro" src="${pokemonOnScreen.image}" >`
@@ -47,7 +102,7 @@ async function dadosPokemon(){
     moneyPlayer.innerHTML = `${currentPlayerMoney}`
     
     let scorePlayer = document.querySelector('.container-score')
-    scorePlayer.innerHTML = `PONTOS : ${cureentPlayerScore}`
+    scorePlayer.innerHTML = `PONTOS : ${currentPlayerScore}`
 
     if (hintOneShow == true){
         var hintOne = document.querySelector('#hint-one')
@@ -93,49 +148,13 @@ var hintTwoShow = false
 var hintThreeShow = false
 var hintOneShow = false
 
-//Geracoes de pokemon
-var Geracoes = {
-    1: {
-        inicio: 1,
-        fim: 151,
-    },
-    2: {
-        inicio: 152,
-        fim: 251,
-    },
-    3: {
-        inicio: 252,
-        fim: 386,
-    },
-    4: {
-        inicio: 387,
-        fim: 493,
-    },
-    5: {
-        inicio: 494,
-        fim: 649,
-    },
-    6: {
-        inicio: 650,
-        fim: 721,
-    },
-    7: {
-        inicio: 722,
-        fim: 807,
-    },
-    8: {
-        inicio: 808,
-        fim: 898,
-    },
-};
-
 
 
 //Variavel que guarda dinheiro do jogador
 var currentPlayerMoney = 100
 
 //Variavel que guarda a pontaução do jogador
-var cureentPlayerScore = 0
+var currentPlayerScore = 0
  
 //Função para o Enter apertar o botão de enviar
 const inputEle = document.getElementById('nome-pokemon');
@@ -154,16 +173,20 @@ function sendNamePokemon(){
     console.log(pokemonOnScreen)
 
     if(inputNomePokemon == pokemonOnScreen.name){
-        cureentPlayerScore += 1
+        currentPlayerScore += 1
         currentPlayerMoney += 25
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)" 
         setTimeout(dadosPokemon,3000)
         document.querySelector('#nome-pokemon').value = ""
 
+        if ((currentPlayerScore%5) == 0){
+            trocaDeGeracao()
+        }
+
         win.play();
     } else {
-        cureentPlayerScore -= 1
+        currentPlayerScore -= 1
         setTimeout(dadosPokemon,1500)
         var imagemPokemon = document.getElementById('filtro')
         imagemPokemon.style.filter = "brightness(100%)"
@@ -362,7 +385,7 @@ closeModal();
 //skip button
 
 function skipPokemon() {
-    cureentPlayerScore -= 1
+    currentPlayerScore -= 1
     setTimeout(dadosPokemon,1500)
     var imagemPokemon = document.getElementById('filtro')
     imagemPokemon.style.filter = "brightness(100%)" 
