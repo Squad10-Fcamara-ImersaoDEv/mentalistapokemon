@@ -1046,6 +1046,7 @@ footer .container-copy {
         text-align: center;
         min-width: 80%;
         font-size: 17px;
+        right: inherit;
     }
 
     .containerAp div a{
