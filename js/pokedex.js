@@ -233,7 +233,7 @@ menuLinks.forEach(
   }
 )
 
-// Botão para voltar após pesquisar um pokemon
+// Botão para voltar à pokedex após pesquisar um pokemon
 function backPokedex() {
     window.location.reload()
 }

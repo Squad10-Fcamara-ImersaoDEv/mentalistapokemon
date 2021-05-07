@@ -68,13 +68,13 @@ var Geracoes = {
         inicio: 808,
         fim: 898,
     },
-};
+}
 
 
 var geracaoAtual = 1
 var inicio = Geracoes[geracaoAtual].inicio
 var fim = Geracoes[geracaoAtual].fim
-// Função que troca as gerações a cada 5 acertos
+// Função que troca as gerações (é chamada a cada 5 pontos)
 function trocaDeGeracao(){
     if (fim < 898){
     geracaoAtual += 1
@@ -351,7 +351,7 @@ function WriteHintThree(){
 // }
 
 
-//Modal 
+//Modal 'sair do jogo'
 function displayModal() {
     var modal = document.querySelector('#modal-exit')
     var button = document.querySelector('#button')
@@ -387,8 +387,7 @@ function closeModal() {
 displayModal()
 closeModal()
 
-//skip button
-
+// Botão para pular o pokemon 
 function skipPokemon() {
     if (currentPlayerScore > 0){
         currentPlayerScore -= 1
@@ -401,7 +400,6 @@ function skipPokemon() {
 }
 
 // sounds effects
-
 var win = new Audio('./assets/win_sound.wav')
 var wrong = new Audio('./assets/wrong_sound.wav')
 var buyTip = new Audio('./assets/tip_sound.wav')
