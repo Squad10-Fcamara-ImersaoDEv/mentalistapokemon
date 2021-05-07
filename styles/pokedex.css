@@ -387,7 +387,7 @@ li {
   width: 20rem;
   font-family: Play, Ubuntu, sans-serif;
   font-size: 1.2rem;
-  background-color: #FB5555 ;
+  background-color: #006DB9;
   border-radius: 2.5rem;
   color: #FFFFFF;
   height: 3rem;
@@ -396,7 +396,7 @@ li {
 }
 
 .botao-back:hover {
-  background-color: #006DB9;
+  background-color: #FB5555;
 }
 
 .container-seemore {
