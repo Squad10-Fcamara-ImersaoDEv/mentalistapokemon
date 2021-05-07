@@ -15,6 +15,7 @@ getPokemonsList()
 // obtendo os elementos necessários
 const cardsBox = document.querySelector('.cards');
 const botaoSeemore = document.querySelector('.botao-seemore');
+const botaoBack = document.querySelector('.botao-back');
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const suggBox = searchWrapper.querySelector(".autocom-box");
@@ -169,6 +170,7 @@ async function showSelectedPokemon() {
         searchWrapper.classList.remove("active"); //hide autocomplete box
         inputBox.value = ''
         botaoSeemore.setAttribute('hidden','hidden')
+        botaoBack.removeAttribute('hidden')
 	} else {
 		cardsBox.innerHTML =
 		`
@@ -179,6 +181,7 @@ async function showSelectedPokemon() {
         searchWrapper.classList.remove("active"); //hide autocomplete box
         inputBox.value = ''
         botaoSeemore.setAttribute('hidden','hidden')
+        botaoBack.removeAttribute('hidden')
     }
 }
 
