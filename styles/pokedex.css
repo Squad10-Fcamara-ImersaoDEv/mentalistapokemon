@@ -373,6 +373,32 @@ li {
   width: 40px;
 }
 
+.container-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.botao-back {
+  cursor: pointer;
+  border: none;
+  width: 20rem;
+  font-family: Play, Ubuntu, sans-serif;
+  font-size: 1.2rem;
+  background-color: #FB5555 ;
+  border-radius: 2.5rem;
+  color: #FFFFFF;
+  height: 3rem;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.botao-back:hover {
+  background-color: #006DB9;
+}
+
 .container-seemore {
   width: 100%;
   display: flex;
@@ -400,7 +426,7 @@ li {
 }
 
 footer {
-    background-color:#006db9 ;
+    background-color: #006db9;
     color: #efefef;
     display: flex;
     height: 100px;
