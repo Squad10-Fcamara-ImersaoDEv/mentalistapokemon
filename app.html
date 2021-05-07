@@ -22,6 +22,7 @@
     <main>
         <div id="nome-game-cell"><h2>QUAL É ESSE POKÉMON?</h2></div>
 
+        <!-- Imagem para fundo em telas maiores que 1024px -->
         <img class="background-game-desktop"src="./assets/bg-game-desktop.png" alt="background imagem do qual é esse pokemon">
 
         <div class="responsivite">
@@ -45,7 +46,7 @@
                     <button class="button-send" onclick="sendNamePokemon()">ok</button>
                 </div>
                 
-                <!-- dica um -->
+                <!-- botões de dicas -->
                 <div class="buttons-hint">
                     <button class='button-hint' id='button-hint-one' onclick="WriteHintOne()"> 
                         <div class="text-hint ">
@@ -72,6 +73,7 @@
                             </div>  
                     </button>
 
+                    <!-- Botão sair e botao Pular -->
                     <div class="skip-and-exit">
                         <button onclick="skipPokemon()" class="skip-button">PULAR</button>
                         
