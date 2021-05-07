@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .containerMenu{
@@ -90,7 +91,7 @@
     text-decoration: none;
 }
 
-.containerAp div a:hover{
+.containerAp div a:hover, #playNow:hover{
     background-color: #FB5555;
 }
 
@@ -1045,6 +1046,7 @@ footer .container-copy {
         text-align: center;
         min-width: 80%;
         font-size: 17px;
+        right: inherit;
     }
 
     .containerAp div a{
@@ -1267,3 +1269,13 @@ li {
     top: 13px;
     position: absolute;        
 }
+
+#playNow{
+    font-size: 1.1rem;
+    font-family: 'Play', sans-serif;
+    color: white;
+    background-color: #006DB9;
+    border-radius: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+

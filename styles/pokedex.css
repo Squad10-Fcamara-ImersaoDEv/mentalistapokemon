@@ -170,11 +170,11 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .container-title .title > img {
-  height: 6rem;
+  height: 4rem;
   margin-left: 2rem;
 }
 
@@ -210,6 +210,7 @@ li {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1.5rem;
+  font-family: Play, Ubuntu, sans-serif;
   font-size: 1.3rem;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 }
@@ -271,8 +272,8 @@ li {
 
 .cards { 
   text-align: center;
-  max-width: 1440px;
-  width: 90%;
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -281,7 +282,7 @@ li {
   box-shadow: 5px 5px 60px rgba(0,0,0,0.05);
   transition: 0.3s;
   display: inline-block;
-  width: 25%;
+  width: 30%;
   margin: 20px 10px 0 10px;
   padding: 30px 0 0 0;
   border-radius: 1rem;
@@ -372,6 +373,32 @@ li {
   width: 40px;
 }
 
+.container-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.botao-back {
+  cursor: pointer;
+  border: none;
+  width: 20rem;
+  font-family: Play, Ubuntu, sans-serif;
+  font-size: 1.2rem;
+  background-color: #FB5555 ;
+  border-radius: 2.5rem;
+  color: #FFFFFF;
+  height: 3rem;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.botao-back:hover {
+  background-color: #006DB9;
+}
+
 .container-seemore {
   width: 100%;
   display: flex;
@@ -399,7 +426,7 @@ li {
 }
 
 footer {
-    background-color:#006db9 ;
+    background-color: #006db9;
     color: #efefef;
     display: flex;
     height: 100px;
@@ -418,6 +445,12 @@ footer {
 }
 
 /* medias */
+@media (max-width:1000px) {
+  .containerMenu nav a{
+    margin: 0.75rem;
+  } 
+}
+
 @media (max-width:812px) {
   .menuHamburguer {
     display: block;
@@ -487,4 +520,17 @@ footer {
   .mobile-nav-button__line:nth-child(3) {
       margin-top: 0.4rem;
   }
+}
+
+#playNow {
+  font-size: 1.1rem;
+  font-family: 'Play', sans-serif;
+  color: white;
+  background-color: #006DB9;
+  border-radius: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+#playNow:hover {
+  background-color: #FB5555;
 }

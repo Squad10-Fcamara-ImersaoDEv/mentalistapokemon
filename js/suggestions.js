@@ -12,28 +12,29 @@ const getPokemonsList = async function() {
 
 getPokemonsList()
 
-// getting all required elements
-const cardsBox = document.querySelector('.cards')
-const botaoSeemore = document.querySelector('.botao-seemore')
+// obtendo os elementos necessários
+const cardsBox = document.querySelector('.cards');
+const botaoSeemore = document.querySelector('.botao-seemore');
+const botaoBack = document.querySelector('.botao-back');
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const suggBox = searchWrapper.querySelector(".autocom-box");
 const icon = searchWrapper.querySelector(".icon");
 let selectedPokemonData = {};
 
-// if user press any key and release
+// executa se o usuário pressionar qualquer tecla e soltar
 inputBox.onkeyup = (e)=>{
-    let userData = e.target.value; //user enetered data
+    let userData = e.target.value; // dados inseridos pelo usuário
     if(userData){        
         emptyArray = suggestions.filter((data)=>{
-            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+            // transforma os caracteres inseridos para minúsculas e retornar apenas as palavras que começam com os caracteres inseridos pelo usuário
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase()); 
         });
         emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
+            // insere os dados nos itens da lista
             return data = '<li>'+ data +'</li>';
         });
-        searchWrapper.classList.add("active"); //show autocomplete box
+        searchWrapper.classList.add("active"); // exibe o autocompletar
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
@@ -41,7 +42,7 @@ inputBox.onkeyup = (e)=>{
             allList[i].setAttribute("onclick", "select(this)");
         }
     }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
+        searchWrapper.classList.remove("active"); // esconde o autocompletar
     }
 }
 
@@ -62,7 +63,7 @@ function showSuggestions(list){
     suggBox.innerHTML = listData;
 }
 
-// get pokemon props
+// obtem os atributos do pokemon escolhido
 async function getPokemonProps(pokemonName) {
     await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonName)
         .then(response => response.json())
@@ -79,7 +80,7 @@ async function getPokemonProps(pokemonName) {
 }
 
 
-//Function for Enter call showSelectedPokemon()
+// a tecla enter executa a função showSelectedPokemon()
 const inputEle = document.getElementById('text-input-pokemon');
 inputEle.addEventListener('keyup', function(e){
   var key = e.key
@@ -89,7 +90,7 @@ inputEle.addEventListener('keyup', function(e){
 })
 
 
-// show selected pokemon on screen
+// exibe o pokemon selecionado na tela
 async function showSelectedPokemon() {
 	let pokemonFirstClass
 
@@ -169,6 +170,7 @@ async function showSelectedPokemon() {
         searchWrapper.classList.remove("active"); //hide autocomplete box
         inputBox.value = ''
         botaoSeemore.setAttribute('hidden','hidden')
+        botaoBack.removeAttribute('hidden')
 	} else {
 		cardsBox.innerHTML =
 		`
@@ -179,9 +181,11 @@ async function showSelectedPokemon() {
         searchWrapper.classList.remove("active"); //hide autocomplete box
         inputBox.value = ''
         botaoSeemore.setAttribute('hidden','hidden')
+        botaoBack.removeAttribute('hidden')
     }
 }
 
+// traduz a classe dos pokemons
 function traduzirPokemon(pokemonTypes) {
     var tipoPokemonTraduzido = []
     for(let i=0 ; i < pokemonTypes.length ; i++){

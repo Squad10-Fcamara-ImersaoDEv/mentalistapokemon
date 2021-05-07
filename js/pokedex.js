@@ -232,3 +232,8 @@ menuLinks.forEach(
     menuLink.addEventListener("click", toggleMenu)
   }
 )
+
+// Botão para voltar à pokedex após pesquisar um pokemon
+function backPokedex() {
+    window.location.reload()
+}
