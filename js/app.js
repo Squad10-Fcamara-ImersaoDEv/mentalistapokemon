@@ -25,9 +25,6 @@ async function showPokemon(id) {
             console.log("Error request pokémon. Id: " + id)
         })
 
-    console.log(pokemonData.id)
-    console.log(pokemonData.name)
-    console.log(pokemonData.types[0])
     return pokemonData;
 }
 
@@ -171,8 +168,7 @@ inputEle.addEventListener('keyup', function(e){
 function sendNamePokemon(){
     var inputNomePokemon = document.querySelector('#nome-pokemon')
     inputNomePokemon = inputNomePokemon.value.toLowerCase()
-    console.log(inputNomePokemon)
-    console.log(pokemonOnScreen)
+
 
     if(inputNomePokemon == pokemonOnScreen.name){
         currentPlayerScore += 1
@@ -271,7 +267,6 @@ function traduzirPokemon(pokemonTypes) {
 function WriteHintOne(){
     if(currentPlayerMoney >= 10 & !hintOneShow){
         tipoPokemon = traduzirPokemon(pokemonOnScreen.types)
-        console.log(tipoPokemon)
         
         let hintOne = document.querySelector('#hint-one')
         hintOne.innerHTML = `<div>Tipo: ${tipoPokemon}<\div>`
@@ -338,17 +333,6 @@ function WriteHintThree(){
         buyTip.play();
     } 
 }
-
-// Função para seleção de imagem dado a dificuldade
-// function definirDificuldade(dificuldadeSelecionada) {
-//     if (dificuldadeSelecionada == dificuldadeFacil || selectedDifficulty == dificuldadeNormal) {
-//         imageDirectory = 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/'
-//     } 
-//     // nao funciona para geração 6/7/8
-//     else if (dificuldadeSelecionada == dificuldadeDificil) {
-//         imageDirectory = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/'
-//     }
-// }
 
 
 //Modal 'sair do jogo'
