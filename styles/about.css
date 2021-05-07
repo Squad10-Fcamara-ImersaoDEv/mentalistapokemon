@@ -258,6 +258,10 @@ li {
     transition: 0.3s;
 }
 
+.container-about__item:hover {
+    transform: translateY(-.5rem) scale(1.025);
+}
+
 .container-about__item:nth-child(1) {
     background-color: #C29DFF;
     grid-area: a;
