@@ -1,18 +1,15 @@
-// ===== VARIABLES
-let baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
-
-// Gera um número inteiro aleatório entre 1 e 898
+// Seleciona um numero aleatório de acordo com a geração de pokemon
 function getRandomPokemon(menor,maior) {
-    min = Math.ceil(menor);
-    max = Math.floor(maior);
-    return Math.floor(Math.random() * (max - min)) + min;
+    min = Math.ceil(menor)
+    max = Math.floor(maior)
+    return Math.floor(Math.random() * (max - min)) + min
 }
 
-// Carrega o card da sorte
+// Busca na api o pokemon sorteado
 async function showPokemon(id) {
-    let pokemonData = {};
+    let pokemonData = {}
 
-    await fetch(baseUrl + id)
+    await fetch('https://pokeapi.co/api/v2/pokemon/' + id)
         .then(response => response.json())
         .then(data => {
             pokemonData.id = data.id
