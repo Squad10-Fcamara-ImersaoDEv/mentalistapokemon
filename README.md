@@ -24,7 +24,8 @@
 	<a href="#contributors">Participantes</a>
 </p>
 
----
+<p align="center">Acesse o site do jogo clicando <a href="https://squad10-fcamara-imersaodev.github.io/mentalistapokemon/">aqui!</a></p>
+
 <h6 id="notes"></h6>
 
 ## :memo: Notas
